@@ -1,0 +1,17 @@
+node_modules/
+.openai/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.log
+*.pem
+*.key
+.ssh/
+outputs/
+tmp/
+playwright-report/
+test-results/
+
+# dist/ 是本项目的可编辑源码和发布目录，必须提交。

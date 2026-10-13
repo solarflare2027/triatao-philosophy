@@ -1,0 +1,9 @@
+.doing-page .doing-steps{max-width:760px;margin:32px 0 38px}
+.doing-page .doing-steps>div{padding:22px 0;border-bottom:1px solid var(--line)}
+.doing-page .doing-steps>div:first-child{border-top:1px solid var(--line)}
+.doing-page .doing-steps dt{color:var(--ink);font-size:20px;line-height:1.6;margin-bottom:8px}
+.doing-page .doing-steps dd{margin:0;color:var(--muted);font-size:15px;line-height:2.1}
+.doing-page .action-lead{max-width:760px}
+.doing-page .doing-chapter h2{text-wrap:balance}
+body:not(.home) .doing-page .doing-chapter{scroll-margin-top:45px}
+@media(max-width:700px){.doing-page .doing-steps{margin:24px 0 30px}.doing-page .doing-steps>div{padding:18px 0}.doing-page .doing-steps dt{font-size:18px}.doing-page .doing-steps dd{font-size:14px}}

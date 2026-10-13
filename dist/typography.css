@@ -1,0 +1,11 @@
+/* Approved site typography: GenRyuMin for headings and body; Aoyagi Reisyo for Chinese brand wordmarks and homepage path characters. */
+@font-face{font-family:GenRyuMin;src:url('assets/fonts/gen-ryu-min.woff2?v=20261012-ren-depth1') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:Dominica;src:url('assets/fonts/dominica.woff2') format('woff2');font-style:normal;font-weight:100 900;font-display:swap;unicode-range:U+0000-024F}
+@font-face{font-family:AoyagiReisyo;src:url('assets/fonts/aoyagi-reisyo.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+:root{--latin-serif:Dominica,Georgia,serif;--brand-serif:AoyagiReisyo,GenRyuMin,'Noto Serif SC','Songti SC','SimSun',serif;--serif:Dominica,GenRyuMin,'Noto Serif SC','Songti SC','SimSun',serif;--sans:Dominica,GenRyuMin,'Noto Serif SC','Songti SC','SimSun',serif}
+.brand>span,.footer-wordmark,.a16-home .a16-wordmark,.a16-home .a16-footer-brand>a{font-family:var(--brand-serif)}
+
+.brand small,.footer-wordmark>span{font-family:var(--latin-serif)}
+.a16-home .a16-path-circles a{font-family:var(--brand-serif)}
+
+.brand>.tria-flow-mark{width:42px;height:30px;margin-right:10px}.footer-wordmark{display:flex;align-items:center;gap:12px}.footer-wordmark>.tria-footer-name{font-family:var(--brand-serif);font-size:24px;letter-spacing:.18em;margin:0}.footer-wordmark>span:not(.tria-footer-name){margin-left:6px}

@@ -1,0 +1,48 @@
+.essay-page{--essay-measure:760px;--essay-body:1.125rem;--essay-heading:clamp(1.65rem,2.7vw,2.2rem);--essay-key:clamp(1.3rem,2.2vw,1.6rem);--essay-ink:#282e29;--essay-secondary:#626258;--essay-accent:#80653c}
+.essay-page .breadcrumbs{margin-bottom:42px}
+.essay-page .essay-heading{max-width:var(--essay-measure);margin:0 auto 32px}
+.essay-page .essay-heading h1{font-size:clamp(3rem,5.3vw,4.6rem);line-height:1.4;letter-spacing:.055em;margin:0 0 16px;text-wrap:balance}
+.essay-page .essay-subtitle{font-size:clamp(1.1rem,2vw,1.4rem);line-height:1.9;color:var(--essay-secondary);margin:0}
+.essay-page .essay-subtitle em{font-style:normal;color:inherit}
+.essay-page .essay-meta{font-size:.8rem;color:var(--essay-secondary);margin-top:18px;line-height:1.8}
+.essay-page .reading-contents{max-width:var(--essay-measure);margin:0 auto 32px}
+.essay-page .reading-contents>nav{grid-template-columns:1fr}
+.essay-page .reading-contents button{font-size:.9rem}
+body:not(.home) .essay-page.reading-single-column .article-layout{max-width:var(--essay-measure);margin-top:0}
+.essay-page .essay-prose{font-size:var(--essay-body);color:var(--essay-ink);letter-spacing:.02em;line-height:2.05;overflow-wrap:break-word}
+body:not(.home) .essay-page .essay-prose>p{line-height:2.05;margin:0 0 18px}
+.essay-page .essay-prose h2{font-size:var(--essay-heading);line-height:1.6;margin:76px 0 30px;padding-top:32px;border-top:1px solid var(--reading-rule);text-wrap:balance;letter-spacing:.02em;font-weight:500}
+.essay-page .essay-prose h2:first-child{margin-top:0;border:0;padding-top:0}
+.essay-page .essay-chapter-prefix{display:block;font-size:.9rem;letter-spacing:.12em;color:var(--essay-accent);margin-bottom:10px}
+.essay-page .essay-heading-phrase{display:inline-block;max-width:100%;vertical-align:top}
+.essay-page .essay-prose h3{font-size:clamp(1.3rem,2.3vw,1.65rem);line-height:1.7;margin:44px 0 24px;text-wrap:balance;font-weight:500;scroll-margin-top:155px}
+.essay-page .essay-prose strong{font-weight:600;color:var(--essay-ink)}
+body:not(.home) .essay-page .essay-prose>p.essay-emphasis{margin:26px 0;line-height:1.95}
+body:not(.home) .essay-page .essay-prose>p.essay-key{font-size:var(--essay-key);line-height:1.85;margin:30px 0;color:var(--essay-ink);text-wrap:pretty}
+body:not(.home) .essay-page .essay-prose>p.essay-key strong{font-weight:500}
+body:not(.home) .essay-page .essay-prose>p.essay-signature{font-size:var(--essay-key);line-height:1.9;margin-top:42px;padding-top:28px;border-top:1px solid var(--reading-rule)}
+.essay-page .essay-ending{max-width:var(--essay-measure);margin:72px auto 0;padding-top:32px;border-top:1px solid var(--reading-rule)}
+.essay-page .essay-ending>p{font-size:.85rem;color:var(--essay-secondary);margin-bottom:16px}
+.essay-page .essay-ending a{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:18px 0;font-size:1.5rem}
+.essay-page .essay-ending svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.2}
+.essay-page .essay-ending a:hover{color:var(--essay-accent)}
+.essay-page a:focus-visible{outline:1px solid var(--essay-accent);outline-offset:5px}
+.essay-page ::selection{background:#ded1b8;color:#252a25}
+@media(max-width:700px){
+ .essay-page{--essay-body:1.0625rem}
+ .essay-page .essay-heading{padding-top:0;margin-bottom:32px}
+ .essay-page .essay-heading h1{margin-bottom:18px}
+ .essay-page .essay-meta{margin-top:20px}
+ .essay-page .reading-contents{margin-bottom:32px}
+ .essay-page .reading-current{max-width:54%}
+ .essay-page .essay-prose h2{margin-top:60px;padding-top:28px;font-size:1.6rem}
+ .essay-page .essay-prose h3{font-size:1.25rem;margin-top:36px}
+ body:not(.home) .essay-page .essay-prose>p{margin-bottom:17px}
+ .essay-page .essay-ending{margin-top:52px}
+}
+@media print{
+ .essay-page .reading-contents,.essay-page .essay-ending{display:none}
+ .essay-page .essay-heading{margin-bottom:30px}
+ .essay-page .essay-prose h2,.essay-page .essay-prose h3{break-after:avoid}
+ .essay-page .essay-prose p{orphans:3;widows:3}
+}

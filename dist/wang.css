@@ -1,0 +1,40 @@
+.wang-page .overview-question{margin-bottom:52px}
+.wang-page .overview-question>span{flex:0 0 100px}
+.wang-page .overview-question>p{font-size:clamp(22px,2.8vw,36px);line-height:1.65}
+.wang-page .wang-position{margin-bottom:52px}
+.wang-page .wang-framework{margin:64px 0 88px;border-top:1px solid var(--reading-rule,#cccfc4)}
+.wang-page .wang-framework-row{display:grid;grid-template-columns:1fr 2.5fr;gap:48px;padding:42px 0;border-bottom:1px solid var(--reading-rule,#cccfc4)}
+.wang-page .wang-group-label h2{font-size:28px;margin:16px 0}
+.wang-page .wang-group-label p,.wang-page .wang-group-items p{font-size:16px;line-height:1.9;color:var(--muted,#62665c);margin:12px 0 0}
+.wang-page .wang-group-items{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.wang-page .wang-group-items a{display:block;padding:8px 0}
+.wang-page .wang-group-items h3{font-size:27px;margin:0;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.wang-page .wang-group-items h3 span,.wang-page .wang-branches h3 span{font-size:18px;font-weight:normal}
+.wang-page .wang-group-items a:hover h3,.wang-page .wang-branches a:hover h3,.wang-page .wang-relations a:hover,.wang-page .wang-connections a:hover{color:#957441}
+.wang-page .wang-branches{border-left:1px solid var(--reading-rule,#cccfc4);padding-left:24px;margin:32px 0 48px}
+.wang-page .wang-branches a{display:block;padding:18px 0;border-bottom:1px solid var(--reading-rule,#cccfc4)}
+.wang-page .wang-branches a:last-child{border-bottom:0}
+.wang-page .wang-branches h3{margin:0;display:flex;justify-content:space-between;align-items:center}
+.wang-page .wang-branches p{margin:10px 0 0;font-size:17px}
+.wang-page .wang-practice{padding-left:1.5em}
+.wang-page .wang-practice li{padding-left:.3em;margin:12px 0;line-height:2}
+.wang-page .wang-connections{border-left:1px solid var(--reading-rule,#cccfc4);padding-left:24px;margin:40px 0}
+.wang-page .wang-connections p{font-size:17px}
+.wang-page .wang-connections a{color:#80653c}
+.wang-page .wang-relations>div{padding:20px 0;border-bottom:1px solid var(--reading-rule,#cccfc4)}
+.wang-page .wang-relations h3{margin:0;font-size:23px}
+.wang-page .wang-relations h3>a>span{font-size:15px}
+.wang-page .wang-relations p{margin:12px 0 0}
+.wang-page a:focus-visible{outline:1px solid #80653c;outline-offset:5px}
+@media(max-width:760px){
+ .wang-page .wang-framework{margin:42px 0 60px}
+ .wang-page .wang-framework-row{grid-template-columns:1fr;gap:20px;padding:30px 0}
+ .wang-page .wang-group-items{grid-template-columns:1fr;gap:0}
+ .wang-page .wang-group-items a{padding:18px 0;border-top:1px solid var(--reading-rule,#cccfc4)}
+ .wang-page .wang-group-items h3{font-size:24px}
+ .wang-page .wang-group-items p{font-size:16px;margin-top:8px}
+ .wang-page .overview-question{margin-bottom:36px}
+ .wang-page .overview-question>span{flex:auto}
+ .wang-page .wang-branches,.wang-page .wang-connections{padding-left:17px}
+ .wang-page .wang-relations h3{font-size:21px}
+}

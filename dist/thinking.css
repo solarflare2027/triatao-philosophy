@@ -1,0 +1,9 @@
+.thinking-page .thinking-steps{max-width:760px;margin:32px 0 38px}
+.thinking-page .thinking-steps>div{padding:22px 0;border-bottom:1px solid var(--line)}
+.thinking-page .thinking-steps>div:first-child{border-top:1px solid var(--line)}
+.thinking-page .thinking-steps dt{color:var(--ink);font-size:20px;line-height:1.6;margin-bottom:8px}
+.thinking-page .thinking-steps dd{margin:0;color:var(--muted);font-size:15px;line-height:2.1}
+.thinking-page .action-lead{max-width:760px}
+.thinking-page .thinking-chapter h2{text-wrap:balance}
+body:not(.home) .thinking-page .thinking-chapter{scroll-margin-top:45px}
+@media(max-width:700px){.thinking-page .thinking-steps{margin:24px 0 30px}.thinking-page .thinking-steps>div{padding:18px 0}.thinking-page .thinking-steps dt{font-size:18px}.thinking-page .thinking-steps dd{font-size:14px}}

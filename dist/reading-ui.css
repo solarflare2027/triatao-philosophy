@@ -1,0 +1,39 @@
+/* Inner-page reading refinements. */
+body:not(.home) .page-shell{--reading-rule:#d5cebf}
+body:not(.home) :is(.identity-prose,.action-prose,.kn-prose,.be-reading,.prose){max-width:760px}
+body:not(.home) :is(.identity-prose,.action-prose,.kn-prose,.be-reading,.prose)>p{line-height:2.1;margin-bottom:22px}
+body:not(.home) :is(.kn-body,.be-element-body,.be-element-intro,.action-lead){max-width:760px;line-height:2.1}
+body:not(.home) .reading-single-column .article-layout{display:block;max-width:760px;margin-inline:auto}
+body:not(.home) :is(.text-link,.source-link,.kn-related a,.be-related a){text-underline-offset:5px;text-decoration-thickness:1px}
+body:not(.home) :is(.text-link,.source-link,.kn-related a,.be-related a):hover{color:#8c6d3b;text-decoration:underline}
+body:not(.home) :is(.kn-section,.be-element-section,.identity-chapter,.action-section,.overview-group){border-color:var(--reading-rule)}
+.reading-position{max-width:760px;margin:0 0 30px;border-top:1px solid var(--reading-rule);border-bottom:1px solid var(--reading-rule);padding:8px 0}
+.reading-position>div{display:grid;grid-template-columns:1.15fr repeat(3,1fr);gap:12px;align-items:center;min-height:38px;font-size:12px}
+.reading-position a{padding:8px 4px;line-height:1.6}
+.reading-position>div>span,.reading-position>div>a:first-child{color:var(--muted)}
+.reading-position a[aria-current]{color:#775b32;background:#eee4d1}
+.reading-position a:hover{text-decoration:underline;text-underline-offset:4px}
+.reading-contents{position:sticky;top:84px;z-index:12;max-width:920px;margin:18px 0 32px;background:#efeee8;border-top:1px solid var(--reading-rule);border-bottom:1px solid var(--reading-rule)}
+.reading-contents>summary{display:flex;gap:18px;align-items:center;cursor:pointer;list-style:none;min-height:50px;padding:10px 14px;font-size:13px;color:#544c3e}
+.reading-contents>summary::-webkit-details-marker{display:none}
+.reading-contents>summary::after{content:'＋';margin-left:auto;font-size:17px}
+.reading-contents[open]>summary::after{content:'−'}
+.reading-current{font-size:11px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:#79674c;max-width:70%}
+.reading-contents>nav{position:absolute;top:100%;left:0;right:0;padding:10px 14px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 18px;max-height:60vh;overflow:auto;background:#efeee8;border:1px solid var(--reading-rule);box-shadow:0 10px 20px #24251e12}
+.reading-contents button{text-align:left;min-height:44px;padding:9px 10px;font-size:13px;line-height:1.7}
+.reading-contents button[aria-current]{color:#775b32;background:#e9e0cf}
+.reading-contents button:hover{color:#775b32;text-decoration:underline;text-underline-offset:4px}
+body:not(.home) :is(.identity-chapter,.action-section,.be-element-section,.kn-section,.prose h2){scroll-margin-top:155px}
+.reading-next{max-width:920px;margin:45px 0 0;padding:25px 0;border-top:1px solid var(--reading-rule);display:flex;justify-content:space-between;gap:25px;align-items:center}
+.reading-next-primary{font-size:20px;line-height:1.8;display:flex;align-items:center;gap:28px}
+.reading-next-back{font-size:12px;color:var(--muted);padding:10px 0}
+.reading-next a:hover{color:#8c6d3b}
+body:not(.home) :is(.reading-contents button,.reading-contents summary,.reading-position a,.reading-next a,.overview-knowing-link):focus-visible{outline:1px solid #8c6d3b;outline-offset:4px}
+@media(max-width:700px){.reading-contents{top:73px}.reading-contents>nav{grid-template-columns:1fr}.reading-current{max-width:58%}.reading-next{align-items:flex-start;flex-direction:column;gap:10px}.reading-next-primary{font-size:18px}.reading-position>div{gap:7px;font-size:11px}.reading-position a{min-height:40px}.reading-position{margin-bottom:24px}}
+
+body:not(.home) .page-shell details:not(.atlas-group):not(.reading-contents)>summary:not(:has(b)):not(:has(.summary-sign)){list-style:none;position:relative;padding-right:32px}
+body:not(.home) .page-shell details:not(.atlas-group):not(.reading-contents)>summary:not(:has(b)):not(:has(.summary-sign))::-webkit-details-marker{display:none}
+body:not(.home) .page-shell details:not(.atlas-group):not(.reading-contents)>summary:not(:has(b)):not(:has(.summary-sign))::after{content:'＋';position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:18px;font-weight:400;color:#79674c}
+body:not(.home) .page-shell details[open]:not(.atlas-group):not(.reading-contents)>summary:not(:has(b)):not(:has(.summary-sign))::after{content:'−'}
+body:not(.home) .page-shell summary>b,body:not(.home) .summary-sign{font-size:18px;font-weight:400;line-height:1}
+body:not(.home) .text-link>span[aria-hidden]{font-size:1em;line-height:1}

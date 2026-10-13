@@ -1,0 +1,12 @@
+.return-navigation{position:fixed;inset:auto 0 0;z-index:35;display:flex;align-items:center;min-height:62px;padding:6px max(24px,5.2vw) calc(6px + env(safe-area-inset-bottom));background:#faf7ee;border-top:1px solid #cfcbbd;color:#30352e}
+.return-navigation :is(button,a){display:inline-flex;align-items:center;gap:12px;min-height:48px;max-width:100%;padding:8px 12px;text-align:left;color:inherit;font:inherit;font-size:15px;line-height:1.6;text-decoration:none;cursor:pointer}
+.return-navigation svg{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.5}
+.return-navigation span{white-space:nowrap}
+.return-navigation small{max-width:40vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#625a4b;font-size:13px}
+.return-navigation :is(button,a):hover{color:#775b32;background:#eee8db}
+.return-navigation :is(button,a):focus-visible{outline:2px solid #775b32;outline-offset:2px}
+.return-navigation button:disabled{cursor:wait;opacity:.65}
+body.has-return-navigation{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+.menu-open .return-navigation{visibility:hidden}
+@media(max-width:700px){.return-navigation{padding-inline:12px;min-height:60px}.return-navigation :is(button,a){gap:10px}.return-navigation small{max-width:42vw}body.has-return-navigation{padding-bottom:calc(74px + env(safe-area-inset-bottom))}}
+@media print{.return-navigation{display:none}body.has-return-navigation{padding-bottom:0}}

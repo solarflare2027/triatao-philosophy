@@ -1,0 +1,30 @@
+/* Atlas reading scale: retain the three-column composition and paper palette. */
+.map-shell{--atlas-secondary:#51594d}
+.map-shell .map-toolbar>div:last-child{font-size:14px;color:var(--atlas-secondary)}
+.map-shell .map-toolbar .plain-button{font-size:14px;min-height:44px}
+.map-shell .filter-tabs button{font-size:15px;min-height:44px}
+.map-shell .atlas-root h2>span{font-size:14px;color:var(--atlas-secondary)}
+.map-shell .atlas-group summary{font-size:24px;line-height:1.6}
+.map-shell .atlas-group .summary-sign{font-size:22px;color:var(--atlas-secondary)}
+.map-shell .atlas-leaf>a>span:first-child{font-size:clamp(18px,1.05vw,20px);line-height:1.65}
+.map-shell .atlas-leaf>a small{font-size:clamp(15px,.84vw,16px);line-height:1.85;color:var(--atlas-secondary)}
+.map-shell .atlas-leaf>a>span[aria-hidden]{font-size:18px;color:var(--atlas-secondary)}
+.map-shell .atlas-branch>.sub-leaves{column-gap:18px}
+.map-shell .atlas-branch>.sub-leaves a{font-size:15px;line-height:1.85;color:var(--atlas-secondary)}
+.map-shell .atlas-branch>.sub-leaves a+a{margin-left:0}
+.map-shell .atlas-leaf>a:hover small,.map-shell .atlas-leaf>a:hover>span[aria-hidden],
+.map-shell .atlas-branch>.sub-leaves a:hover{color:#806039}
+.map-shell .atlas-footer>p{font-size:15px;color:var(--atlas-secondary)}
+.map-shell .atlas-footer .text-link{font-size:15px}
+body:has(.map-shell) .return-navigation :is(button,a){font-size:16px}
+body:has(.map-shell) .return-navigation small{font-size:15px;color:#51594d}
+@media(max-width:700px){
+ .map-shell .map-toolbar>div:last-child{font-size:13px}
+ .map-shell .map-toolbar .plain-button{font-size:14px}
+ .map-shell .filter-tabs button{font-size:14px;padding-inline:20px}
+ .map-shell .atlas-group summary{font-size:22px}
+ .map-shell .atlas-root h2>span{font-size:13px}
+ .map-shell .atlas-branch>.sub-leaves a{font-size:14px}
+ .map-shell .atlas-footer>p,.map-shell .atlas-footer .text-link{font-size:14px}
+ body:has(.map-shell) .return-navigation small{font-size:14px}
+}
