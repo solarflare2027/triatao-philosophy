@@ -1,9 +1,9 @@
 import {wangHeart} from './wang-heart.js?v=20261011-wang1';
 import {wangPower} from './wang-power.js?v=20261011-wang1';
-import {wangRealm} from './wang-realm.js?v=20261011-wang1';
+import {wangRealm} from './wang-realm.js?v=20261014-change-world1';
 import {wangBranches} from './wang-branches.js?v=20261011-wang1';
-import {wangGroups,wangOrder,wangRelations,wangOverview,wangClosing} from './wang-framework.js?v=20261011-wang1';
-import {daoSources} from './dao-content.js?v=20261012-tian-depth1';
+import {wangGroups,wangOrder,wangRelations,wangOverview,wangClosing} from './wang-framework.js?v=20261014-wang-question1';
+import {daoSources} from './dao-content.js?v=20261014-change-world1';
 export {wangGroups,wangOrder,wangOverview};
 export const wangContent={...wangHeart,...wangPower,...wangRealm,...wangBranches};
 export const hasWangReading=id=>Object.hasOwn(wangContent,id);

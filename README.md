@@ -30,7 +30,7 @@ npm run dev -- --port 4174
 npm run check
 ```
 
-该命令检查 JavaScript 语法、静态模块引用与 HTML/CSS 本地资源引用；页面交互、视觉效果仍需在浏览器检查。
+该命令检查 JavaScript 语法、静态模块引用、HTML/CSS 本地资源引用及实践配置／链接完整性；页面交互、视觉效果仍需在浏览器检查。
 
 ## 交给新 Codex
 
@@ -58,6 +58,8 @@ npm run check
 | 想象、聚焦、情绪 | `dist/creation-template.js` |
 | 思维、话语、行动 | `dist/creation-reality.js` |
 | 创造自己入口与样式 | `dist/becoming.js`、`dist/creation.css` |
+| 创造实践首页、目录、详情模板 | `dist/practice.js`、`dist/practice.css` |
+| 实践目录与练习内容配置 | `dist/practice-catalog.js`、`dist/practice-details.js`；编辑说明见 [docs/PRACTICE.md](docs/PRACTICE.md) |
 | 王道 | `dist/wang.js`、`dist/wang-*.js`、`dist/wang.css` |
 | 返回导航、目录、阅读交互 | `dist/navigation.js`、`dist/reading-ui.js` 及对应 CSS |
 | 三道全图 | `dist/app.js`、`dist/atlas.css` |

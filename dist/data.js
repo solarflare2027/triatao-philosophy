@@ -1,4 +1,4 @@
-import {wangContent,wangGroups,wangOverview} from './wang.js?v=20261012-tian-depth1';
+import {wangContent,wangGroups,wangOverview} from './wang.js?v=20261014-wang-question1';
 export const paths = [
  {id:'tian',name:'天道',en:'THE NATURE OF REALITY',number:'01',verb:'看见真理',question:'世界的本质是什么？它运行的规律又是什么？',intro:'认识世界的九大原理。本源回答存在是什么，变化回答存在如何展开，创造回答意识为何及如何成为经验。从存在的本质，到变化的结构，再到实相的形成，九理构成一条相互承接的追问。',groups:[
   {id:'origin',name:'本源',desc:'存在是什么：性质、整体与差异。',items:[['emptiness','空性','无固定自性，以意识本源理解开放的存在。'],['chaos','混沌','分别之前，容纳潜在秩序的完整。'],['polarity','极性','一成为多，差异在关系中相依。']]},
@@ -10,7 +10,7 @@ export const paths = [
   {id:'acceptance',name:'接纳自己',desc:'允许真实，理解自己，让一切各归其位。',items:[['cognitive','认知接纳','允许真实，让局限不再定义全部的我。'],['emotional','情绪接纳','允许感受，把选择权留在自己手中。'],['existential','存在接纳','尚未改变，依然值得被尊重和善待。']]},
   {id:'becoming',name:'创造自己',desc:'自我定向、内在成形、现实运行与外化，在反馈中持续创造。',items:[['consciousness','意识层','身份 · 信念 · 意图'],['template','模板层','想象 · 聚焦 · 情绪'],['reality','实相层','思维 · 话语 · 行动']]}
  ]},
- {id:'wang',name:'王道',en:'THE PRACTICE OF CREATION',number:'03',verb:'改变世界',question:'如何成为一位哲人王式的领导者？',intro:'以求真确立方向，以三勇锤炼领导者的品格，以战略、系统与成人发展领导能力，以无为、无执、无敌深化领导智慧。在改变世界的实践中，成就他人，培养新的领导者。',groups:[
+ {id:'wang',name:'王道',en:'THE PRACTICE OF CREATION',number:'03',verb:'改变世界',question:wangOverview.question,intro:'以求真确立方向，以三勇锤炼领导者的品格，以战略、系统与成人发展领导能力，以无为、无执、无敌深化领导智慧。在改变世界的实践中，成就他人，培养新的领导者。',groups:[
   {id:'courage',name:'王之三勇',desc:'在风险中决断，在选择后承担，在认识中修正。',items:[['decide','决断','看清风险，明确取舍，敢于作出决定。'],['responsibility','担当','主动站出来，承担选择及其后果。'],['revolution','革新','敢于否定旧我，让新的认识改变自己。']]},
   {id:'powers',name:'王之三力',desc:'三种彼此促进的创造能力。',items:[['strategy','战略','识局 · 破局 · 布局'],['system','系统','建构 · 协同 · 进化'],['people','成人','识人 · 用人 · 育人']]},
   {id:'ways',name:'王之三道',desc:'使共同事业自主运行，让力量成就众人。',items:[['wuwei','无为','创造自主运行的条件。'],['nonattachment','无执','让判断与权力接受修正。'],['unity','无敌','以成就众人与扩大合作展开力量。']]}
@@ -55,20 +55,10 @@ export const extraNodes = [
  {id:'entrust',name:'用人',parent:'people',summary:'任其所长',text:'使任务的要求与人的所长相匹配，给出清楚的目标、责任、资源和权限。通过具体反馈支持成长，允许参与者形成自己的方法。',question:'承担这份责任的人，是否拥有相应的资源和决定权？'},
  {id:'empower',name:'育人',parent:'people',summary:'成其主体',text:'帮助共同参与者发展独立追问、形成判断与承担创造的能力。让他能够选择自己的方向，也逐渐支持其他人的成长。',question:'我的帮助，是否使对方越来越能够自主选择？'}
 ];
-export const exercises = [
- ['身体与呼吸','感受脚下的支撑，注意呼吸的起伏，辨认身体紧张或舒展的位置。'],
- ['外界感官','看见周围的光线、色彩与距离，听见近处和远处的声音。'],
- ['注意力所在','留意注意力正在停留哪里，是否被某个念头反复带走。'],
- ['情绪与感受','用贴近体验的词命名感受，并辨认它在身体中的表现。'],
- ['念头与叙事','写下头脑正在讲述的故事，分辨事实与额外加入的解释。'],
- ['言语、行为与冲动','观察想说什么、想做什么，给反应与行动之间留出一点空间。'],
- ['关系、触发与动机','留意在关系中什么被触发，自己想保护什么，又真正重视什么。']
-];
 
 // The Wang catalogue and search/atlas labels share the chapter source of truth.
 const wangPath=paths.find(p=>p.id==='wang');
-wangPath.intro='以真理统领力量，创造世界，成就诸王。三勇立心，三力成能，三道升境，使共同的创造能够超出一个人的生命。';
-wangPath.question=wangOverview.question;
+wangPath.intro='以真理统领力量，改变世界，成就诸王。三勇立心，三力成能，三道升境，使共同的创造能够超出一个人的生命。';
 wangPath.groups=wangGroups.map(g=>({id:g.id,name:g.name,desc:g.desc,items:g.parts.map(id=>[id,wangContent[id].name,wangContent[id].children?wangContent[id].children.map(c=>wangContent[c].name).join(' · '):wangContent[id].thesis])}));
 for(const [id,d] of Object.entries(wangContent)){
  notes[id]=[d.definition[0],d.definition[1]||'',d.question];

@@ -1,5 +1,6 @@
-import {paths} from './data.js?v=20261009-courage1';
-import {elements} from './elements.js?v=20261009-intention1';
+import {practiceSearchItems} from './practice-catalog.js?v=20261014-practice1';
+import {paths} from './data.js?v=20261014-wang-question2';
+import {elements} from './elements.js?v=20261014-practice3';
 
 const svg=(path,cls='')=>`<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true"><path d="${path}"/></svg>`;
 const icons={menu:svg('M3 8h18M3 16h18'),search:svg('M15.5 15.5 21 21M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0'),close:svg('m6 6 12 12M6 18 18 6'),next:svg('m9 5 7 7-7 7'),back:svg('m15 5-7 7 7 7'),arrow:svg('M2 12h19m-7-7 7 7-7 7'),pause:svg('M9 5v14M15 5v14'),play:svg('m8 5 11 7-11 7Z'),muted:svg('m3 10 5 0 5-5v14l-5-5H3ZM17 9l5 6m0-6-5 6'),sound:svg('m3 10 5 0 5-5v14l-5-5H3ZM17 8q5 4 0 8M19 5q8 7 0 14')};
@@ -9,10 +10,10 @@ const panels={
  paths:{title:'三道体系',items:paths.map(p=>`<button class="a16-row" data-third="${p.id}"><span>${p.name}<small>${p.verb}</small></span>${icons.next}</button>`).join('')+row('map','三道全图','从整体进入每一个思想分支')},
  becoming:{title:'创造自己',items:elements.map((e,i)=>row('becoming/'+e.id,`${String(i+1).padStart(2,'0')}　${e.name}`)).join('')+row('becoming','三层九要素','意识层 · 模板层 · 实相层')},
  readings:{title:'文章与案例',items:row('essay','三道总论','从看见真理，到参与创造')+row('layout','布局','把未来带回现在')+row('case','面对质疑，我如何回应？','一次从觉察到选择的实践')+row('library','浏览文章与案例')},
- practice:{title:'日用实践',items:row('practice','日用三步','看清 · 选择 · 成为')+row('becoming/practice','九要素实操','从身份到行动')+row('awareness','一分钟觉察','回到正在发生的体验')}
+ practice:{title:'创造实践',items:row('practice','创造自己的实践','从理解到体验，从体验到成为')+row('practice/exercise/from-choice-to-being','从选择到成为','框架预览 · 内容完善中')+row('becoming','回到创造自己','三层九项的理论脉络')}
 };
 const thirdPanels=Object.fromEntries(paths.map(p=>[p.id,{title:p.name,items:row(p.id,p.name+'篇总览',p.verb)+p.groups.map(g=>row(g.id==='knowing'?'knowing':g.id==='becoming'?'becoming':'map?focus='+g.id,g.name,g.items.map(i=>i[1]).join(' · '))).join('')} ]));
-const searchEntries=[...paths.map(p=>({name:p.name,detail:p.verb,href:p.id})),...elements.map(e=>({name:e.name,detail:'创造自己 · '+e.essence,href:'becoming/'+e.id})),{name:'三道全图',detail:'思想结构与阅读入口',href:'map'},{name:'三道总论',detail:'世界观、人生观与价值观',href:'essay'},{name:'认识自己',detail:'三个“我”',href:'knowing'},{name:'日用三步',detail:'看清、选择、成为',href:'practice'},{name:'九要素实操',detail:'有意识地创造个人实相',href:'becoming/practice'},{name:'布局',detail:'布先手、据枢纽、留自由',href:'layout'}];
+const searchEntries=[...practiceSearchItems.map(({name,summary,href})=>({name,detail:summary,href})),...paths.map(p=>({name:p.name,detail:p.verb,href:p.id})),...elements.map(e=>({name:e.name,detail:'创造自己 · '+e.essence,href:'becoming/'+e.id})),{name:'三道全图',detail:'思想结构与阅读入口',href:'map'},{name:'三道总论',detail:'世界观、人生观与价值观',href:'essay'},{name:'认识自己',detail:'三个“我”',href:'knowing'},{name:'布局',detail:'布先手、据枢纽、留自由',href:'layout'}];
 
 export function home(){return `
  <div class="a16-home">
@@ -32,7 +33,7 @@ export function home(){return `
   </div></section>
   <footer class="a16-footer"><div class="a16-footer-inner"><div class="a16-footer-brand"><a href="#/" class="tria-footer-lockup"><span>三道哲学</span></a><p>《哲人王》的学习与实践手册</p></div><div class="a16-footer-right">
    <nav class="a16-path-circles" aria-label="三道入口"><a href="#/tian" aria-label="天道：看见真理">天</a><a href="#/ren" aria-label="人道：创造自己">人</a><a href="#/wang" aria-label="王道：改变世界">王</a></nav>
-   <div class="a16-footer-links"><span>求真 · 选择 · 创造</span><a href="#/start">阅读指南</a><a href="#/map">三道全图</a><a href="#/library">文章与案例</a><a href="#/practice">日用实践</a></div>
+   <div class="a16-footer-links"><span>求真 · 选择 · 创造</span><a href="#/start">阅读指南</a><a href="#/map">三道全图</a><a href="#/library">文章与案例</a><a href="#/practice">创造实践</a></div>
   </div></div></footer>
   <dialog id="a16-menu" class="a16-menu" data-depth="0" aria-labelledby="a16-menu-title">
    <h2 id="a16-menu-title" class="a16-sr">三道哲学导航</h2>

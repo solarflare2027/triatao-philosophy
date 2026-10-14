@@ -39,3 +39,5 @@ for (const file of files) {
 }
 if (errors.length) { console.error(errors.join('\n')); process.exitCode = 1; }
 else console.log(`通过：${modules} 个 JavaScript 文件；${references} 个静态本地引用。页面交互与视觉效果请继续在浏览器检查。`);
+
+if (!errors.length) await import('./check-practice.mjs');
