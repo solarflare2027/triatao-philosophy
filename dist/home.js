@@ -1,5 +1,5 @@
 import {practiceSearchItems} from './practice-catalog.js?v=20261014-sources1';
-import {paths} from './data.js?v=20261014-sources1';
+import {paths} from './data.js?v=20261014-acceptance4';
 import {elements} from './elements.js?v=20261014-sources1';
 
 const svg=(path,cls='')=>`<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true"><path d="${path}"/></svg>`;

@@ -1,12 +1,12 @@
 {
   "version": 1,
   "sourceFiles": {
-    "acceptance.css": "70cded7aa6492e485924fd36f9f37aa42d36f960b991f40b554c03dc49daab1d",
-    "acceptance.js": "6ce22a39373d78cfd0a23ed52ad305a14feb7d42dc85a5f27c1e87473fbdd97a",
+    "acceptance.css": "57d8c9a962f2afe8de0eb108b6a33cd9b4730318fcb66af8935ad311b6c3a157",
+    "acceptance.js": "6324c218d2cf2cd8e6f17499dcf7b5af8c8c16b9fb5b2bfff5deda6c0ba21004",
     "action-v2.css": "140669cde0996c085b7d8872516c42a6344845f5cfe0a940437fe9c62c67f315",
     "action.css": "3b06f994ba13bedc390b303e584452a618d091a79a5eee6d851576c358e5fcfc",
     "action.js": "c157ea7e3d2e62a8ecbbada95a6e923f40102dcc38fef7f87445c0466adf7985",
-    "app.js": "514c9abc2819d9a40f2f58c096d8d56eb2a3d0b4a984ee0e032cc2940c3074fc",
+    "app.js": "43b9252fa8ebde0cd082e76223cba15f080cf84e2ce4aaee784441f5bd30b18c",
     "art.js": "0dd8c3411e3703ef32d1a512188e997ff3bffc111fc150253293477572cd50f6",
     "atlas.css": "5f19ef94e8e3bae650f0bfb1b9920da3f61c027439058168b66b1ef7b26a3a40",
     "becoming.css": "a3ad568d28ccbb9f90684e592dec66e47763fbd0fb8751d520b5282c9f7780ff",
@@ -22,7 +22,7 @@
     "dao-content.js": "8dd3eff76b2dbb41e99e741f5c974fed34b3835a4612a7b75d2f9b6e83410a7b",
     "dao-reading.css": "aa0e0d9a894085a87e3a852eacee216bcdc79c07f7bf513ef6c72ac3205d02b3",
     "dao-reading.js": "f67a898b80a6d0523c1eb3c62a9cfd1307d65b23008223b413a7434454929754",
-    "data.js": "a2ff2415971aa3d19a3e6f75b6366e8f368a7f6da18afb35a4d855534b2f3cc3",
+    "data.js": "8ae18698ed250627d64ccc673968ea0ed1531e82ecceef28fd5533b07b228468",
     "elements.js": "710577c0c23230a31b52912d3c1f147704bf4d75189cbb1bfc245623511af012",
     "emotion.css": "ca2097e5c110cdc8b1dd44dd17b805e6284d18628970264ded4b9a7f3ebc4f5a",
     "emotion.js": "dc161c201611b4c038f95a6b075ac36132dedf1f44def19ffe04201fc1e759ed",
@@ -31,12 +31,12 @@
     "focus.css": "fefa8d6fb5ff5a963d0b71892e2819436b0c1cc93f07d49d73a8ca18c9b3f4f0",
     "focus.js": "c49cbc395e20ee31a0fb2adb5144102bade315b38313e6e7cf401d7d9b3f656b",
     "home.css": "1f31a5d64e1b66f2e7dd5d6d660aab2a7f6b2b85b560e36bb3385f07e7d839ef",
-    "home.js": "ddedd716d846367b27da1461d8aa99efab6506030c62c7c345d1f9f2425f7908",
+    "home.js": "1126fa209342766ec4ec5da4a7735a8d63cbeb34f6771ff81c246fffce153b66",
     "identity.css": "a798302ccf9bf6b8f6230636af131ba06c398c604617e3a43a1dc5bac15e3711",
     "identity.js": "eaa465628a56a40b9001b0d721a033ea239e0e6fd4f2c5e841aa78f86e94b551",
     "imagination.css": "9dcfb2bc19b315b49aeb74e08054eac89b1a85743a9d057720bf69d645458e1d",
     "imagination.js": "4d3a4ae209d4dd3108bc5d5cde84c6f8c6ff0760f24cb03d1a10e6f8c77b80c8",
-    "index.html": "1e6abd630f18314281bb0d8539781b85b0ea477f758f083ddeb4c81f9fa83c5f",
+    "index.html": "d8f7a08cd6c1e5875d6e6d37e4b96358067b24846bee327962874c70566e87b1",
     "intention.css": "3704e5580be3dccca9cf6808703bfa409f0557335d95bdde1ba5a554deb33798",
     "intention.js": "86fc0bfd96fe2c1c7788ab5582e7b9b73940f558c37fe316645cb202c2b6712c",
     "knowing.css": "5bf793b5a42e26928a83e32c5548b2b8db340e1615cf7c925760a5ab34103dbe",
@@ -48,11 +48,11 @@
     "practice-details.js": "1dc47dba628029ee6ad25932b89667b4a5b61150ff2716d6ef366745c99db097",
     "practice.css": "25b591be64efa8967d9fc36d73a785af48cf378703b21a3fb850ef4cfcec6137",
     "practice.js": "c493dd6e212eb1986dc6f9f6d55929931211516f6302ab88c62593f5a11e7367",
-    "readable.js": "c03bd0ecbb785f913daad8f48dd56f53266b6a05f8214246eda95dad5d30e4f5",
+    "readable.js": "67f2c5035f47d20048681d46bcdf42878d531fbb63e3f6aa29e16ba10a6d66da",
     "reading-depth.js": "bee96e3de453f24930b7b93460a341c9a4063475a6beb769614b3ab92ed4bec2",
     "reading-expansion.js": "f2ce6fbce8160fbbac033d8c1f402e53a6fce5825f7435780b9bdc3aee1ec93d",
     "reading-ui.css": "fce31fe79da01a72cbc950c9ea381e49529ee86c300c16534130de7504df9748",
-    "reading-ui.js": "11fa35147e8a7dcd6c5d6f09dee9284de6b98043b83f39ca8e3146b58d33dd56",
+    "reading-ui.js": "9ceaae5501c19397851395906fc991f99f3c2ee6e0b4c649a06884d057eb4ea6",
     "selected-deepening.js": "6a6fb6ae3b0b2931c56d3ddafe8d54030e6bb36e6cafffe149a0378e786a18f7",
     "styles.css": "d40f9068230f6b2e5f32796d59cec6a234d5ca3953fd3424da0980aac0e446f7",
     "thinking.css": "4e2ae1ed5d457df23598f144577c5264b8cb8892ee7e853e506c814b65edc8a5",
@@ -77,15 +77,15 @@
       "title": "三道哲学 — 看见真理 · 创造自己 · 改变世界",
       "textHash": "3d8aa31ba264388db385b213c910b7c5f71acd494d3a679172f74769b0f3a8e8",
       "textLength": 283,
-      "htmlHash": "c968513334683a398eac79ffcfc1310c72389e17c796f572d729f511c0eb31b2"
+      "htmlHash": "3cb6023b49b51f2c3b737fb90cff89753419a770d4ff9a41e2017f9e2c673579"
     },
     {
       "route": "map",
       "url": "https://www.triatao.com/read/map/",
       "title": "一张图，看见三道。 — 三道哲学",
-      "textHash": "e5b440814daf938f699a8615b7874d41dcf10ffe9ff9b1558ffe30a82501f07b",
+      "textHash": "4f3a3b8eb9dc83855eb22192919eb4ee9b802909a5c16cd3f47b4b51cf6d3ae0",
       "textLength": 941,
-      "htmlHash": "1b855d38230eb4d8282f76dd41f5d3e43f76310fe011f0503611cb112bc0dbec"
+      "htmlHash": "5234da7756f1a39840f34a207360d5342c9c3317cd344a7bbc96963f02095754"
     },
     {
       "route": "library",
@@ -93,7 +93,7 @@
       "title": "沿着一个问题，继续深入。 — 三道哲学",
       "textHash": "e0380a01fe0e959f512712c7a0c143948205045d0283e105384a3561a9ba2139",
       "textLength": 237,
-      "htmlHash": "d7fc904e064212c1aac688e4f48ed0891eb7681ad9fe9fffc2f7593b0bb01076"
+      "htmlHash": "785319ca51e4d84a6eb2df59ca243f94630a4315734f2f6808527de3c5657758"
     },
     {
       "route": "practice",
@@ -101,7 +101,7 @@
       "title": "创造自己的实践 — 三道哲学",
       "textHash": "fe7e697e704883e01832be449e7edefbf506a24d2444fd37ba4d48e308ef981f",
       "textLength": 849,
-      "htmlHash": "f755a41cd47fc0eeb68784de8cfd3c2cbce167101b76a69c52333bfadf06b6d3"
+      "htmlHash": "65a7567988c1667031e8da4fda1ef1794abc597883e2e8ac3cb8c6344135ff1f"
     },
     {
       "route": "becoming/mechanism",
@@ -109,7 +109,7 @@
       "title": "创造的循环 — 三道哲学",
       "textHash": "f42c268d382b0cea65e3ffdcabf04715dc9afbdbddf447f3329cbca6fd33c49f",
       "textLength": 3689,
-      "htmlHash": "90766296ad43529ab3bfcb3ae3b5174a332fb309a9ad68b377b9bdb798e89640"
+      "htmlHash": "7172fe3c02b414501181942154227b64854226d7a44614134e1a384ddeaa2b71"
     },
     {
       "route": "becoming/cases",
@@ -117,7 +117,7 @@
       "title": "案例与思想来源 — 三道哲学",
       "textHash": "ad98a3f553560ddc021807192edf35d43774a741874ff3dbb1d72d53a8262b18",
       "textLength": 7536,
-      "htmlHash": "bbe62bf6ab1ed8cdf020951015e1b08cef5e2c35992f1af5c7f3043d993586a9"
+      "htmlHash": "f2ad42c13650bd6a1ccc0407ff93a8359c62d0a1954871b7c9f6c0e20f4dc359"
     },
     {
       "route": "wang/closing",
@@ -125,7 +125,7 @@
       "title": "真正的王 — 三道哲学",
       "textHash": "6f773248db5a286f6b35ae319d2f732907bf7270dd0646afebaa911f45b17cab",
       "textLength": 1312,
-      "htmlHash": "369199a8970af0495c01f938aacc68405104a291c56fdeaef81df7debcfca264"
+      "htmlHash": "527999403a8746ae98f3892eb55f3bb54ce6f434abe366af6feac10e5abbc121"
     },
     {
       "route": "start",
@@ -133,7 +133,7 @@
       "title": "从这里开始。 — 三道哲学",
       "textHash": "87c7c92498293ef006ece0259d92015ab813a9fddfca3da5574a9f40eb0cb935",
       "textLength": 418,
-      "htmlHash": "805f4110628f80e4600b443faa28a09d51ba79e00d3f8421fc94fdf1f36e864c"
+      "htmlHash": "11529faa8b4345970f4977dde7d52587089c4d726a66fc00f224a00d6d07cf7d"
     },
     {
       "route": "tian",
@@ -141,15 +141,15 @@
       "title": "天道/看见真理 — 三道哲学",
       "textHash": "49b46c690fd2bbc583cd5445ff41df3f718e42dea87646983136c8765f63e256",
       "textLength": 490,
-      "htmlHash": "41d45fc80ba865ffe9d6faaa8cf90c0db2900cd759a6942fe953f49a997618bf"
+      "htmlHash": "e18a48dab4a129e84407edfcedf03cc0cf568353811a333b608d4f9e65ef5189"
     },
     {
       "route": "ren",
       "url": "https://www.triatao.com/read/ren/",
       "title": "人道/创造自己 — 三道哲学",
-      "textHash": "91fba3320df51d306c8d8343db353f5e51c0b8d9f86bf63ecc4e32eccfe736aa",
-      "textLength": 421,
-      "htmlHash": "7ae0f005043498e7c15a81e1a27f6aa73c34d303907363626123ce05a4ce9c05"
+      "textHash": "5b5a1cf458ca551b42f6e9047c55eec10e81a3d881dc99219b66da2af5313e60",
+      "textLength": 423,
+      "htmlHash": "4bc049e512108ea58d0fc282b5d7ea946042ac8b848dcadf19891bd40de924ab"
     },
     {
       "route": "wang",
@@ -157,7 +157,7 @@
       "title": "王道/改变世界 — 三道哲学",
       "textHash": "6e9f1c0cf0ca40386b6f67165de03ac4a9276cc32d507316f6a9ad0d86c54e53",
       "textLength": 3608,
-      "htmlHash": "33d2601079e30fc1b681681bea2d695bc72b49df982075c8a4f925e082e95d7c"
+      "htmlHash": "54bfd9a5586cce1c450d92db4068da4b5f8fd00acf79586622b8cb7fd00485c7"
     },
     {
       "route": "essay",
@@ -165,7 +165,7 @@
       "title": "三道总论 — 三道哲学",
       "textHash": "4b374239bd8ec8ed66f7b92fcbd88dfacd31961a75f3b0b0531c5205a286d62a",
       "textLength": 11251,
-      "htmlHash": "a67a787eb69c2977f1546621a5f010fc3758fe372c69588292cbec0784cc8ff0"
+      "htmlHash": "87a8478c8b958fd92124ddd7910f3b6d82b571b792cd834543a895956568116a"
     },
     {
       "route": "concept/emptiness",
@@ -173,7 +173,7 @@
       "title": "空性 — 三道哲学",
       "textHash": "0d8197c1f95448894c7675c93ce88aa6d2391de0aab3642122397c477b31cbc0",
       "textLength": 6734,
-      "htmlHash": "4e9c4066edd2f082cfcf20d10fd775ea14c7ef48f8ae15b7470971301a7dd7ac"
+      "htmlHash": "2e5b44f676821175ab6c638cf38454422b34516ff3dc3a23df61bf70dd839909"
     },
     {
       "route": "concept/chaos",
@@ -181,7 +181,7 @@
       "title": "混沌 — 三道哲学",
       "textHash": "69b7d52bd7f0ece59f4406db27c68fdcf4101428892d81b64cfc6ccb5eb1ab34",
       "textLength": 5290,
-      "htmlHash": "26812074bd643de3887156f78810f7b60b0fe22873857931d90f0d6958caf7b1"
+      "htmlHash": "7056c863c65050678895f340998dd923104297a618ebbaea73331606fb2f92f7"
     },
     {
       "route": "concept/polarity",
@@ -189,7 +189,7 @@
       "title": "极性 — 三道哲学",
       "textHash": "84313d35545a5b646ea9325bbbf0a8bcc827745ae2010963b863a8d23e457911",
       "textLength": 6459,
-      "htmlHash": "c5e35ea718f1bf5daa3107b87a67d6cbf7a0b7b88e9d29c70970735e7f2971cb"
+      "htmlHash": "885808029025e6b630de1b9a1bcf9ee0b1f7bd5d1722f905c3cad512c54adbb0"
     },
     {
       "route": "concept/flux",
@@ -197,7 +197,7 @@
       "title": "流变 — 三道哲学",
       "textHash": "e30807f06a3b7d1b758d487ee906477602698577f60342e3ca2ead030fdb70e5",
       "textLength": 5467,
-      "htmlHash": "25e3102b77565d391101944a8dd49a518f7a8447d1f9be26418b9b51f1b02bf3"
+      "htmlHash": "ecb465b5caa8a6450218e96452753e68c5454924bb22eb731c8d70ae2a03787a"
     },
     {
       "route": "concept/probability",
@@ -205,7 +205,7 @@
       "title": "概率 — 三道哲学",
       "textHash": "dcd76759199a4366a9a1ec98f37240ecf1141f8a205ed157b122f452bf0ca868",
       "textLength": 5785,
-      "htmlHash": "454ba75f719b16732762a2e0252f50e72076adcca0c48f2d7226bd0d9f8b82cb"
+      "htmlHash": "055d1b6e7c729c6fdcf287d581b2bf03923b4bdf762b68eb91344a95aca55561"
     },
     {
       "route": "concept/alltime",
@@ -213,7 +213,7 @@
       "title": "全时 — 三道哲学",
       "textHash": "d771a74a03b3f6193a9efa6d71364b9c964a19994e461857cb0c7f17b7ff3f8a",
       "textLength": 5692,
-      "htmlHash": "ec7a230b2e3213a1d2ffea0223796afcad8e94faaec882580a07fa58c40f4e0d"
+      "htmlHash": "31782ebb400770348cd28bfd9dda1d5c2682db64007a88e1f13b6af008dd0e92"
     },
     {
       "route": "concept/mirror",
@@ -221,7 +221,7 @@
       "title": "镜像 — 三道哲学",
       "textHash": "a5fe3bda2bfb786af400c93a72e7eeec6398d702563764eed347de177abe3345",
       "textLength": 5561,
-      "htmlHash": "41f58eea7cdcacf54113a4fe0f3595258249e735293938d9e627893ac0062f3e"
+      "htmlHash": "342ea4555b82d5e01bb8c3597c51ae8b64d4649bd9a32df022e322164a88b3a9"
     },
     {
       "route": "concept/blueprint",
@@ -229,7 +229,7 @@
       "title": "蓝图 — 三道哲学",
       "textHash": "75d0ae1925fc77cd80f0f20f280d084d19ac9bacafa6b97b5ad54b56f9d39183",
       "textLength": 6327,
-      "htmlHash": "ce6ff5ac57f6b1b1bee60436d3c433dd2e4221aec0bb0978e3baa8c61e660961"
+      "htmlHash": "fc352df1702b08987eae6bf332f6cfaa1b37d8c028eca9c1e744cb05ba3274cf"
     },
     {
       "route": "concept/generation",
@@ -237,7 +237,7 @@
       "title": "生成 — 三道哲学",
       "textHash": "da2c9e1bcb5f32f13fb976220e3cda7c550878f014c0d5c6282c3db7ce160263",
       "textLength": 7156,
-      "htmlHash": "9e50a91a9687e77e5e226526e36ed64201f3c84b26e3acd971c6f5d06d0353cf"
+      "htmlHash": "b73ac513d7089c68ed2e8573c7ec54279f7db1734a95a2ba73a2b5f70781055b"
     },
     {
       "route": "knowing",
@@ -245,7 +245,7 @@
       "title": "认识自己 — 三道哲学",
       "textHash": "6cfd57bb6ebd054732a783d394eaee8e8ec35d4dcf1013df972e96c8d305f74a",
       "textLength": 3046,
-      "htmlHash": "db4833c1cda34d7cd6ac12f61f362b444a87f6ec8502ba1acf770dc5261c0b93"
+      "htmlHash": "b3f0ee69d85e35bc222b60def80e5db57324671e35d9d6178e602e35826c2391"
     },
     {
       "route": "knowing/external-self",
@@ -253,7 +253,7 @@
       "title": "外在角色我 — 三道哲学",
       "textHash": "a9c36f6b1f86264e7e7f387e25b521e99ddd5f18b4208bb2ae04d1befcd135e9",
       "textLength": 5481,
-      "htmlHash": "467dea6f8028319dfc2224b292225a02d0cf6d91239210e0180f2b26e53733cd"
+      "htmlHash": "3fe979f4d5d9d23bc9430dd9b21f98c4ce7c9da764674726d96de9427dca65ce"
     },
     {
       "route": "knowing/body-self",
@@ -261,7 +261,7 @@
       "title": "身体我 — 三道哲学",
       "textHash": "0cc3aa16a7e5ebd4ea49d04ffdb8dfddb56deb34f82945931a33ff8b3fa02998",
       "textLength": 2038,
-      "htmlHash": "d88b9e2f4458698cfc29a2e763ca4a5b435baca5e488d97b3507125dfeaad7fc"
+      "htmlHash": "108231555f051df3e782f50c80ba2f4aabb5209784b6f3938ffe210e4a3f955b"
     },
     {
       "route": "knowing/thinking-self",
@@ -269,7 +269,7 @@
       "title": "头脑我 — 三道哲学",
       "textHash": "1b55069d6ad83d9aec10c69df5789d5ffd9d92afb086102df4031577523edde1",
       "textLength": 3143,
-      "htmlHash": "0a78251b89b878322032f0206c1d88522ec94a27efa3d27877a3d1396201ec12"
+      "htmlHash": "3d008ba5ec11549456c481c230ec3beca7d37ad0d05cbbe33efd73d0a9258069"
     },
     {
       "route": "knowing/feeling-self",
@@ -277,7 +277,7 @@
       "title": "情感我 — 三道哲学",
       "textHash": "52bb3008ead26c7c7ac7fb8c64d7dc17aa82a7aff6b25ce4455319cb85e10f29",
       "textLength": 2130,
-      "htmlHash": "60779c136aafd6ce2819b4bd55d2c921bfd46cca6af946458d9fab1edc0e8e7f"
+      "htmlHash": "ad37354fb27885d945afba7130936f6cafb020fe8d3ed7650b342435fbb2f557"
     },
     {
       "route": "knowing/inner-role",
@@ -285,7 +285,7 @@
       "title": "内在角色我 — 三道哲学",
       "textHash": "b2cbac3995d06ad73a7489335c9de87de4afc4f42dc250305674c21ac260918c",
       "textLength": 2526,
-      "htmlHash": "cbfd42f99507bd86729a5908932ff6a645b1e91ab368bc1b87174e58c0144409"
+      "htmlHash": "3bc6ef6a74e9f0c77546ef12d2f66f0a47a8a07c47678dbf76141e820935bb20"
     },
     {
       "route": "knowing/heaven-soul",
@@ -293,7 +293,7 @@
       "title": "意识承接 — 三道哲学",
       "textHash": "c3126a76c278e458852c1166ea61ad10069db097e35055f4f3975023e3a5bb1a",
       "textLength": 1924,
-      "htmlHash": "2f235596c05612ac061a0a697b63798d1870c628d73d11d1536d3367101c8c46"
+      "htmlHash": "aad7d39cb01ccf317e0699c57be96fa670a537637feaded8ec4d79f571b31b97"
     },
     {
       "route": "knowing/human-soul",
@@ -301,7 +301,7 @@
       "title": "角色运作 — 三道哲学",
       "textHash": "36f434057c3cac275248ea306b5e79a20979d1e578cf6a6abb05a8fe33ae3d01",
       "textLength": 1965,
-      "htmlHash": "0dcf338c00a6c0f1001f2c06790045fc08d2faef701bf382a00cd1e84b2c600f"
+      "htmlHash": "93f9b16cf797e4fd7ca165b411a02128eac95475eec6366a5f9e3b2dd0d1cbe7"
     },
     {
       "route": "knowing/earth-soul",
@@ -309,7 +309,7 @@
       "title": "生命维系 — 三道哲学",
       "textHash": "ce660d82174871870f10db685c1391153226af37813548aa9c1d46c08bcdb884",
       "textLength": 1860,
-      "htmlHash": "ee56fa70b799dd633b00cf7fd7c9f8f2708a440e49bbff9c4877aad308c4d294"
+      "htmlHash": "db6b3d2a1ab91cd69d8873ee7b4390985cab07a6e1603ab45d3b5c2bf2157153"
     },
     {
       "route": "knowing/inner-consciousness",
@@ -317,7 +317,7 @@
       "title": "内在意识我 — 三道哲学",
       "textHash": "94cbdec15d8d88c256dccf347399ecea338c1aabc61ccf2109e2069fefe899fe",
       "textLength": 6192,
-      "htmlHash": "528350f2d1113d80761ece6adef41d139191773956c0a7d8b41084fa15e6679a"
+      "htmlHash": "06710cc92097f4de03602431e34b0a0b5dd1145290213d0ae4c6653b761230c7"
     },
     {
       "route": "knowing/godhead-a",
@@ -325,7 +325,7 @@
       "title": "主导神格 A — 三道哲学",
       "textHash": "dfc205a5968825bd652f4a90c36f06fbaa3fba611da7f587df56fbaa2273c0a6",
       "textLength": 2835,
-      "htmlHash": "224629b6c349e2fca6988afe099a30ed09f237fed6919b719ad664333b941966"
+      "htmlHash": "8d10207759fce42e71214a814024761042731454218318f1a4945b694972ba53"
     },
     {
       "route": "knowing/godhead-b",
@@ -333,7 +333,7 @@
       "title": "次级神格 B — 三道哲学",
       "textHash": "954d27c9202fae352248a909f984060958d8d07c6a8eb87c8b9e38c8a0f03c90",
       "textLength": 1964,
-      "htmlHash": "f168867ab0cb05f58e0423ba6ee5f54ef9e9a2ada2e8f6993fe804f9b9ebb2ff"
+      "htmlHash": "eeaad6732fe8dc66a144148e80a42a038df05a96e7777a51cefe50a23c96dcb9"
     },
     {
       "route": "knowing/godhead-c",
@@ -341,39 +341,39 @@
       "title": "次级神格 C — 三道哲学",
       "textHash": "cfc78b14e2cd156aab0ea760a2955114206511b162345457ad05c51dd80f5662",
       "textLength": 1985,
-      "htmlHash": "c1d0af56bfa58d01f18d666a113dc4596acaac1bff0af0131a130e04fdb4fc59"
+      "htmlHash": "50eed99e6f4f74879ae62d452d4f36ef84a3e085b74fa941f8d1309650117f6d"
     },
     {
       "route": "acceptance",
       "url": "https://www.triatao.com/read/acceptance/",
       "title": "接纳自己 — 三道哲学",
-      "textHash": "32b10b54492b605333309626b6284c40de1e5b797cab10f03b1637a1f35345bd",
-      "textLength": 5963,
-      "htmlHash": "3f69f01172fc8c0d12fc3474238361e72e65da307f7a2255682a38f2493a7904"
+      "textHash": "3ff235aca3b37c61c04f235b10a6ab7fe8309b271cb62afd69d28c8870cf19a9",
+      "textLength": 2482,
+      "htmlHash": "b69df799bcc21c99fca0f1bf239f262dab066c3fcf13d4a91b41fc626142a4bb"
     },
     {
       "route": "concept/cognitive",
       "url": "https://www.triatao.com/read/concept/cognitive/",
-      "title": "认知接纳 — 三道哲学",
-      "textHash": "2068565130ff858d932c8eed28296cfede366f7a8c3830b5194b7ac62e39068a",
-      "textLength": 6459,
-      "htmlHash": "2a9e4d4b27942aafe4387c6e9d9cba36fac4ec28be7127c0f95745c728974ea2"
+      "title": "看见自己 — 三道哲学",
+      "textHash": "12e0e6fe13940e740ec44dbeee21aba5d39bb7aec5ac0832f1d39fbe763a84e0",
+      "textLength": 2494,
+      "htmlHash": "3582d8cadab712de93ee93530bdef6c3ed6b612d8c1b610306b7660a2b8bca18"
     },
     {
       "route": "concept/emotional",
       "url": "https://www.triatao.com/read/concept/emotional/",
-      "title": "情绪接纳 — 三道哲学",
-      "textHash": "6a07a6cede36621d19dfc2e9d4f23387e7066027aa3593d506db17a36954396d",
-      "textLength": 6169,
-      "htmlHash": "b6fb44a5e54781dd2a81a976d76bb5d4adc92a4cd713f2116796414a2a69320e"
+      "title": "站在自己这一边 — 三道哲学",
+      "textHash": "288e6eaf6afb24c75e1aef819dba22420973f6e57e8fc8bebd093151e5e6287a",
+      "textLength": 2639,
+      "htmlHash": "f05fccf8f6b81d6cdb708276a7d03dd2d840aef0aaf5cb8e175db98a57961e8b"
     },
     {
       "route": "concept/existential",
       "url": "https://www.triatao.com/read/concept/existential/",
-      "title": "存在接纳 — 三道哲学",
-      "textHash": "2b3613d75dce65da5500db5c92f6ccd36a0a8c49e2b9355c08539b50891b45e5",
-      "textLength": 6793,
-      "htmlHash": "dd3641e0723f97b1839052ec44106293ebbb6288698a8989c388cf3499aa36e9"
+      "title": "重建内在动力 — 三道哲学",
+      "textHash": "f28d0365f5e97a79b31acd5dcb98d9a1fbf23556f525716160d3bff4068729ae",
+      "textLength": 2621,
+      "htmlHash": "3d37bb57a3b59cbe3e0ee923263882536cb4f7ffb7eae96cf1355bf507522f27"
     },
     {
       "route": "becoming",
@@ -381,7 +381,7 @@
       "title": "创造自己 — 三道哲学",
       "textHash": "e9fb9cee4afa850d436be71bbb7df592a49125db23943cb10609ac0375826080",
       "textLength": 7877,
-      "htmlHash": "c15098738a3de184bcecc94c585cb4fcd74f2786f31e9b1dec5d73c2733099db"
+      "htmlHash": "9133f821f0cc9d6471263d8afac5c50ef93c7d92f94f1a0e8ea924b52e468111"
     },
     {
       "route": "becoming/identity",
@@ -389,7 +389,7 @@
       "title": "身份 — 三道哲学",
       "textHash": "6004cf47981fecb277f1378f6a482ccf52d0c31059343366661d55c967d30c89",
       "textLength": 7267,
-      "htmlHash": "e503f3cc04750c4af072a25f2df23de1da33f2f1a7d282ac4720fd4c2a7a0e78"
+      "htmlHash": "7c16c8052aa6c10d9079b763ee84e7d257e157c21997be9c2e8bff1f46ba1906"
     },
     {
       "route": "becoming/belief",
@@ -397,7 +397,7 @@
       "title": "信念 — 三道哲学",
       "textHash": "296ff592bd328097ee882251078bf604792c0d060921860f9e79db7d162d4a69",
       "textLength": 7090,
-      "htmlHash": "ca8f17d9459134e9c787db6a7e8104ad4bc4365b3ada63ec684a98537cef6250"
+      "htmlHash": "f0b0c16f1797694108b4ac5fe187c28ac7d780484328b618a54010f5f244dfee"
     },
     {
       "route": "becoming/intention",
@@ -405,7 +405,7 @@
       "title": "意图 — 三道哲学",
       "textHash": "222c99d0fb9ac6ff0ab9ac88cd226544c6e16cd0ffcce13082de71d85d7671fb",
       "textLength": 7101,
-      "htmlHash": "83cbdad259fedb3f9055b8df332b40dbd0d26e20be0be869242bad517f78f8d6"
+      "htmlHash": "3733a51c20520cc860066563f5b93720668488f115a230d37edccf6db69f9580"
     },
     {
       "route": "becoming/imagination",
@@ -413,7 +413,7 @@
       "title": "想象 — 三道哲学",
       "textHash": "71bd6be65f965d1e98a66a4b8ccf623bed38f314dc00b43fc0b28e60e1e49ae8",
       "textLength": 7911,
-      "htmlHash": "c402e1374ab391936e62ade6c4f770be38417e78e0b55e58846eecf57ad35a30"
+      "htmlHash": "c09b789052da4b970c63cd22498717c0eb0b7b0aa6ec3cd8e122c90dc0e1e58c"
     },
     {
       "route": "becoming/focus",
@@ -421,7 +421,7 @@
       "title": "聚焦 — 三道哲学",
       "textHash": "7f48f8e6d5dbdfd26f31dada2be63be9c21fd3e1103052f2931e037b4a46400c",
       "textLength": 7503,
-      "htmlHash": "86df17c301e6a770170cd4b4938b016dfea1087ff86f99658306eaaa8adce90f"
+      "htmlHash": "bfb9c22fdf25d97ce90831c75f69378ff9e31349b60c19aca783fee343dcdabb"
     },
     {
       "route": "becoming/emotion",
@@ -429,7 +429,7 @@
       "title": "情绪 — 三道哲学",
       "textHash": "de09562e5f3426c31333bdce599c40b8125a010c6ad60947544fb766899e2ddd",
       "textLength": 7714,
-      "htmlHash": "d1f3a8558cc2bbb7c8fbef1d9ccdd15bdacba39367c23b2a6d1bcc2b1b2e727b"
+      "htmlHash": "c2154eb40ac0c7291c8e7004baf2551331c8c1a6a86ca6ac399df9e06735d836"
     },
     {
       "route": "becoming/thinking",
@@ -437,7 +437,7 @@
       "title": "思维 — 三道哲学",
       "textHash": "264c1f13f7e77a5a93290398dcdaa7f905b70812359867e0f5902a9b0b070335",
       "textLength": 7111,
-      "htmlHash": "329b1c906277abc1066971d9caa653ee1ce1b313bf2fb170c433e16da1e9e337"
+      "htmlHash": "3c6c23b85effc4a50da005aa058c149ffa3de3eacae4584a654d118145939225"
     },
     {
       "route": "becoming/words",
@@ -445,7 +445,7 @@
       "title": "话语 — 三道哲学",
       "textHash": "35c9dd22201f331c4a485602eb4c3d3a9af08c2cefc3097f39e83ecf8b195f86",
       "textLength": 7118,
-      "htmlHash": "89e9ecc8048becc8b739cd9014abdd9d05c9d65e49b0fe43dada418ab665a0d1"
+      "htmlHash": "3d68cd7207b1ecd636d244ede4134ee5744dcf32f5bd0cb2504a72936cc0e821"
     },
     {
       "route": "becoming/action",
@@ -453,7 +453,7 @@
       "title": "行动 — 三道哲学",
       "textHash": "297b4f53f4226c2c937adfb63080e90e8a93025dcbef460fd514a59fcea9528c",
       "textLength": 7519,
-      "htmlHash": "74ad0ed17671b305c624be90c68e8ddcfd5e7ca63d3d1877ee776d4f74726af8"
+      "htmlHash": "613fe9e0d66f75cb8c27d91dbba8030abb12ead7f77553ff93522aa93c4bcf9d"
     },
     {
       "route": "concept/decide",
@@ -461,7 +461,7 @@
       "title": "决断 — 三道哲学",
       "textHash": "68a93d0cb9bd4ecc7e96fc4b16bde835e6c075707d8549986a57b88a5bc11809",
       "textLength": 2545,
-      "htmlHash": "bba6740133e95dcb25141f928aa36f514b26b2e015c2794a0eea2ed1eddd72a3"
+      "htmlHash": "13d37968e1e8d6f1cf412277f5bb4257944062277f63673884b8953adc22e5a8"
     },
     {
       "route": "concept/responsibility",
@@ -469,7 +469,7 @@
       "title": "担当 — 三道哲学",
       "textHash": "0c3ae9572eac699d8273fe583835bd6f48754ba98d6ffda87a8b18aa85b491ee",
       "textLength": 2694,
-      "htmlHash": "27ddc2c64b81d89456a48b1954ed78011ec2bbae58f3da085b1019360d1f6743"
+      "htmlHash": "ddb9cce42f8ee0a3d1b651f2a60087267dbd70fa6d41163a4abd50a7a6ad78ca"
     },
     {
       "route": "concept/revolution",
@@ -477,7 +477,7 @@
       "title": "革新 — 三道哲学",
       "textHash": "2358832fb7e7612aed86a55a6005c4a8c6cae3bf01dc2a2c7f6084f1d8ab74b4",
       "textLength": 2534,
-      "htmlHash": "1f0d7cda3bd648cb70505fd4871b652d49fb6e9a1f109b850dd0faf18b355874"
+      "htmlHash": "14ce67ea9699732303d02c6165726047b10bf6e135f700cda7029bccc70be26f"
     },
     {
       "route": "concept/strategy",
@@ -485,7 +485,7 @@
       "title": "战略 — 三道哲学",
       "textHash": "d3c7bb231ba2ea149dca4ca7d382ab0d19cbfa9a2c273b574b158240015bb9bd",
       "textLength": 2829,
-      "htmlHash": "aaba08d8c4f469f3c808c294fa631b30a864f76a93ca6b97edc08b202c51d370"
+      "htmlHash": "352f334cafd3e3197c4469b80a11281fbe33956af24670da821312706dd43801"
     },
     {
       "route": "concept/discern",
@@ -493,7 +493,7 @@
       "title": "识局 — 三道哲学",
       "textHash": "482a5c51122a2a360c3517b2ac27d4f6f668de822230b25e9c7267bdeab47855",
       "textLength": 1473,
-      "htmlHash": "b7fb29fda38cd155d12aec540e39ef63953a298cb27647ae4d350b182ca5a347"
+      "htmlHash": "044695be92e3dbed8b482e6e0e3dd81a8ed301c020f3fcee0248f8b0fa74adfa"
     },
     {
       "route": "concept/breakthrough",
@@ -501,7 +501,7 @@
       "title": "破局 — 三道哲学",
       "textHash": "890d77c53a6932955c9f6d0bd86c89c9c3b4af2b6bb5d3feab60da4a86fe78c3",
       "textLength": 1373,
-      "htmlHash": "f8d0e7f0c47fbfd5924e274e744c8585edb55f626742a098729bcde829af6d0f"
+      "htmlHash": "f5114aa1e15cba8f759b270a10ffad5c63843dbaf2f923d3bba49318d2e1ab22"
     },
     {
       "route": "layout",
@@ -509,7 +509,7 @@
       "title": "布局 — 三道哲学",
       "textHash": "73317c08b1d63c2dbbebadd9926190e284426750cd24b4d871d8b8059c5b4cfe",
       "textLength": 1771,
-      "htmlHash": "ac103776073c5aca53e99c482fb5873f4c07f8cbd3b6d255c3048382815e764f"
+      "htmlHash": "c959c9a1122a7269c6b6cc9852f513939c7d0f0209b260251d8f64caac16f56f"
     },
     {
       "route": "concept/system",
@@ -517,7 +517,7 @@
       "title": "系统 — 三道哲学",
       "textHash": "87a8e904d585af4d0d5c209dd17f566d643bbac4f32c5c4cf0ad1da513e2a56b",
       "textLength": 2849,
-      "htmlHash": "2e4d3c957453981f9467b8de8110f2a28be1c076f404e24a5a77cfd438bf290a"
+      "htmlHash": "dadb28f30cb8be4ee212c8c97043cf482707e29604ed594aed8fb77c89ae6f0e"
     },
     {
       "route": "concept/build",
@@ -525,7 +525,7 @@
       "title": "建构 — 三道哲学",
       "textHash": "7ddd6592ef0cd96b91249e8aa1d7ef3fb97696e808d9718c32c834d30025ddcb",
       "textLength": 1331,
-      "htmlHash": "52e9660123ecea698d903a2da9aecc598c1ddcaabe3ac8dca91aee812ea397c9"
+      "htmlHash": "765ef4ac0b3ff3cacd13e6a2566a2015ef59ca8200f18da401f9e1ac35c83979"
     },
     {
       "route": "concept/collaborate",
@@ -533,7 +533,7 @@
       "title": "协同 — 三道哲学",
       "textHash": "9591058646377609e8314eba5c09ee4f93256bb881602396bc18245f82c8c4e7",
       "textLength": 1431,
-      "htmlHash": "fff0e3639beb175a8901e0f20afb8187d8016511c68289777ae3556a2a55c4be"
+      "htmlHash": "b0b6d3cb0529a86ab5930256f6a94de4a8acaa3a89c306a5ed3f0d5f6c65d289"
     },
     {
       "route": "concept/evolve",
@@ -541,7 +541,7 @@
       "title": "进化 — 三道哲学",
       "textHash": "5ce255c92e07f45bec4f3d671f1915478274decbb5d53591e5462e35f994ed11",
       "textLength": 1514,
-      "htmlHash": "49a08848a3a9d5e76259e54087b5f74affe11fdd0d541b7e70f453afc5381902"
+      "htmlHash": "4abcefe32b0f0783dd2da02dc17f25a1436772a063d6246e687e61d610c7e608"
     },
     {
       "route": "concept/people",
@@ -549,7 +549,7 @@
       "title": "成人 — 三道哲学",
       "textHash": "f3643822dde52e96f90dac7accdfa73c37dd1665bd35f62853bb354c9b1da8df",
       "textLength": 3431,
-      "htmlHash": "a403683a5adab880fe9a9564c211190b917a17c867aff765fd3923168cb27876"
+      "htmlHash": "b90a13fec55f8e9b2760d3fa44267e58592ac82f2383f70a207db00a799e2b0a"
     },
     {
       "route": "concept/recognize",
@@ -557,7 +557,7 @@
       "title": "识人 — 三道哲学",
       "textHash": "e3990358f91f37ff654104fd4751366e40de2c8950f0bc78b20c15ab8e1b2920",
       "textLength": 1340,
-      "htmlHash": "c8bba3212e08e017398ed7911a2b48586d76d6d023e5a3f7bc05618bbbd5e10c"
+      "htmlHash": "36de314084e78cf127a415f4d145756bd56ddf8d5fb1b958603881b1ec7eb79d"
     },
     {
       "route": "concept/entrust",
@@ -565,7 +565,7 @@
       "title": "用人 — 三道哲学",
       "textHash": "65febff3fc05c19c5daca98f8d6f754590ef87b6985141e724231ab03f194ce3",
       "textLength": 1341,
-      "htmlHash": "f08784aec73092a27c06bb48f15780879beb9a50353ed6ac9126a05600722b07"
+      "htmlHash": "df14a68f9142bbbd3620cf4a30260024b98b1d6b5c753a2e660d266878c18ea9"
     },
     {
       "route": "concept/empower",
@@ -573,7 +573,7 @@
       "title": "成就 — 三道哲学",
       "textHash": "c17168c5ee06c421793352c75491671167f2bd726b3069dd18e90b40deb20354",
       "textLength": 1812,
-      "htmlHash": "4d727834b27ed7861f37decdaea144d3013a6610ccbb2bb5592396d131b43f28"
+      "htmlHash": "5a5a815a0d18fdb96b9b66c30de0d76c0b7060b1fc26a9b628ab0c5df2eead11"
     },
     {
       "route": "concept/wuwei",
@@ -581,7 +581,7 @@
       "title": "无为 — 三道哲学",
       "textHash": "e5faf7197938e8cf6003954f18fac461cf98560a6e178ec5e24ed032baaed13d",
       "textLength": 2874,
-      "htmlHash": "7b764cd15d0460a13e4a549db6504d0bca80255584e0b1b265146b0e6e2f1f16"
+      "htmlHash": "e940c0eb61ca438a11f7dd73a9fc1e85066eefdcde646772f254f0c7770282be"
     },
     {
       "route": "concept/nonattachment",
@@ -589,7 +589,7 @@
       "title": "无执 — 三道哲学",
       "textHash": "3ae4da5c510efe6ef1db603ac17075ad4c941055e8ad515483ca58eb6c5dbb0b",
       "textLength": 2803,
-      "htmlHash": "8af73ef544c21d9eae83438677717c4737304ec2334648214c1c808cc7340d27"
+      "htmlHash": "2421f7b730268649e4d834b7e7901dddecaa8e58d0cc6c8a0dce89b268a02d18"
     },
     {
       "route": "concept/unity",
@@ -597,7 +597,7 @@
       "title": "无敌 — 三道哲学",
       "textHash": "a2215ee6668ae5f2a1774514f8f008ef68561abfda1a3e8bf0a90132ed425a78",
       "textLength": 3220,
-      "htmlHash": "de52b2797c66d911a7ec464bc2ebab7f07e8d58af69de7e0501a2fe740cfcdae"
+      "htmlHash": "a2b00f30784467120d729888f7156c63e7561fa907b074619dbb471771d0f47b"
     },
     {
       "route": "case",
@@ -605,7 +605,7 @@
       "title": "面对质疑，我如何回应？ — 三道哲学",
       "textHash": "29b16a2312defa043cf1cd87aecadd7286d844d8c7594c62965127c13a7c0ea9",
       "textLength": 504,
-      "htmlHash": "1e25967824854eb42ce292a2c539bfc8f1ceeb1761786fbb6c332c1ceb1ced43"
+      "htmlHash": "482396b9fdddbda73717e8eea1800c98cb322969bacb9746ebe5a49f75e86e1b"
     },
     {
       "route": "practice/layer/identity",
@@ -613,7 +613,7 @@
       "title": "身份的实践 — 三道哲学",
       "textHash": "76b49cc4a11b8da8b64aace229d2e3b74f82d7286b08fd54fbf1f02649c86b17",
       "textLength": 161,
-      "htmlHash": "a7f5f44390fa40c36d3b877c4e0e8aa390435e9789850d86aae1feab5ecbe2b1"
+      "htmlHash": "9f82fe0093db598d17e360834cf7364ee4c3c0b1fdb57cf931960a34f7d09c22"
     },
     {
       "route": "practice/layer/belief",
@@ -621,7 +621,7 @@
       "title": "信念的实践 — 三道哲学",
       "textHash": "12f3d50b78f62910a853f44787fd1aa4e626c8e33d327c44c7043e72f22e699a",
       "textLength": 133,
-      "htmlHash": "1226fa3bfb9d763eaee5b3b9c7058b10decfe5e2b428962f733eaf1e4ec97525"
+      "htmlHash": "130769e935e2b15c6d927f60db84cd1712aed715c24541ab0506e41820414fe1"
     },
     {
       "route": "practice/layer/intention",
@@ -629,7 +629,7 @@
       "title": "意图的实践 — 三道哲学",
       "textHash": "5b3768676ea282501a5dc8276a953e86d6335ce49bf2356a47b49697e611837e",
       "textLength": 133,
-      "htmlHash": "4e29348a0f25b4c34c5364cf8a4a05655939dedbb68a7b3e1e959ec753f63154"
+      "htmlHash": "016adb704c702941f14acf3dfea728b4200395d56ff405411f0c31cedfe1f392"
     },
     {
       "route": "practice/layer/imagination",
@@ -637,7 +637,7 @@
       "title": "想象的实践 — 三道哲学",
       "textHash": "f0854f2d03af9aa4e9788dd15dbdba0edbf92286af5421e70c5d8f7b2945c0e1",
       "textLength": 162,
-      "htmlHash": "0ae8974b8af571928793d0b28d18dbd396ef2ebfb9fbd8353bf289e73fc080e7"
+      "htmlHash": "1021f74a693e5b67687ab0073fe3b5e587782b805d8f137a7171002eb05004cf"
     },
     {
       "route": "practice/layer/focus",
@@ -645,7 +645,7 @@
       "title": "聚焦的实践 — 三道哲学",
       "textHash": "017a431bcb6f2e5a3f43a7327d20114566eb700ca7ec0953947695fea7743712",
       "textLength": 133,
-      "htmlHash": "dab40aff3e7a64b1c477f840577318ed2dfee6d17c4ad672d4ee96c88d074906"
+      "htmlHash": "9885ad3706bebfb2da1ac6f8e44e2bf351d3f304691dd59fe467c0e2ff5d41f9"
     },
     {
       "route": "practice/layer/emotion",
@@ -653,7 +653,7 @@
       "title": "情绪的实践 — 三道哲学",
       "textHash": "1ff976033135bdbd759cd52ca37a01e7e140a3faa232772c3f38b345eb2ff327",
       "textLength": 164,
-      "htmlHash": "c05a68550a9de51de6490670563e0ca39d4942f2bc213f8b53b9c386fbee70b0"
+      "htmlHash": "add293ffeb930d33301015ba8edbd7d262347b8fa98a156bb63a26847aac111f"
     },
     {
       "route": "practice/layer/thinking",
@@ -661,7 +661,7 @@
       "title": "思维的实践 — 三道哲学",
       "textHash": "c3db062850378f7914c5651a37f3056b39c3d10baff1e3a965b143ece0d31a04",
       "textLength": 133,
-      "htmlHash": "02434ca8b4a1daa6f8316f94d39279386bf6327f35518909accf9d242041fae6"
+      "htmlHash": "86c75ece2531dba979a26c0374e8fe134e571be40bb4b78dae096b9694398065"
     },
     {
       "route": "practice/layer/words",
@@ -669,7 +669,7 @@
       "title": "话语的实践 — 三道哲学",
       "textHash": "205b5edd38ebddef78196d68bc5523e76578c92fdae0be6dde409b86e2268835",
       "textLength": 133,
-      "htmlHash": "0279d044d89d159f84fef14d49d3af6f25b178c8aa6fff4fe31ddadb1b7f8de8"
+      "htmlHash": "70ce464862fa2ebec6e013370ab0d72726a3fb1f278bb6176294cee415e4c472"
     },
     {
       "route": "practice/layer/action",
@@ -677,7 +677,7 @@
       "title": "行动的实践 — 三道哲学",
       "textHash": "37bb637982f0d57ec62a489e4e36ec645d41023d403b2a63657bf1ae62075f6e",
       "textLength": 162,
-      "htmlHash": "b5520208d38293f65664d01789d756e7fd088435b8ecfcf24f115e3155a84ed0"
+      "htmlHash": "0618c5b139b09c58fbe1b78806a6c71d7455fc1787b71faa62b78009cd694ee3"
     },
     {
       "route": "practice/exercise/from-choice-to-being",
@@ -685,7 +685,7 @@
       "title": "从选择到成为 — 三道哲学",
       "textHash": "77db3e26d52aa3008df56b735326bbd100c91f9dcef4feebc384ea755cc8d4a4",
       "textLength": 453,
-      "htmlHash": "3da258ea432c6ea673cf9cb42842ef106692d9c0aeb96dbabf87ec6313165de1"
+      "htmlHash": "97fffc1358a61dec62554e803d895591b79fa8a42c7a918a0a3d848fd24c7ade"
     }
   ]
 }

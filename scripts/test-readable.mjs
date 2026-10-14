@@ -29,6 +29,10 @@ try{
  const aliasText=(await page.locator('main').textContent()).replace(/\s+/g,' ').trim();
  assert.equal(hash(aliasText),manifest.pages.find(e=>e.route==='practice').textHash,'No-JS /practice alias text');
  assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'),'https://www.triatao.com/read/practice/');
+ const homeResponse=await page.goto(origin+'/');assert.equal(homeResponse.status(),200);
+ const homeText=(await page.locator('main').textContent()).replace(/\s+/g,' ').trim();
+ assert.equal(hash(homeText),manifest.pages.find(e=>e.route==='').textHash,'No-JS home page text');
+ assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'),'https://www.triatao.com/');
  await nojs.close();
  for(const width of [1440,390]){
   for(const route of ['practice','becoming/identity','wang','practice/layer/identity','practice/exercise/from-choice-to-being']){

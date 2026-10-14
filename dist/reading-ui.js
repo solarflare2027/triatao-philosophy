@@ -23,6 +23,8 @@ export function initReadingUI(root,path,elements,selfLayers,selfElements,catalog
  else if(path.startsWith('knowing/')){const i=selfLayers.findIndex(l=>path==='knowing/'+l.id);if(i>=0){next=i<2?['knowing/'+selfLayers[i+1].id,'继续阅读：'+selfLayers[i+1].name]:['acceptance','走向接纳自己'];back=['knowing','返回完整结构'];}}
  if(!next&&(path.startsWith('concept/')||path==='layout')){const id=path==='layout'?'layout':path.split('/')[1],node=catalogue.find(n=>n.id===id);if(node){const siblings=catalogue.filter(n=>node.parent?n.parent===node.parent:n.groupId===node.groupId&&n.path===node.path),i=siblings.findIndex(n=>n.id===id),n=siblings[i+1];next=n?[n.id==='layout'?'layout':'concept/'+n.id,'继续阅读：'+n.name]:[node.path||'wang','回到'+({tian:'天道',ren:'人道',wang:'王道'}[node.path]||'王道')];back=['map','返回三道全图'];}}
  if(['concept/cognitive','concept/emotional','concept/existential'].includes(path)){back=['acceptance','返回接纳自己'];if(path==='concept/existential')next=['becoming','走向创造自己'];}
+ if(path==='concept/cognitive')next=['concept/emotional','站在自己这一边'];
+ if(path==='concept/emotional')next=['concept/existential','重建内在动力'];
  if(next&&!shell.classList.contains('wang-page')){const nav=document.createElement('nav');nav.className='reading-next';nav.setAttribute('aria-label','继续阅读');nav.innerHTML=`<a class="reading-next-primary" href="#/${next[0]}">${next[1]} <span aria-hidden="true">→</span></a><a class="reading-next-back" href="#/${back[0]}">${back[1]}</a>`;oldFooter?oldFooter.replaceWith(nav):shell.append(nav);shell.querySelectorAll('.intention-back').forEach(a=>a.remove());}
  return ()=>{window.removeEventListener('scroll',onScroll);cancelAnimationFrame(frame);};
 }

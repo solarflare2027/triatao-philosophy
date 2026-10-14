@@ -7,7 +7,7 @@ export const paths = [
  ]},
  {id:'ren',name:'人道',en:'THE ART OF BECOMING',number:'02',verb:'创造自己',question:'我是谁？我又选择成为谁？',intro:'通过体验认识自己，通过选择创造自己。让真实的自己被看见、被理解、被善待，再把选择落实为思考、表达与行动。',groups:[
   {id:'knowing',name:'认识自己',desc:'以三个“我”理解完整生命：外在角色、内在角色与内在意识。',items:[['external-self','外在角色我','身体我 · 头脑我 · 情感我'],['inner-role','内在角色我','意识承接 · 角色运作 · 生命维系'],['inner-consciousness','内在意识我','主导神格 A · 次级神格 B · 次级神格 C']]},
-  {id:'acceptance',name:'接纳自己',desc:'允许真实，理解自己，让一切各归其位。',items:[['cognitive','认知接纳','允许真实，让局限不再定义全部的我。'],['emotional','情绪接纳','允许感受，把选择权留在自己手中。'],['existential','存在接纳','尚未改变，依然值得被尊重和善待。']]},
+  {id:'acceptance',name:'接纳自己',desc:'看见自己，站在自己这一边，重建内在动力。',items:[['cognitive','看见自己','为什么我无法接纳自己？'],['emotional','站在自己这一边','即使我对自己失望，也不因此抛弃自己。'],['existential','重建内在动力','从恐惧驱动，走向爱驱动的创造。']]},
   {id:'becoming',name:'创造自己',desc:'自我定向、内在成形、现实运行与外化，在反馈中持续创造。',items:[['consciousness','意识层','身份 · 信念 · 意图'],['template','模板层','想象 · 聚焦 · 情绪'],['reality','实相层','思维 · 话语 · 行动']]}
  ]},
  {id:'wang',name:'王道',en:'THE PRACTICE OF CREATION',number:'03',verb:'改变世界',question:wangOverview.question,intro:'以求真确立方向，以三勇锤炼领导者的品格，以战略、系统与成人发展领导能力，以无为、无执、无敌深化领导智慧。在改变世界的实践中，成就他人，培养新的领导者。',groups:[

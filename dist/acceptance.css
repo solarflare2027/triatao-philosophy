@@ -12,3 +12,17 @@
 .acceptance-layer .acceptance-steps{font-size:16px;color:var(--muted)}
 .acceptance-layer:focus-visible,.acceptance-position a:focus-visible{outline:1px solid #80653c;outline-offset:5px}
 @media(max-width:600px){.acceptance-reading .acceptance-position{gap:10px 20px}.acceptance-layer{padding:23px 0}.acceptance-layer .acceptance-steps{font-size:15px}}
+
+.acceptance-overview .page-intro{font-weight:600}
+.acceptance-practice{margin:46px 0;padding:8px 0 22px;border-block:1px solid var(--reading-rule)}
+.acceptance-practice h2{margin-top:28px}
+
+.acceptance-reading .prose>section:not(.acceptance-layers)>p{line-height:2.15;margin:0 0 25px}
+
+.acceptance-nine{margin:30px 0;border-top:1px solid var(--reading-rule)}
+.acceptance-nine-group{display:grid;grid-template-columns:190px minmax(0,1fr);gap:30px;padding:28px 0;border-bottom:1px solid var(--reading-rule)}
+.acceptance-nine-group h3{margin:0;color:#80653c;font-size:22px;line-height:1.7}
+.acceptance-nine-group h3 span{display:block;margin-top:10px;font-size:16px;font-weight:400;color:var(--muted)}
+.acceptance-nine-group p{line-height:2.15;margin:0 0 20px}
+.acceptance-nine-group p:last-child{margin-bottom:0}
+@media(max-width:600px){.acceptance-nine-group{grid-template-columns:1fr;gap:18px;padding:24px 0}.acceptance-nine-group h3{font-size:20px}.acceptance-nine-group h3 span{font-size:15px}}
