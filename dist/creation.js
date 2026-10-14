@@ -1,4 +1,4 @@
-import {practiceEntryCard,practiceOverviewModule} from './practice.js?v=20261014-sources1';
+import {practiceEntryCard,practiceOverviewModule} from './practice.js?v=20261014-choice11';
 import {creationConsciousness} from './creation-consciousness.js?v=20261014-sources1';
 import {creationTemplate} from './creation-template.js?v=20261014-sources1';
 import {creationReality} from './creation-reality.js?v=20261014-sources1';

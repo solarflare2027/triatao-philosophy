@@ -25,15 +25,28 @@ for(const e of practiceExercises){
  assert(d.sections===undefined||Array.isArray(d.sections),`${e.id}: 环节应为数组`);
  const sections=d.sections||[];
  unique(sections.map(s=>s.id),`${e.id}: 环节 ID 不能重复`);
+ if(d.layout==='guide'){
+  assert(text(d.introductionTitle),`${e.id}: 缺少导读标题`);
+  unique(sections.flatMap(s=>(s.steps||[]).map(step=>step.id)),`${e.id}: 全页步骤 ID 不能重复`);
+  assert(d.criteria&&text(d.criteria.title)&&Array.isArray(d.criteria.criteria)&&d.criteria.criteria.every(row=>Array.isArray(row)&&row.length===2&&row.every(text)),`${e.id}: 判断标准应包含名称与问题`);
+  assert(d.closing&&text(d.closing.title),`${e.id}: 缺少结语`);
+  strings(d.criteria.before,`${e.id}: 判断标准引言格式错误`);strings(d.criteria.paragraphs,`${e.id}: 判断标准正文格式错误`);strings(d.closing.paragraphs,`${e.id}: 结语正文格式错误`);
+ }
+
  for(const s of sections){
   assert(slug.test(s.id)&&text(s.title),`${e.id}: 环节需要有效 ID 和标题`);
   for(const key of ['paragraphs','prompts','actions'])strings(s[key],`${e.id}/${s.id}: ${key} 应为文本数组`);
+  if(s.steps!==undefined){
+   assert(Array.isArray(s.steps),`${e.id}: 步骤应为数组`);
+   unique(s.steps.map(step=>step.id),`${e.id}/${s.id}: 步骤 ID 不能重复`);
+   for(const step of s.steps){assert(slug.test(step.id)&&text(step.title),`${e.id}: 步骤需要有效 ID 与标题`);strings(step.paragraphs,`${e.id}/${step.id}: 步骤正文应为文本数组`);}
+  }
   assert(s.questions===undefined||Array.isArray(s.questions),`${e.id}: 问答应为数组`);
   for(const q of s.questions||[]){assert(Array.isArray(q)&&q.length===2&&text(q[0]),`${e.id}: 问答格式错误`);assert(Array.isArray(q[1])&&q[1].every(text),`${e.id}: 回答应为文本数组`);}
  }
  if(e.status==='published'){
   assert(sections.length>0,`${e.id}: 完整练习需要具体环节`);
-  assert(sections.every(s=>!s.placeholder&&['paragraphs','prompts','actions','questions'].some(key=>s[key]?.length)),`${e.id}: 占位内容不能标记为已完成`);
+  assert(sections.every(s=>!s.placeholder&&(['paragraphs','prompts','actions','questions'].some(key=>s[key]?.length)||s.steps?.length&&s.steps.every(step=>step.paragraphs?.length))),`${e.id}: 占位内容不能标记为已完成`);
  }
 }
 for(const id of Object.keys(practiceDetails))assert(practiceExercises.some(e=>e.id===id),`${id}: 详情缺少目录条目`);
@@ -45,7 +58,7 @@ for(const id of creationOrder){
  assert(practiceElementPage(id).includes(`href="#/becoming/${id}"`),`${id}: 缺少返回理论入口`);
 }
 assert.equal((creationOverviewPage().match(/id="creation-practice-bridge"/g)||[]).length,1);
-const pages=['practice',...creationOrder.map(id=>'practice/layer/'+id),...practiceExercises.map(e=>'practice/exercise/'+e.id)];
+const pages=['practice','practice/exercise/from-choice-to-being/philosopher-king',...creationOrder.map(id=>'practice/layer/'+id),...practiceExercises.map(e=>'practice/exercise/'+e.id)];
 let links=0;
 for(const route of pages){
  const html=practiceRoute(route);assert(html,`${route}: 页面为空`);
@@ -59,6 +72,7 @@ for(const item of practiceSearchItems)assert(practiceRoute(item.href),`搜索入
 for(const e of practiceExercises)for(const id of e.elementIds)assert(practiceElementPage(id).includes(`href="#/practice/exercise/${e.id}"`));
 assert.equal(practiceRoute('practice/layer/missing'),'');
 assert.equal(practiceRoute('practice/exercise/missing'),'');
+assert.equal(practiceRoute('practice/exercise/from-choice-to-being/unknown'),'');
 assert.equal(practiceRoute('practice/layer/identity/extra'),'');
 assert.equal(practiceRoute('other/layer/identity'),'');
 assert.equal(practiceRedirect('becoming/practice',new URLSearchParams()),'#/practice');

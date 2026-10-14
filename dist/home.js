@@ -1,6 +1,6 @@
-import {practiceSearchItems} from './practice-catalog.js?v=20261014-sources1';
+import {practiceSearchItems} from './practice-catalog.js?v=20261014-choice11';
 import {paths} from './data.js?v=20261014-acceptance4';
-import {elements} from './elements.js?v=20261014-sources1';
+import {elements} from './elements.js?v=20261014-choice11';
 
 const svg=(path,cls='')=>`<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true"><path d="${path}"/></svg>`;
 const icons={menu:svg('M3 8h18M3 16h18'),search:svg('M15.5 15.5 21 21M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0'),close:svg('m6 6 12 12M6 18 18 6'),next:svg('m9 5 7 7-7 7'),back:svg('m15 5-7 7 7 7'),arrow:svg('M2 12h19m-7-7 7 7-7 7'),pause:svg('M9 5v14M15 5v14'),play:svg('m8 5 11 7-11 7Z'),muted:svg('m3 10 5 0 5-5v14l-5-5H3ZM17 9l5 6m0-6-5 6'),sound:svg('m3 10 5 0 5-5v14l-5-5H3ZM17 8q5 4 0 8M19 5q8 7 0 14')};

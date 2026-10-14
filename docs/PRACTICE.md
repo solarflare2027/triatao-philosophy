@@ -95,3 +95,10 @@
 ## 验证与发布
 
 运行 `npm run check`，并在本地预览检查桌面与手机布局、目录跳转、返回导航、九项理论和实践的相互链接、旧书签兼容。项目仍不需要构建或安装依赖。修改文件时同步更新 `?v=` 引用链。正式发布继续遵循 `AGENTS.md` 中的发布边界。
+
+
+## 公开阅读指南 V1.1
+
+`practiceDetails` 支持 `layout: 'guide'`：`introductionTitle`／`introduction` 为引言，`sections` 为阶段，每阶段可有 `paragraphs` 与 `steps`；步骤包含稳定的 `id`、`title`、`paragraphs`。`criteria` 包含标题、前文、名称/问题二元数组与后文；`closing` 包含标题和段落。段落仅支持 `**重点**` 与 `*提示*`，渲染前转义正文，不接受原始 HTML。此布局保留连续滚动阅读，不添加表单、评分或进度要求。
+
+《从选择到成为》公开版继续使用 `#/practice/exercise/from-choice-to-being`。独立的 `#/practice/exercise/from-choice-to-being/philosopher-king` 仅为占位页，不是另一项已发布练习，不进入关联练习目录。两页均由现有静态正文生成器发现并输出 `/read/` 版本。

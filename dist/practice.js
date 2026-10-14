@@ -1,5 +1,5 @@
-import {creationOrder,creationLayers,elementName,practiceTitles,practiceExercises,exercisesFor,practiceAvailability,theoryHref,elementPracticeHref,exerciseHref} from './practice-catalog.js?v=20261014-sources1';
-import {practiceDetails} from './practice-details.js?v=20261014-practice1';
+import {creationOrder,creationLayers,elementName,practiceTitles,practiceExercises,exercisesFor,practiceAvailability,theoryHref,elementPracticeHref,exerciseHref} from './practice-catalog.js?v=20261014-choice11';
+import {practiceDetails} from './practice-details.js?v=20261014-choice11';
 
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const paragraphs=items=>(items||[]).map(text=>`<p>${esc(text)}</p>`).join('');
@@ -14,12 +14,12 @@ const theoryLinks=ids=>`<nav class="cp-theory-links" aria-label="关联理论">$
 const footer=()=>`<nav class="cp-footer" aria-label="理论与实践">${link('#/practice','返回创造实践')}${link('#/becoming','回到创造自己总论')}</nav>`;
 
 export function practiceHomePage(){
- const sections=[['cp-intro','实践体系总论'],['cp-cycle','创造实践的循环'],['cp-elements','九项实践入口'],['cp-exercises','实践练习完整目录']];
+ const sections=[['cp-intro','实践体系总论'],['cp-cycle','创造实践的循环'],['cp-exercises','身份创造实践工具'],['cp-elements','单项实践练习']];
  return `<div class="page-shell creation-practice cp-home">${crumbs([['创造实践']])}${heading('创造自己 / 实践','创造自己的实践','从理解到体验，从体验到成为。')}<p class="cp-position">通过体验与行动，让对哲学的理解逐渐转化为真实的生命经验。</p><div class="article-layout">${toc(sections)}<article class="cp-body">
   <section class="cp-section" id="cp-intro">${sectionHead('01 / 理解与体验','让理解，进入真实生活。')}<div class="cp-prose"><p>认知上的理解，不等于内在模式已经改变。我们可以选择新的身份，旧有的信念、情绪反应和行为习惯却仍可能在熟悉的情境中出现。</p><p>创造实践从这段距离开始：通过想象与感受熟悉新的可能，通过现实行动尝试新的选择，再让真实反馈参与修正。新的身份由此逐渐成为稳定的生命经验。</p><p>实践沿着创造自己的三层九项展开，帮助哲学认知进入体验与行动；它不是第十项，也不是三道之外的第四道。</p>${link('#/becoming','阅读创造自己总论')}</div></section>
   <section class="cp-section" id="cp-cycle">${sectionHead('02 / 一条实践路径','让选择，成为经验。','九项协同运作，反馈回到新的选择。')}<figure class="cp-cycle"><figcaption class="eyebrow">创造实践的核心循环</figcaption><ol>${[['选择身份','愿意成为怎样的自己'],['想象体验','熟悉新的感受与回应'],['现实行动','在生活中作出选择'],['获得反馈','看见真实发生的结果'],['身份内化','让新经验逐渐稳定']].map(([title,desc],i)=>`<li><span class="cp-cycle-number">0${i+1}</span><strong>${title}</strong><p>${desc}</p></li>`).join('')}</ol><p class="cp-cycle-return"><span aria-hidden="true">↶</span> 带着经验，继续选择、体验与修正。</p></figure><p class="cp-note">这是理解创造九项如何协同的一条实践路径，并非五个新的理论层次，也不要求每一次体验都按同一顺序发生。</p></section>
-  <section class="cp-section" id="cp-elements">${sectionHead('03 / 三层九项','从与你有关的一处开始。','每一项都有自己的实践入口，也可以在同一个练习中彼此连接。')}<div class="cp-layers">${creationLayers.map((layer,i)=>`<section class="cp-layer"><div class="cp-layer-label"><span class="eyebrow">0${i+1}</span><h3>${layer.name}</h3></div><div class="cp-grid">${layer.parts.map(id=>`<a class="cp-element-card" href="${elementPracticeHref(id)}"><span class="cp-element-top"><span class="eyebrow">${String(creationOrder.indexOf(id)+1).padStart(2,'0')}</span><span aria-hidden="true">↗</span></span><h4>${elementName(id)}</h4><p>${practiceTitles[id]}</p><small>${practiceAvailability(id)}</small></a>`).join('')}</div></section>`).join('')}</div></section>
-  <section class="cp-section" id="cp-exercises">${sectionHead('04 / 逐步展开','实践练习完整目录','先看见路径，再一起打磨其中的体验。')}<div class="cp-exercise-list">${practiceExercises.map(exerciseCard).join('')}</div></section>
+  <section class="cp-section" id="cp-exercises">${sectionHead('03 / 身份创造','身份创造实践工具','从选择身份出发，让想象、感受与行动协同展开。')}<div class="cp-exercise-list">${practiceExercises.filter(exercise=>exercise.elementIds.includes('identity')).map(exerciseCard).join('')}</div></section>
+  <section class="cp-section" id="cp-elements">${sectionHead('04 / 三层九项','单项实践练习','每一项都有自己的实践入口，也可以在同一个练习中彼此连接。')}<div class="cp-layers">${creationLayers.map((layer,i)=>`<section class="cp-layer"><div class="cp-layer-label"><span class="eyebrow">0${i+1}</span><h3>${layer.name}</h3></div><div class="cp-grid">${layer.parts.map(id=>`<a class="cp-element-card" href="${elementPracticeHref(id)}"><span class="cp-element-top"><span class="eyebrow">${String(creationOrder.indexOf(id)+1).padStart(2,'0')}</span><span aria-hidden="true">↗</span></span><h4>${elementName(id)}</h4><p>${practiceTitles[id]}</p><small>${practiceAvailability(id)}</small></a>`).join('')}</div></section>`).join('')}</div></section>
  </article></div><nav class="cp-footer" aria-label="回到理论">${link('#/becoming','回到创造自己总论')}</nav></div>`;
 }
 
@@ -29,16 +29,32 @@ export function practiceElementPage(id){
  return `<div class="page-shell creation-practice cp-directory">${crumbs([['创造实践','#/practice'],[elementName(id)+'实践']])}${heading(layer.name+' / 创造实践',elementName(id)+'的实践',practiceTitles[id])}<div class="cp-directory-intro"><span class="cp-status">${practiceAvailability(id)}</span><p>这里将逐步展开与「${elementName(id)}」相关的练习。你可以先回看理论${exercises.length?'，或查看下方关联练习':''}。</p>${link(theoryHref(id),'返回'+elementName(id)+'理论')}</div><section class="cp-section"><h2>相关练习</h2>${exercises.length?`<div class="cp-exercise-list">${exercises.map(exerciseCard).join('')}</div>`:'<div class="cp-empty"><p>这一项的实践内容正在完善。</p><p>具体方法与引导文案确定后，将在这里逐步加入。</p></div>'}</section>${footer()}</div>`;
 }
 
+// Only simple emphasis is accepted; author text is escaped before formatting.
+const guideInline=text=>esc(text).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>').replace(/\*([^*]+)\*/g,'<em>$1</em>');
+const guideParagraphs=items=>(items||[]).map(text=>`<p${/^\*\*.*\*\*$/.test(text)?' class="cp-guide-emphasis"':/^\*[^*].*\*$/.test(text)?' class="cp-guide-note"':''}>${guideInline(text)}</p>`).join('');
+
+function practiceGuidePage(exercise,detail){
+ const sections=detail.sections||[],criteria=detail.criteria,closing=detail.closing;
+ const items=[['cp-guide-intro',detail.introductionTitle],...sections.map(s=>['cp-phase-'+s.id,s.title]),['cp-guide-criteria',criteria.title],['cp-guide-closing',closing.title]];
+ return `<div class="page-shell creation-practice cp-detail cp-guide">${crumbs([['创造实践','#/practice'],[exercise.title]])}${heading('身份创造实践工具 V1.1 / 公开版',exercise.title,exercise.subtitle)}<nav class="cp-related" aria-label="关联实践层次"><span>关联层次</span>${exercise.elementIds.map(id=>`<a href="${elementPracticeHref(id)}">${elementName(id)} <span aria-hidden="true">↗</span></a>`).join('')}</nav><div class="article-layout">${toc(items)}<article class="cp-guide-body"><section class="cp-guide-intro" id="cp-guide-intro"><h2>${esc(detail.introductionTitle)}</h2>${guideParagraphs(detail.introduction)}</section>${sections.map(s=>`<section class="cp-guide-phase" id="cp-phase-${esc(s.id)}"><h2>${esc(s.title)}</h2>${guideParagraphs(s.paragraphs)}${s.steps.map(step=>`<section class="cp-guide-step" id="cp-${esc(step.id)}"><h3>${esc(step.title)}</h3>${guideParagraphs(step.paragraphs)}</section>`).join('')}</section>`).join('')}<section class="cp-guide-criteria" id="cp-guide-criteria"><h2>${esc(criteria.title)}</h2>${guideParagraphs(criteria.before)}<table><thead><tr><th scope="col">判断标准</th><th scope="col">核心问题</th></tr></thead><tbody>${criteria.criteria.map(([name,question])=>`<tr><th scope="row">${esc(name)}</th><td>${esc(question)}</td></tr>`).join('')}</tbody></table>${guideParagraphs(criteria.paragraphs)}</section><section class="cp-guide-closing" id="cp-guide-closing"><h2>${esc(closing.title)}</h2>${guideParagraphs(closing.paragraphs)}</section></article></div><footer class="cp-guide-footer"><nav class="cp-theory-links" aria-label="关联理论">${exercise.elementIds.map(id=>link(theoryHref(id),elementName(id)+'理论')).join('')}</nav>${link('#/practice','返回创造实践')}<div class="cp-guide-edition">${link(exerciseHref(exercise.id)+'/philosopher-king','哲人王版')}</div></footer></div>`;
+}
+
+export function practicePhilosopherKingPage(){
+ return `<div class="page-shell creation-practice cp-edition-placeholder">${crumbs([['创造实践','#/practice'],['从选择到成为',exerciseHref('from-choice-to-being')],['哲人王版']])}${heading('创造实践','从选择到成为 · 哲人王版','个人身份创造与日常实践')}<div class="cp-prose"><p>这一版本将用于长期的身份创造实践，包括每日觉察、身份连接、现实行动、经验反馈与深度身份冥想。</p><p>内容正在完善中。</p>${link(exerciseHref('from-choice-to-being'),'返回公开版')}</div></div>`;
+}
+
 export function practiceExercisePage(id){
  const exercise=practiceExercises.find(exercise=>exercise.id===id);
  if(!exercise)return '';
  const detail=practiceDetails[id]||{},sections=detail.sections||[],draft=exercise.status!=='published';
+ if(detail.layout==='guide')return practiceGuidePage(exercise,detail);
  const items=[...(detail.goal||detail.scenarios?.length||detail.introduction?.length?[['cp-exercise-intro','练习概览']]:[]),...sections.map(s=>['cp-step-'+s.id,s.title])];
  return `<div class="page-shell creation-practice cp-detail">${crumbs([['创造实践','#/practice'],[exercise.title]])}${heading('创造实践 / '+status(exercise),exercise.title,exercise.subtitle)}<nav class="cp-related" aria-label="关联实践层次"><span>关联层次</span>${exercise.elementIds.map(id=>`<a href="${elementPracticeHref(id)}">${elementName(id)} <span aria-hidden="true">↗</span></a>`).join('')}</nav>${draft?'<div class="cp-draft-notice"><span class="cp-status">实践内容完善中</span><p>当前展示的是练习框架。具体方法与引导文案将逐步打磨，尚未形成可正式使用的完整练习。</p></div>':''}<div class="article-layout">${toc(items)}<article class="cp-body">${items.some(([id])=>id==='cp-exercise-intro')?`<section id="cp-exercise-intro" class="cp-section cp-prose">${detail.goal?`<h2>核心目标</h2><p>${esc(detail.goal)}</p>`:''}${detail.scenarios?.length?`<h3>适用场景</h3><ul>${detail.scenarios.map(text=>`<li>${esc(text)}</li>`).join('')}</ul>`:''}${paragraphs(detail.introduction)}</section>`:''}<div class="cp-steps">${sections.map((section,i)=>`<section class="cp-step" id="cp-step-${esc(section.id)}"><span class="cp-step-number">${String(i+1).padStart(2,'0')}</span><div><h2>${esc(section.title)}</h2>${section.subtitle?`<p class="cp-step-subtitle">${esc(section.subtitle)}</p>`:''}<div class="cp-prose">${paragraphs(section.paragraphs)}${section.prompts?.length?`<ul>${section.prompts.map(text=>`<li>${esc(text)}</li>`).join('')}</ul>`:''}${section.actions?.length?`<ol>${section.actions.map(text=>`<li>${esc(text)}</li>`).join('')}</ol>`:''}${(section.questions||[]).map(([question,answer])=>`<details class="action-fold dao-fold"><summary>${esc(question)}</summary><div class="action-prose">${paragraphs(answer)}</div></details>`).join('')}</div>${section.placeholder?`<p class="cp-placeholder">${esc(section.placeholder)}</p>`:''}</div></section>`).join('')}</div><section class="cp-section cp-connected"><h2>让体验与理解相互照应</h2><p>回到关联的理论篇章，理解每一项在这条路径中的作用。</p>${theoryLinks(exercise.elementIds)}</section></article></div>${footer()}</div>`;
 }
 
 export function practiceRoute(path){
  if(path==='practice')return practiceHomePage();
+ if(path==='practice/exercise/from-choice-to-being/philosopher-king')return practicePhilosopherKingPage();
  const parts=path.split('/');
  if(parts.length!==3||parts[0]!=='practice')return '';
  if(parts[1]==='layer')return practiceElementPage(parts[2]);

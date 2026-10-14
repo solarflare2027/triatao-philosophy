@@ -1,4 +1,4 @@
-import {creationOverviewPage,creationElementPage,creationCyclePage,creationSourcesPage} from './creation.js?v=20261014-sources1';
+import {creationOverviewPage,creationElementPage,creationCyclePage,creationSourcesPage} from './creation.js?v=20261014-choice11';
 export function becomingPage(){return creationOverviewPage();}
 export function becomingElementPage(id){return creationElementPage(id);}
 export function becomingReadingPage(kind){return kind==='cases'?creationSourcesPage():creationCyclePage();}

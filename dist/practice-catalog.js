@@ -17,9 +17,9 @@ export const exerciseHref=id=>`#/practice/exercise/${id}`;
 export const practiceExercises=[{
  id:'from-choice-to-being',
  title:'从选择到成为',
- subtitle:'让理想中的自己，逐渐成为真实的自己。',
+ subtitle:'让你选择成为的自己，逐渐成为真实的自己。',
  elementIds:['identity','imagination','emotion','action'],
- status:'draft'
+ status:'published'
 }];
 export const exercisesFor=id=>practiceExercises.filter(exercise=>exercise.elementIds.includes(id));
 export const practiceAvailability=id=>exercisesFor(id).some(exercise=>exercise.status==='published')?'查看实践练习':'实践内容完善中';
