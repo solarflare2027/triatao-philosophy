@@ -10,7 +10,7 @@ for(const [id,e] of Object.entries(entries)){
  e.details=Array.isArray(e.details)?e.details:[];
 }
 history.scrollRestoration='manual';
-const routeHash=()=>location.hash.startsWith('#/')?location.hash:'#/';
+const routeHash=()=>location.hash.startsWith('#/')?location.hash:'#/'+(document.documentElement.dataset.readRoute||'')+location.search;
 function persist(){
  try{
   const ids=Object.keys(entries).sort((a,b)=>entries[b].time-entries[a].time);

@@ -9,7 +9,7 @@ const root = fileURLToPath(new URL('../dist/', import.meta.url));
 const portIndex = process.argv.indexOf('--port');
 const port = Number(portIndex >= 0 ? process.argv[portIndex + 1] : process.env.PORT || 4173);
 if (!Number.isInteger(port) || port < 1 || port > 65535) throw new Error('Invalid port');
-const mime = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp', '.mp4': 'video/mp4', '.woff2': 'font/woff2', '.ttf': 'font/ttf', '.otf': 'font/otf' };
+const mime = { '.xml': 'application/xml; charset=utf-8', '.txt': 'text/plain; charset=utf-8', '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp', '.mp4': 'video/mp4', '.woff2': 'font/woff2', '.ttf': 'font/ttf', '.otf': 'font/otf' };
 
 const server = http.createServer(async (req, res) => {
   if (!['GET', 'HEAD'].includes(req.method)) { res.writeHead(405, { Allow: 'GET, HEAD' }); res.end(); return; }
@@ -19,7 +19,11 @@ const server = http.createServer(async (req, res) => {
     file = path.resolve(root, '.' + (pathname === '/' ? '/index.html' : pathname));
     const relative = path.relative(root, file);
     if (relative.startsWith('..') || path.isAbsolute(relative)) { res.writeHead(403); res.end(); return; }
-    const info = await stat(file);
+    let info = await stat(file);
+    if (info.isDirectory()) {
+      if (!pathname.endsWith('/')) { res.writeHead(301, {Location: pathname + '/' + new URL(req.url, 'http://localhost').search}); res.end(); return; }
+      file = path.join(file, 'index.html'); info = await stat(file);
+    }
     if (!info.isFile()) throw new Error('Not a file');
     const headers = { 'Content-Type': mime[path.extname(file)] || 'application/octet-stream', 'Cache-Control': 'no-store', 'Accept-Ranges': 'bytes', 'X-Content-Type-Options': 'nosniff' };
     let start = 0, end = info.size - 1, status = 200;

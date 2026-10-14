@@ -4,10 +4,17 @@
   "private": true,
   "type": "module",
   "description": "三道哲学 V2.0 · 网站源码与编辑交接",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "node scripts/preview.mjs",
     "start": "node scripts/preview.mjs",
-    "check": "node scripts/check.mjs"
+    "check": "node scripts/check.mjs",
+    "generate:readable": "node scripts/generate-readable-pages.mjs",
+    "test:readable": "node scripts/test-readable.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.64.0"
   }
 }
