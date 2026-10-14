@@ -27,19 +27,19 @@ export function home(){return `
    <h1 id="a16-title">看见真理 · 创造自己 · 改变世界</h1>
    <p class="a16-life-motto-cn" lang="zh-CN">生命的意义在于 —— 通过体验，认识自己；通过选择，创造自己。</p>
    <p class="a16-life-motto" lang="en"><span>The meaning of life is to know yourself through experience,</span> <span>and create yourself through choice.</span></p>
-   <a class="a16-invitation" href="#/start">从这里，开始你的探索 ${icons.arrow}</a>
+   <a class="a16-invitation" href="#/start">走进三道，开始你的探索 ${icons.arrow}</a>
    <div class="a16-media-controls"><button id="a16-pause" class="a16-icon" aria-label="暂停背景视频">${icons.pause}</button><button id="a16-sound" class="a16-icon" aria-label="开启视频声音" aria-pressed="false">${icons.muted}</button></div>
    <span id="a16-media-status" role="status"></span>
   </div></section>
   <footer class="a16-footer"><div class="a16-footer-inner"><div class="a16-footer-brand"><a href="#/" class="tria-footer-lockup"><span>三道哲学</span></a><p>《哲人王》的学习与实践手册</p></div><div class="a16-footer-right">
    <nav class="a16-path-circles" aria-label="三道入口"><a href="#/tian" aria-label="天道：看见真理">天</a><a href="#/ren" aria-label="人道：创造自己">人</a><a href="#/wang" aria-label="王道：改变世界">王</a></nav>
-   <div class="a16-footer-links"><span>求真 · 选择 · 创造</span><a href="#/start">阅读指南</a><a href="#/map">三道全图</a><a href="#/library">文章与案例</a><a href="#/practice">创造实践</a></div>
+   <div class="a16-footer-links"><span>求真 · 选择 · 创造</span><a href="#/start">走进三道</a><a href="#/map">三道全图</a><a href="#/library">文章与案例</a><a href="#/practice">创造实践</a></div>
   </div></div></footer>
   <dialog id="a16-menu" class="a16-menu" data-depth="0" aria-labelledby="a16-menu-title">
    <h2 id="a16-menu-title" class="a16-sr">三道哲学导航</h2>
    <button id="a16-menu-close" class="a16-icon a16-menu-close" aria-label="关闭菜单">${icons.close}</button>
    <div class="a16-menu-columns">
-    <nav class="a16-menu-root" aria-label="主菜单"><a href="#/start">从这里开始</a><a href="#/essay">三道总论</a>${Object.entries(panels).map(([id,p])=>`<button data-second="${id}" aria-expanded="false" aria-controls="a16-second"><span>${p.title}</span>${icons.next}</button>`).join('')}<a href="#/map">三道全图</a><p>看见真理<br>创造自己<br>改变世界</p></nav>
+    <nav class="a16-menu-root" aria-label="主菜单"><a href="#/start">走进三道</a><a href="#/essay">三道总论</a>${Object.entries(panels).map(([id,p])=>`<button data-second="${id}" aria-expanded="false" aria-controls="a16-second"><span>${p.title}</span>${icons.next}</button>`).join('')}<a href="#/map">三道全图</a><p>看见真理<br>创造自己<br>改变世界</p></nav>
     <section id="a16-second" class="a16-menu-panel" hidden><div class="a16-panel-bar"><button class="a16-icon" data-back="0" aria-label="返回主菜单">${icons.back}</button><h3></h3></div><div class="a16-panel-body"></div></section>
     <section id="a16-third" class="a16-menu-panel" hidden><div class="a16-panel-bar"><button class="a16-icon" data-back="1" aria-label="返回三道体系">${icons.back}</button><h3></h3></div><div class="a16-panel-body"></div></section>
    </div>
