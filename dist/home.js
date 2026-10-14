@@ -1,6 +1,6 @@
-import {practiceSearchItems} from './practice-catalog.js?v=20261014-practice1';
-import {paths} from './data.js?v=20261014-wang-question2';
-import {elements} from './elements.js?v=20261014-practice3';
+import {practiceSearchItems} from './practice-catalog.js?v=20261014-sources1';
+import {paths} from './data.js?v=20261014-sources1';
+import {elements} from './elements.js?v=20261014-sources1';
 
 const svg=(path,cls='')=>`<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true"><path d="${path}"/></svg>`;
 const icons={menu:svg('M3 8h18M3 16h18'),search:svg('M15.5 15.5 21 21M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0'),close:svg('m6 6 12 12M6 18 18 6'),next:svg('m9 5 7 7-7 7'),back:svg('m15 5-7 7 7 7'),arrow:svg('M2 12h19m-7-7 7 7-7 7'),pause:svg('M9 5v14M15 5v14'),play:svg('m8 5 11 7-11 7Z'),muted:svg('m3 10 5 0 5-5v14l-5-5H3ZM17 9l5 6m0-6-5 6'),sound:svg('m3 10 5 0 5-5v14l-5-5H3ZM17 8q5 4 0 8M19 5q8 7 0 14')};
@@ -24,7 +24,7 @@ export function home(){return `
    <button id="a16-search-open" class="a16-icon" aria-label="搜索三道哲学" aria-expanded="false" aria-controls="a16-search">${icons.search}</button>
   </div></header>
   <section class="a16-stage" aria-labelledby="a16-title"><div class="a16-stage-inner">
-   <h1 id="a16-title">看见真理，创造自己，改变世界。</h1>
+   <h1 id="a16-title">看见真理 · 创造自己 · 改变世界</h1>
    <p class="a16-life-motto-cn" lang="zh-CN">生命的意义在于 —— 通过体验，认识自己；通过选择，创造自己。</p>
    <p class="a16-life-motto" lang="en"><span>The meaning of life is to know yourself through experience,</span> <span>and create yourself through choice.</span></p>
    <a class="a16-invitation" href="#/start">从这里，开始你的探索 ${icons.arrow}</a>

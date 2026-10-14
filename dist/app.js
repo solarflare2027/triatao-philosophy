@@ -1,16 +1,16 @@
-import {practiceRoute} from './practice.js?v=20261014-practice3';
-import {practiceRedirect,practiceSearchItems} from './practice-catalog.js?v=20261014-practice1';
-import {hasWangReading,wangPage,wangOverviewPage,wangClosingPage} from './wang.js?v=20261014-wang-question1';
+import {practiceRoute} from './practice.js?v=20261014-sources1';
+import {practiceRedirect,practiceSearchItems} from './practice-catalog.js?v=20261014-sources1';
+import {hasWangReading,wangPage,wangOverviewPage,wangClosingPage} from './wang.js?v=20261014-sources1';
 import {acceptancePage,acceptanceConceptPage,initAcceptance} from './acceptance.js?v=20261012-ren-depth1';
 import {initTianVisuals} from './tian-visuals.js?v=20261012-tian-depth1';
-import {hasDaoReading,daoReadingToc,daoReadingBody,daoReadingSources,daoReadingPractice} from './dao-reading.js?v=20261014-change-world1';
+import {hasDaoReading,daoReadingToc,daoReadingBody,daoReadingSources,daoReadingPractice} from './dao-reading.js?v=20261014-sources1';
 import {beginNavigation,finishNavigation} from './navigation.js?v=20261014-readable1';
 import {initReadingUI} from './reading-ui.js?v=20261011-wang1';
-import {home,initHome} from './home.js?v=20261014-practice3';
-import {elements} from './elements.js?v=20261014-practice3';
-import {paths,notes,extraNodes} from './data.js?v=20261014-wang-question2';
-import {essayPage} from './essay.js?v=20261011-author-essay1';
-import {becomingPage,initBecoming,becomingElementPage,becomingReadingPage} from './becoming.js?v=20261014-practice3';
+import {home,initHome} from './home.js?v=20261014-sources1';
+import {elements} from './elements.js?v=20261014-sources1';
+import {paths,notes,extraNodes} from './data.js?v=20261014-sources1';
+import {essayPage} from './essay.js?v=20261014-sources1';
+import {becomingPage,initBecoming,becomingElementPage,becomingReadingPage} from './becoming.js?v=20261014-sources1';
 import {mountArt,diagram} from './art.js';
 import {selfLayers,selfElements,knowingPage,selfLayerPage,selfElementPage,initKnowing} from './knowing.js?v=20261012-ren-depth1';
 const $=s=>document.querySelector(s), main=$('#main');
@@ -48,7 +48,7 @@ function notFound(){return `<div class="page-shell">${pageHead('404 / 重新找�
 
 function route(){const raw=location.hash.startsWith('#/')?location.hash.slice(2):(document.documentElement.dataset.readRoute||'')+location.search, [path,query]=raw.split('?'), params=new URLSearchParams(query||'');const redirect=practiceRedirect(path,params);if(redirect){location.replace(redirect);return;}beginNavigation(main);cleanup();revealObserver?.disconnect();currentRoute=path;const isPractice=path==='practice'||path.startsWith('practice/');const isKnowing=path==='knowing'||path.startsWith('knowing/')||path==='concept/aspects';const isBecoming=path.startsWith('becoming')||['seven','consciousness','template','reality'].some(id=>path==='concept/'+id);document.body.classList.toggle('becoming-view',isBecoming);if(isBecoming&&path.startsWith('concept/'))params.set('layer',path.split('/')[1]);document.body.classList.toggle('reading',isPractice||isKnowing||isBecoming||['essay','layout','case','becoming','wang','wang/closing'].includes(path)||path.startsWith('concept/'));document.querySelector('meta[name=theme-color]').content=path?'#efeee8':'#181c1b';document.body.classList.toggle('home',!path);$('#mobile-nav').hidden=true;$('#menu-toggle').setAttribute('aria-expanded','false');$('#menu-toggle').setAttribute('aria-label','打开导航');document.body.classList.remove('menu-open');main.inert=false;$('.site-footer').inert=false;
  const views={'':home,start,knowing:knowingPage,acceptance:acceptancePage,map:()=>mapPage(params.get('focus')),tian:()=>overview('tian'),ren:()=>overview('ren'),wang:wangOverviewPage,'wang/closing':wangClosingPage,essay:essayPage,layout:layoutPage,library,case:casePage,becoming:becomingPage};const elementId=path.startsWith('becoming/')?path.split('/')[1]:null;const selfId=path.startsWith('knowing/')?path.split('/')[1]:null;main.innerHTML=isPractice?(practiceRoute(path)||notFound()):selfLayers.some(x=>x.id===selfId)?selfLayerPage(selfId):selfElements.some(x=>x.id===selfId)?selfElementPage(selfId):elements.some(e=>e.id===elementId)?becomingElementPage(elementId):['mechanism','cases'].includes(elementId)?becomingReadingPage(elementId):path.startsWith('concept/')?conceptPage(path.split('/')[1]):(views[path]||notFound)();
- const title=main.querySelector('h1')?.textContent.trim();document.title=path?`${title} — 三道哲学`:'三道哲学 — 看见真理，创造自己，改变世界';
+ const title=main.querySelector('h1')?.textContent.trim();document.title=path?`${title} — 三道哲学`:'三道哲学 — 看见真理 · 创造自己 · 改变世界';
  const parent=isPractice?'practice':isKnowing||isBecoming||path==='acceptance'?'ren':path.startsWith('concept/')?(lookup(path.split('/')[1])?.path||'wang'):path==='layout'?'wang':path;
  document.querySelectorAll('.desktop-nav a,.map-nav').forEach(a=>{a.classList.toggle('active',a.hash===`#/${parent}`);if(a.hash===`#/${parent}`)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
  scrollTo({top:0,behavior:'instant'});main.focus({preventScroll:true});revealObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');revealObserver.unobserve(e.target);}}),{threshold:.08});main.querySelectorAll('.reveal').forEach(e=>revealObserver.observe(e));

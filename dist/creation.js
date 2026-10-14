@@ -1,8 +1,8 @@
-import {practiceEntryCard,practiceOverviewModule} from './practice.js?v=20261014-practice3';
-import {creationConsciousness} from './creation-consciousness.js?v=20261014-practice1';
-import {creationTemplate} from './creation-template.js?v=20261014-practice1';
-import {creationReality} from './creation-reality.js?v=20261014-practice1';
-import {creationOrder,creationNames,creationLayers,creationOverview,creationCycle} from './creation-framework.js?v=20261012-ren-depth1';
+import {practiceEntryCard,practiceOverviewModule} from './practice.js?v=20261014-sources1';
+import {creationConsciousness} from './creation-consciousness.js?v=20261014-sources1';
+import {creationTemplate} from './creation-template.js?v=20261014-sources1';
+import {creationReality} from './creation-reality.js?v=20261014-sources1';
+import {creationOrder,creationNames,creationLayers,creationOverview,creationCycle} from './creation-framework.js?v=20261014-sources1';
 export const creationContent={...creationConsciousness,...creationTemplate,...creationReality};
 export {creationOrder,creationNames,creationLayers};
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

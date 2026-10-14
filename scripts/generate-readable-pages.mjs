@@ -55,8 +55,8 @@ try{
    // make the pre-rendered fallback usable when it does not run.
    const ns=document.createElement('noscript');ns.innerHTML='<style>.reveal{opacity:1!important;transform:none!important}.reading-contents nav a{display:block;padding:.6em 0;color:inherit;text-decoration:none}#search-open,#menu-toggle,.back-top,.map-toolbar{display:none!important}[role="tabpanel"][hidden]{display:block!important}</style>';
    doc.querySelector('head').append(ns);
-   const script=document.createElement('script');script.type='module';script.src='/readable.js?v=20261014-readable1';doc.querySelector('head').append(script);
-   return {html:'<!doctype html>\n'+doc.outerHTML,title:document.title,text,links,description:document.querySelector('.page-intro,.be-subtitle,.page-heading p,.eyebrow')?.textContent.trim()||document.title};
+   const script=document.createElement('script');script.type='module';script.src='/readable.js?v=20261014-sources1';doc.querySelector('head').append(script);
+   return {html:'<!doctype html>\n'+doc.outerHTML,title:document.title,text,links,description:document.querySelector('.page-intro,.be-element-essence,.be-element-intro')?.textContent.trim()||document.title};
   },{route,anchors});
   if(snapshot.text.includes('这条路径尚未展开'))throw Error('Unknown reachable route: '+route);
   snapshots.set(route,snapshot);

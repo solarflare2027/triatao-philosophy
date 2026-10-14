@@ -1,4 +1,4 @@
-import {creationOrder,creationNames,creationLayers} from './creation-framework.js?v=20261012-ren-depth1';
+import {creationOrder,creationNames,creationLayers} from './creation-framework.js?v=20261014-sources1';
 
 // The theory remains the single source of truth for names, order and layers.
 export {creationOrder,creationLayers};

@@ -1,4 +1,4 @@
-import {creationContent,creationElementPage,creationOrder,creationLayers} from './creation.js?v=20261014-practice3';
+import {creationContent,creationElementPage,creationOrder,creationLayers} from './creation.js?v=20261014-sources1';
 
 // Navigation and search use the same definitions as the current theory pages.
 export const elements=creationOrder.map(id=>{

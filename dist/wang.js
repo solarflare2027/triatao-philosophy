@@ -3,7 +3,7 @@ import {wangPower} from './wang-power.js?v=20261011-wang1';
 import {wangRealm} from './wang-realm.js?v=20261014-change-world1';
 import {wangBranches} from './wang-branches.js?v=20261011-wang1';
 import {wangGroups,wangOrder,wangRelations,wangOverview,wangClosing} from './wang-framework.js?v=20261014-wang-question1';
-import {daoSources} from './dao-content.js?v=20261014-change-world1';
+import {daoSources} from './dao-content.js?v=20261014-sources1';
 export {wangGroups,wangOrder,wangOverview};
 export const wangContent={...wangHeart,...wangPower,...wangRealm,...wangBranches};
 export const hasWangReading=id=>Object.hasOwn(wangContent,id);
@@ -23,7 +23,7 @@ const extraSources={
  xiyuZhuang:{label:'细雨：《庄子·天道》讲解',url:'https://xiyu.love/archives/zhuang-zi-tian-dao',note:'借鉴尊重自身与他人的发展、减少控制和成全不同生命的思想；本篇的组织与治理论述由三道框架展开。'},
  ostrom:{label:'Elinor Ostrom：Beyond Markets and States（2009）',url:'https://www.nobelprize.org/prizes/economic-sciences/2009/ostrom/lecture/?lbw=1',note:'关于复杂经济系统的多中心治理，作为制度、合作与自主组织的延伸阅读；不用于证明本体系的形而上学命题。'}
 };
-function sources(d){return `<details class="action-fold dao-fold dao-sources"><summary>思想来源与延伸阅读</summary><div class="action-prose"><p>本页以三道哲学的定义与九章结构组织论述。赛斯、细雨与传统思想提供哲学参照；制度安排、现实机制和案例分析是本篇的综合阐释，不作为相关作者的原话或固定分类。</p>${(d.sources||['oldCourages','oldPowers','oldWays']).map(key=>{const s=extraSources[key]||daoSources[key];if(!s)throw new Error('Unknown Wang source: '+key);return `<p><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label)} ↗</a><br>${esc(s.note)}</p>`;}).join('')}</div></details>`;}
+function sources(d){return `<details class="action-fold dao-fold dao-sources"><summary>思想来源与延伸阅读</summary><div class="action-prose"><p>本页以三道哲学的定义与九章结构组织论述。赛斯、细雨与传统思想提供哲学参照；制度安排、现实机制和案例分析是本篇的综合阐释，不作为相关作者的原话或固定分类。</p>${(d.sources||['oldCourages','oldPowers','oldWays']).map(key=>{const s=extraSources[key]||daoSources[key];if(!s)throw new Error('Unknown Wang source: '+key);return `<p>${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label)} ↗</a>`:`<strong>${esc(s.label)}</strong>`}<br>${esc(s.note)}</p>`;}).join('')}</div></details>`;}
 function nextNav(url,title,backUrl='wang',backLabel='返回王道总论'){return `<nav class="reading-next wang-reading-nav" aria-label="继续阅读"><a class="reading-next-primary" href="#/${url}">${esc(title)} <span aria-hidden="true">→</span></a><a class="reading-next-back" href="#/${backUrl}">${esc(backLabel)}</a></nav>`;}
 function connections(id){const relations=wangRelations.filter(([a,b])=>a===id||b===id);if(!relations.length)return '';return `<div class="wang-connections"><span class="eyebrow">放回整体</span>${relations.map(([a,b,title,text])=>`<p>${link(a===id?b:a,title)}<br>${esc(text)}</p>`).join('')}</div>`;}
 export function wangPage(id){

@@ -1,4 +1,4 @@
-import {creationOrder,creationLayers,elementName,practiceTitles,practiceExercises,exercisesFor,practiceAvailability,theoryHref,elementPracticeHref,exerciseHref} from './practice-catalog.js?v=20261014-practice1';
+import {creationOrder,creationLayers,elementName,practiceTitles,practiceExercises,exercisesFor,practiceAvailability,theoryHref,elementPracticeHref,exerciseHref} from './practice-catalog.js?v=20261014-sources1';
 import {practiceDetails} from './practice-details.js?v=20261014-practice1';
 
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
