@@ -17,3 +17,6 @@ for(const p of manifest.pages){
  }
 }
 console.log(`通过：${manifest.pages.length} 篇静态页面、生成输入新鲜度、文件完整性与独立页面链接。`);
+const practice=await readFile(new URL('practice/index.html',root),'utf8');
+const practiceCanonical=await readFile(new URL('read/practice/index.html',root),'utf8');
+if(practice!==practiceCanonical)throw Error('The /practice static alias is stale');

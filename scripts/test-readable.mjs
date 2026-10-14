@@ -25,6 +25,10 @@ try{
   assert(await page.locator('main h1').isVisible(),'No-JS heading hidden '+entry.route);
   results.push({route:entry.route,noJavaScript:true,fullTextMatch:true,characters:text.length});
  }
+ const practiceAlias=await page.goto(origin+'/practice/');assert.equal(practiceAlias.status(),200);
+ const aliasText=(await page.locator('main').textContent()).replace(/\s+/g,' ').trim();
+ assert.equal(hash(aliasText),manifest.pages.find(e=>e.route==='practice').textHash,'No-JS /practice alias text');
+ assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'),'https://www.triatao.com/read/practice/');
  await nojs.close();
  for(const width of [1440,390]){
   for(const route of ['practice','becoming/identity','wang','practice/layer/identity','practice/exercise/from-choice-to-being']){
