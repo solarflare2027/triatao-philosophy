@@ -17,7 +17,7 @@ const searchEntries=[...practiceSearchItems.map(({name,summary,href})=>({name,de
 
 export function home(){return `
  <div class="a16-home">
-  <div class="a16-film" aria-hidden="true"><video id="a16-video" muted loop playsinline autoplay preload="auto" poster="assets/a16z-study/poster-fast-v1.webp"></video></div>
+  <div class="a16-film" aria-hidden="true"><video id="a16-video" muted loop playsinline preload="none" poster="/assets/a16z-study/poster-fast-v1.webp"></video></div>
   <header class="a16-header"><div class="a16-header-inner">
    <button id="a16-menu-open" class="a16-icon" aria-label="打开菜单" aria-expanded="false" aria-controls="a16-menu">${icons.menu}</button>
    <a class="a16-wordmark" href="#/" aria-label="三道哲学 TRIA TAO 首页"><span class="tria-brand-type"><span>三道哲学</span><small lang="en">TRIA TAO</small></span></a>
@@ -49,7 +49,7 @@ export function home(){return `
 
 export function initHome(){
  const warmVideo=window.__triataoHeroVideo;
- if(warmVideo){document.querySelector('#a16-video').replaceWith(warmVideo);delete window.__triataoHeroVideo;}
+ if(warmVideo){warmVideo.__heroCleanup?.();warmVideo.autoplay=false;document.querySelector('#a16-video').replaceWith(warmVideo);delete window.__triataoHeroVideo;}
 
  const $=s=>document.querySelector(s),dialog=$('#a16-menu'),open=$('#a16-menu-open'),search=$('#a16-search'),searchOpen=$('#a16-search-open'),input=$('#a16-search-input'),video=$('#a16-video'),pause=$('#a16-pause'),sound=$('#a16-sound'),second=$('#a16-second'),third=$('#a16-third');
  const reduce=matchMedia('(prefers-reduced-motion: reduce)'),portrait=matchMedia('(max-aspect-ratio:5/4)'),compact=matchMedia('(max-width:1023px)');let depth=0,disposed=false,activeSecond='paths';
@@ -79,10 +79,10 @@ export function initHome(){
  const play=()=>{video.play().catch(()=>{if(!disposed)syncVideo();});};
  function loadVideo(){
   if(disposed)return;
-  const src=portrait.matches?'assets/a16z-study/portrait-fast-v1.mp4':'assets/a16z-study/landscape-fast-v1.mp4';
+  const src=portrait.matches?'/assets/a16z-study/portrait-fast-v2.mp4':'/assets/a16z-study/landscape-fast-v2.mp4';
   const wasPlaying=!video.paused;
   if(video.getAttribute('src')!==src){video.classList.remove('is-ready');video.src=src;video.load();}
-  if(!reduce.matches||wasPlaying)play();syncVideo();
+  if((!reduce.matches&&!video.__heroUserPaused)||wasPlaying)play();syncVideo();
  }
  let frameCallback=null;
  const reveal=()=>{if(!disposed)video.classList.add('is-ready');};
@@ -96,7 +96,7 @@ export function initHome(){
  video.addEventListener('loadeddata',ready);
  video.addEventListener('playing',ready);
 
- pause.onclick=()=>{if(!video.getAttribute('src'))loadVideo();video.paused?play():video.pause();syncVideo();};sound.onclick=()=>{video.muted=!video.muted;if(video.paused)play();syncVideo();};
+ pause.onclick=()=>{if(!video.getAttribute('src'))loadVideo();video.__heroUserPaused=!video.paused;video.paused?play():video.pause();syncVideo();};sound.onclick=()=>{video.muted=!video.muted;if(video.paused){video.__heroUserPaused=false;play();}syncVideo();};
  const preference=()=>{if(reduce.matches)video.pause();else if(!video.getAttribute('src'))loadVideo();else play();syncVideo();};
  const failure=()=>{video.classList.remove('is-ready');$('#a16-media-status').textContent='当前显示静态画面';pause.disabled=true;sound.disabled=true;};
  video.addEventListener('play',syncVideo);video.addEventListener('pause',syncVideo);video.addEventListener('volumechange',syncVideo);video.addEventListener('error',failure);portrait.addEventListener('change',loadVideo);reduce.addEventListener('change',preference);

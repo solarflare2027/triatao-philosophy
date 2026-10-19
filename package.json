@@ -12,7 +12,8 @@
     "start": "node scripts/preview.mjs",
     "check": "node scripts/check.mjs",
     "generate:readable": "node scripts/generate-readable-pages.mjs",
-    "test:readable": "node scripts/test-readable.mjs"
+    "test:readable": "node scripts/test-readable.mjs",
+    "test:hero": "node scripts/test-hero.mjs"
   },
   "devDependencies": {
     "playwright": "1.64.0"

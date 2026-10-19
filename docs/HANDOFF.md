@@ -46,7 +46,7 @@
 
 正文使用经过裁剪的中文 WOFF2 字体；`dist/assets/fonts/` 也保留完整 TTF／OTF。增加新汉字时要检查当前 WOFF2 是否覆盖。确实缺字时，用原始字体重新生成包含“旧字集 + 新增字”的子集，保留已有字形，不替换字体风格。原本地 fontTools 脚本未随仓库迁移，下一次处理需在当前环境建立相应流程。
 
-首页优先使用 `landscape-fast-v1.mp4`、`portrait-fast-v1.mp4`、`poster-fast-v1.webp`。原始媒体仍保留供后续处理。线上曾为 MP4 设置长期缓存；更换内容时使用新文件名，并同步 HTML 提前加载与首页模块中的引用。
+首页优先使用 `landscape-fast-v2.mp4`、`portrait-fast-v2.mp4`、`poster-fast-v1.webp`。视频在 HTML 的 `triatao-hero-boot` 中提前启动，由 `home.js` 接管；两处的地址必须一致。静态生成会清除视频的临时 `src` 和就绪状态，避免手机重复下载横版视频。详见 [首页视频](HERO-VIDEO.md)。原始媒体仍保留供后续处理。线上曾为 MP4 设置长期缓存；更换内容时使用新文件名，并同步 HTML 提前加载与首页模块中的引用。
 
 ## 预览检查
 

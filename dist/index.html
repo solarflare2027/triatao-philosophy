@@ -5,23 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#181c1b">
   <meta name="description" content="《哲人王》的学习与实践手册。以天道看见真理，以人道创造自己，以王道改变世界。">
-  <script>
-  // Start only the home hero before the application module graph is ready.
+  <script id="triatao-hero-boot">
+  // Play the existing home hero without waiting for the article module graph.
   (() => {
-    if (location.hash && location.hash !== '#/' && location.hash !== '#') return;
-    const poster = 'assets/a16z-study/poster-fast-v1.webp';
+    const isHome = () => (!location.hash || location.hash === '#/' || location.hash === '#') && !document.documentElement.dataset.readRoute;
+    if (!isHome()) return;
+    const poster = '/assets/a16z-study/poster-fast-v1.webp';
     const link = document.createElement('link');
     link.rel = 'preload'; link.as = 'image'; link.href = poster; link.fetchPriority = 'high';
     document.head.append(link);
     if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const video = document.createElement('video');
-    video.id = 'a16-video'; video.muted = true; video.loop = true; video.playsInline = true;
+    video.id = 'a16-video'; video.muted = true; video.loop = true; video.playsInline = true; video.autoplay = true;
     video.preload = 'auto'; video.poster = poster;
     video.setAttribute('muted', ''); video.setAttribute('playsinline', '');
-    video.src = matchMedia('(max-aspect-ratio:5/4)').matches
-      ? 'assets/a16z-study/portrait-fast-v1.mp4' : 'assets/a16z-study/landscape-fast-v1.mp4';
+    let frame = null;
+    const reveal = () => {
+      if (frame !== null) return;
+      if (video.requestVideoFrameCallback) frame = video.requestVideoFrameCallback(() => { frame = null; video.classList.add('is-ready'); });
+      else if (video.readyState >= 2) video.classList.add('is-ready');
+    };
+    const play = () => video.play().catch(() => {});
+    const sync = () => {
+      const pause = document.querySelector('#a16-pause'), sound = document.querySelector('#a16-sound');
+      pause?.setAttribute('aria-label', video.paused ? '播放背景视频' : '暂停背景视频');
+      pause?.querySelector('path')?.setAttribute('d', video.paused ? 'm8 5 11 7-11 7Z' : 'M9 5v14M15 5v14');
+      sound?.setAttribute('aria-label', video.muted ? '开启视频声音' : '关闭视频声音');
+      sound?.setAttribute('aria-pressed', String(!video.muted));
+      sound?.querySelector('path')?.setAttribute('d', video.muted ? 'm3 10 5 0 5-5v14l-5-5H3ZM17 9l5 6m0-6-5 6' : 'm3 10 5 0 5-5v14l-5-5H3ZM17 8q5 4 0 8M19 5q8 7 0 14');
+    };
+    const controls = event => {
+      const id = event.target.closest('button')?.id;
+      if (id === 'a16-pause') { video.__heroUserPaused = !video.paused; video.paused ? play() : video.pause(); }
+      if (id === 'a16-sound') { video.muted = !video.muted; if (video.paused) { video.__heroUserPaused = false; play(); } }
+      if (id === 'a16-pause' || id === 'a16-sound') sync();
+    };
+    const mount = () => {
+      const slot = document.querySelector('.a16-film video');
+      if (!slot) return;
+      if (slot !== video) slot.replaceWith(video);
+      observer.disconnect();
+      if (video.readyState >= 2) reveal();
+      if (!video.__heroUserPaused) play();
+      sync();
+    };
+    const leave = () => {
+      if (isHome()) return;
+      video.__heroCleanup(); video.pause(); video.removeAttribute('src'); video.load(); delete window.__triataoHeroVideo;
+    };
+    const observer = new MutationObserver(mount);
+    video.__heroCleanup = () => {
+      observer.disconnect(); if (frame !== null) video.cancelVideoFrameCallback(frame);
+      video.removeEventListener('loadeddata', reveal); video.removeEventListener('playing', reveal);
+      for (const event of ['play', 'pause', 'volumechange']) video.removeEventListener(event, sync);
+      document.removeEventListener('click', controls); removeEventListener('hashchange', leave);
+    };
+    video.addEventListener('loadeddata', reveal); video.addEventListener('playing', reveal);
+    for (const event of ['play', 'pause', 'volumechange']) video.addEventListener(event, sync);
+    document.addEventListener('click', controls); addEventListener('hashchange', leave);
     window.__triataoHeroVideo = video;
-    video.load();
+    observer.observe(document.documentElement, { childList: true, subtree: true });
+    video.src = matchMedia('(max-aspect-ratio:5/4)').matches
+      ? '/assets/a16z-study/portrait-fast-v2.mp4' : '/assets/a16z-study/landscape-fast-v2.mp4';
+    play(); mount();
   })();
   </script>
   <link rel="preload" href="assets/fonts/aoyagi-reisyo.woff2" as="font" type="font/woff2" crossorigin>
@@ -43,7 +89,7 @@
   <link rel="stylesheet" href="action-v2.css?v=20261011-action2">
   <link rel="stylesheet" href="home.css?v=20261014-practice1">
   <link rel="stylesheet" href="typography.css?v=20261012-ren-depth1">
-  <script type="module" src="app.js?v=20261014-entry1"></script>
+  <script type="module" src="app.js?v=20261019-hero2"></script>
   <link rel="stylesheet" href="reading-ui.css?v=20261011-inner1">
   <link rel="stylesheet" href="navigation.css?v=20261011-return1">
   <link rel="stylesheet" href="dao-reading.css?v=20261011-dao1">
@@ -65,7 +111,7 @@
   <nav id="mobile-nav" class="mobile-nav" aria-label="移动端导航" hidden><a href="#/">首页</a><a href="#/start">走进三道</a><a href="#/tian">天道 · 看见真理</a><a href="#/ren">人道 · 创造自己</a><a href="#/wang">王道 · 改变世界</a><a href="#/practice">创造实践</a><a href="#/library">文章与案例</a><a href="#/map">三道全图</a></nav>
   <main id="main" tabindex="-1">
  <div class="a16-home">
-  <div class="a16-film" aria-hidden="true"><video id="a16-video" loop="" playsinline="" preload="auto" poster="/assets/a16z-study/poster-fast-v1.webp" muted="" src="/assets/a16z-study/landscape-fast-v1.mp4" class="is-ready"></video></div>
+  <div class="a16-film" aria-hidden="true"><video id="a16-video" loop="" playsinline="" preload="none" poster="/assets/a16z-study/poster-fast-v1.webp" muted="" class=""></video></div>
   <header class="a16-header"><div class="a16-header-inner">
    <button id="a16-menu-open" class="a16-icon" aria-label="打开菜单" aria-expanded="false" aria-controls="a16-menu"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18M3 16h18"></path></svg></button>
    <a class="a16-wordmark" href="#/" aria-label="三道哲学 TRIA TAO 首页"><span class="tria-brand-type"><span>三道哲学</span><small lang="en">TRIA TAO</small></span></a>

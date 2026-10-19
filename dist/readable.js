@@ -8,6 +8,6 @@ function convertLinks(){
  });
 }
 // Keep all original page initializers, animation, search and mobile menu behavior.
-await import('./app.js?v=20261014-entry1');
+await import('./app.js?v=20261019-hero2');
 convertLinks();
 new MutationObserver(convertLinks).observe(document.body,{childList:true,subtree:true});

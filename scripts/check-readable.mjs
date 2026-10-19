@@ -6,6 +6,12 @@ for(const [name,expected] of Object.entries(manifest.sourceFiles)){
  if(hash(await readFile(new URL(name,root)))!==expected)throw Error('Readable pages are stale; regenerate after editing '+name);
 }
 const routes=new Set(manifest.pages.map(p=>p.route));
+for(const path of ['index.html','read/index.html']){
+ const html=await readFile(new URL(path,root),'utf8');
+ const video=html.match(/<video\b[^>]*id="a16-video"[^>]*>/)?.[0];
+ if(!video||/\ssrc=|\sautoplay(?:\s|=|>)|is-ready/.test(video))throw Error('Home snapshot must not preload a captured desktop video: '+path);
+ if(!html.includes('id="triatao-hero-boot"'))throw Error('Missing early home video bootstrap: '+path);
+}
 for(const p of manifest.pages){
  const html=await readFile(new URL('read/'+(p.route?p.route+'/':'')+'index.html',root),'utf8');
  if(hash(html)!==p.htmlHash)throw Error('Generated HTML changed: '+p.route);
