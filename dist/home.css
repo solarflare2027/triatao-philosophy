@@ -1,5 +1,6 @@
 /* Scope is strictly the home route; the original inner pages are unchanged. */
-body.home{background:#111716;color:#fff}body.home::after{display:none}
+@font-face{font-family:GenRyuHome;src:url('assets/fonts/gen-ryu-home.woff2?v=20261019-hero3') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+body.home{--serif:Dominica,GenRyuHome,GenRyuMin,'Noto Serif SC','Songti SC','SimSun',serif;--sans:Dominica,GenRyuHome,GenRyuMin,'Noto Serif SC','Songti SC','SimSun',serif;--brand-serif:AoyagiReisyo,GenRyuHome,GenRyuMin,'Noto Serif SC','Songti SC','SimSun',serif;background:#111716;color:#fff}body.home::after{display:none}
 body.home>.site-header,body.home>.site-footer,body.home>.mobile-nav{display:none}
 .a16-home{--a16-gold:#d8c9ad;--a16-platinum:#e4d8c2;--a16-ivory:#f4f0e8;--a16-text:#ded8cd;--a16-muted:#bdb5a8;--a16-menu:#f6f4ee;--a16-panel:#f0ece3;--a16-ink:#504e4a;--a16-rule:#e7e1d2;position:relative;isolation:isolate;min-height:100svh;color:var(--a16-ivory)}
 .a16-home *{box-sizing:border-box}.a16-home button,.a16-home a{touch-action:manipulation}
@@ -82,7 +83,7 @@ body.home>.site-header,body.home>.site-footer,body.home>.mobile-nav{display:none
 @media(max-width:767px){.a16-wordmark{gap:10px}.a16-wordmark>.tria-flow-mark{width:43px;height:32px}.tria-brand-type{gap:6px}.a16-life-motto{font-size:15px;line-height:1.65;max-width:34em;margin:0 0 22px}.a16-life-motto span{display:inline}.a16-life-motto span+span:before{content:' '}}
 
 @font-face{font-family:TangXianBinSong;src:url('assets/fonts/tang-xian-bin-song.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
-.a16-life-motto-cn{font-family:GenRyuMin,'Songti SC',serif;font-size:clamp(17px,1.6vw,23px);line-height:1.8;letter-spacing:.06em;color:#e4d8c2;margin:0 110px 8px 0;max-width:1000px;text-shadow:0 1px 10px #0008}
+.a16-life-motto-cn{font-family:GenRyuHome,GenRyuMin,'Songti SC',serif;font-size:clamp(17px,1.6vw,23px);line-height:1.8;letter-spacing:.06em;color:#e4d8c2;margin:0 110px 8px 0;max-width:1000px;text-shadow:0 1px 10px #0008}
 @media(max-width:767px){.a16-life-motto-cn{font-size:17px;line-height:1.9;margin:0 0 9px;letter-spacing:.035em}}
 
 /* Champagne gold homepage Chinese wordmark. */

@@ -71,7 +71,15 @@
   })();
   </script>
   <link rel="preload" href="assets/fonts/aoyagi-reisyo.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/gen-ryu-min.woff2?v=20261012-ren-depth1" as="font" type="font/woff2" crossorigin>
+  <script id="triatao-font-preload">
+  (() => {
+    const home = (!location.hash || location.hash === '#/' || location.hash === '#') && !document.documentElement.dataset.readRoute;
+    const link = document.createElement('link');
+    link.id = 'triatao-serif-preload'; link.rel = 'preload'; link.as = 'font'; link.type = 'font/woff2'; link.crossOrigin = 'anonymous';
+    link.href = home ? '/assets/fonts/gen-ryu-home.woff2?v=20261019-hero3' : '/assets/fonts/gen-ryu-min.woff2?v=20261012-ren-depth1';
+    document.head.append(link);
+  })();
+  </script>
   <title>三道哲学 — 看见真理 · 创造自己 · 改变世界</title>
   <link rel="icon" type="image/png" href="assets/tria-flow.png">
   <link rel="stylesheet" href="styles.css?v=20261011-knowing-entry">
@@ -87,7 +95,7 @@
   <link rel="stylesheet" href="thinking.css?v=20261011-thinking1">
   <link rel="stylesheet" href="words.css?v=20261011-words1">
   <link rel="stylesheet" href="action-v2.css?v=20261011-action2">
-  <link rel="stylesheet" href="home.css?v=20261014-practice1">
+  <link rel="stylesheet" href="home.css?v=20261019-hero3">
   <link rel="stylesheet" href="typography.css?v=20261012-ren-depth1">
   <script type="module" src="app.js?v=20261019-hero2"></script>
   <link rel="stylesheet" href="reading-ui.css?v=20261011-inner1">

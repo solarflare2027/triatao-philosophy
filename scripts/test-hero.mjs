@@ -8,8 +8,8 @@ await new Promise((resolve,reject)=>{server.stdout.once('data',resolve);server.o
 const browser=await launchBrowser();
 try{
  for(const width of [1440,390])for(const path of ['/','/read/']){
-  const c=await browser.newContext({viewport:{width,height:900}}),p=await c.newPage(),requests=[],errors=[];
-  p.on('request',r=>{if(r.url().includes('.mp4'))requests.push(r.url());});p.on('pageerror',e=>errors.push(e.message));
+  const c=await browser.newContext({viewport:{width,height:900}}),p=await c.newPage(),requests=[],fonts=[],errors=[];
+  p.on('request',r=>{if(r.url().includes('.mp4'))requests.push(r.url());if(r.url().includes('.woff2'))fonts.push(r.url());});p.on('pageerror',e=>errors.push(e.message));
   // Hold the entire app graph: the first frame and media controls must work anyway.
   let release;const held=new Promise(resolve=>{release=resolve;});
   await p.route('**/app.js*',async route=>{await held;await route.continue();});
@@ -21,6 +21,7 @@ try{
    assert(requests.every(url=>url.includes(width===390?'portrait-fast-v2.mp4':'landscape-fast-v2.mp4')));
    await p.locator('#a16-pause').click();await p.waitForFunction(()=>document.querySelector('#a16-video').paused);
    release();await p.waitForFunction(()=>!window.__triataoHeroVideo&&!!document.querySelector('#a16-menu-open')?.onclick);
+   assert(!fonts.some(url=>url.includes('/gen-ryu-min.woff2')),'Home should not download the full reading font');
    assert(await p.locator('#a16-video').evaluate(v=>v.paused),'App handoff must preserve an early pause');
    await p.locator('#a16-pause').click();await p.waitForFunction(()=>!document.querySelector('#a16-video').paused);
    await p.locator('#a16-sound').click();assert(await p.locator('#a16-video').evaluate(v=>!v.muted));
