@@ -3,5 +3,14 @@
   "source": "D:\\BaiduNetdiskDownload\\源流明体GenRyuMin.ttf",
   "suppliedBy": "user",
   "scope": "Site-wide Chinese headings and body",
-  "approved": "2026-10-10"
+  "approved": "2026-10-10",
+  "subsetUpdates": [
+    {
+      "date": "2026-10-21",
+      "reason": "补齐三道首屏核心句与播放器所需字形；保留原 1887 字及轮廓",
+      "input": "dist/dao-portal.js",
+      "tool": "scripts/extend-site-font.py",
+      "characters": 1896
+    }
+  ]
 }

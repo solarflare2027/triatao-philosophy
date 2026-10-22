@@ -1,4 +1,4 @@
-import {wangContent,wangGroups,wangOverview} from './wang.js?v=20261014-sources1';
+import {wangContent,wangGroups,wangOverview} from './wang.js?v=20261021-portals2';
 export const paths = [
  {id:'tian',name:'天道',en:'THE NATURE OF REALITY',number:'01',verb:'看见真理',question:'世界的本质是什么？它运行的规律又是什么？',intro:'认识世界的九大原理。本源回答存在是什么，变化回答存在如何展开，创造回答意识为何及如何成为经验。从存在的本质，到变化的结构，再到实相的形成，九理构成一条相互承接的追问。',groups:[
   {id:'origin',name:'本源',desc:'存在是什么：性质、整体与差异。',items:[['emptiness','空性','无固定自性，以意识本源理解开放的存在。'],['chaos','混沌','分别之前，容纳潜在秩序的完整。'],['polarity','极性','一成为多，差异在关系中相依。']]},

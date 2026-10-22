@@ -1,0 +1,45 @@
+/* An ivory opening around the original three landscape artworks. */
+.dao-overview>.breadcrumbs{margin-bottom:42px}
+.dao-portal{margin-bottom:48px}
+.dao-portal-heading{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;padding:0 0 38px}
+.dao-portal-title>.eyebrow{font-size:10px;letter-spacing:.2em;margin-bottom:18px}
+.dao-portal-title h1{font-family:var(--serif);font-size:clamp(64px,6.8vw,104px);line-height:1.1;letter-spacing:.12em}
+.dao-portal-title h1>span{display:inline-block;font-size:15px;letter-spacing:.18em;color:var(--muted);margin-left:32px;vertical-align:middle}
+.dao-portal-quote{margin:0 0 4px;padding:0 0 0 28px;border-left:1px solid var(--gold);font-family:var(--serif);font-size:clamp(23px,2.3vw,36px);font-weight:400;letter-spacing:.045em;line-height:1.9;color:var(--ink)}
+.dao-portal-quote>span{display:block}
+.dao-portal-image{position:relative;margin:0;overflow:hidden;background:#d8d4c8;aspect-ratio:2.55}
+.dao-portal-image img{display:block;width:100%;height:100%;object-fit:cover}
+.dao-portal-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 52%;opacity:0}
+.dao-portal-video.is-ready{opacity:1}
+.dao-portal-playback{position:absolute;right:14px;bottom:14px;display:grid;place-items:center;width:44px;height:44px;border:1px solid #ffffff80;border-radius:50%;color:#fff;background:#181e1b80}
+.dao-portal-playback[hidden]{display:none}
+.dao-portal-playback:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.dao-portal--tian img{object-position:40% 55%}
+.dao-portal--ren img{object-position:50% 58%}
+.dao-portal--wang img{object-position:50% 52%}
+.dao-overview-intro{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin:0 0 48px}
+.dao-overview-intro>.eyebrow{padding-top:6px;color:#89734f}
+.dao-overview-intro>.page-intro{font-size:15px;line-height:2.1;color:var(--muted);max-width:690px}
+.dao-overview>.overview-question{margin-top:0}
+@media(min-width:1800px){.dao-portal-image{max-height:570px}}
+@media(max-width:1050px){
+ .dao-portal-title h1>span{display:block;margin:18px 0 0;font-size:14px}
+ .dao-portal-heading{gap:30px}
+ .dao-portal-quote{padding-left:22px;font-size:clamp(20px,2.5vw,28px)}
+}
+@media(max-width:700px){
+ .dao-overview>.breadcrumbs{margin-bottom:30px}
+ .dao-portal{margin-bottom:30px}
+ .dao-portal-heading{grid-template-columns:1fr;gap:26px;padding-bottom:28px}
+ .dao-portal-title>.eyebrow{font-size:9px;margin-bottom:14px}
+ .dao-portal-title h1{font-size:64px;letter-spacing:.1em}
+ .dao-portal-title h1>span{display:inline-block;vertical-align:middle;margin:0 0 0 24px;font-size:13px}
+ .dao-portal-quote{font-size:clamp(18px,4.5vw,25px);padding-left:18px;line-height:1.9;letter-spacing:.01em;margin:0}
+ .dao-portal-image{aspect-ratio:1.15}
+ .dao-portal--tian img{object-position:22% 50%}
+ .dao-portal--ren img{object-position:43% 55%}
+ .dao-portal--wang img{object-position:64% 50%}
+ .dao-portal-video{object-position:64% 50%}
+ .dao-overview-intro{grid-template-columns:1fr;gap:12px;margin-bottom:30px}
+ .dao-overview-intro>.page-intro{font-size:14px;line-height:2.1}
+}
