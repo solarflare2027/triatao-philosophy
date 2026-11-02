@@ -1,5 +1,5 @@
 // Enhancement only for generated /read/ pages. The original Hash site is unchanged.
-import {readableRoutes} from './readable-routes.js?v=20261029-inner-tagline';
+import {readableRoutes} from './readable-routes.js?v=20261102-rolepages1';
 const known=new Set(readableRoutes);
 function convertLinks(){
  document.querySelectorAll('a[href^="#/"]').forEach(a=>{
