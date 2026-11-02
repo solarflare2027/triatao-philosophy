@@ -1,1 +1,3 @@
 插画由内置 image_gen 依作者要求生成。PNG 保留原始像素与透明通道。字体沿用本站字体，保留原始来源与许可。绘图提示词见随附 taiji-prompt.txt 与 illustration-prompts.txt。
+
+2026-11-02 读者版：页首改用 relative-mountain WebP，与原始生成 PNG 为同一幅图的网页编码版本，保留透明通道；提示词见 relative-mountain-prompt.txt。字体扩展记录见 reader-font-provenance.json。原太极素材保留为历史资源，本页已不引用。

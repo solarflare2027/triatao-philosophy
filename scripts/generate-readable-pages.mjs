@@ -20,7 +20,7 @@ try{
    const context=await browser.newContext({viewport:{width:1440,height:1000}}),page=await context.newPage();
    await page.goto(origin+'/read/'+route+'/',{waitUntil:'networkidle'});
    const content=await page.evaluate(()=>({title:document.title,text:document.querySelector('main').textContent.replace(/\s+/g,' ').trim(),links:[...document.querySelectorAll('a[href^="#/"],a[href^="/#/"]')].map(a=>a.getAttribute('href').replace(/^\/?#\//,'').split('?')[0]),description:document.querySelector('meta[name="description"]')?.content||document.title}));
-   snapshots.set(route,{html:authored,...content});
+   snapshots.set(route,{html:authored.trimEnd(),...content});
    for(const link of content.links)if(!snapshots.has(link)&&!pending.includes(link))pending.push(link);
    await context.close();console.log('Preserved authored page',route);continue;
   }

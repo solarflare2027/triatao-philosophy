@@ -65,7 +65,7 @@
     "navigation.css": "5b8c4410babd27ca4b019c0928ded82226a988dc460f89d36bc6648d14b1745d",
     "navigation.js": "3c4d261599d056062d06f89d00ae1ba374cc0c2ed230315f161f359ada648dde",
     "personality.js": "d41189b32e6b8d6e9ecdc4d31480232598ce750d064d669c5ea5e9fe72295886",
-    "polarity.html": "fe879660ea7f1c38861d1091a3a8e6de1e5c3cf357c969b61fbf1c2857bebf3d",
+    "polarity.html": "628cb8e39e84b038c49cd0f2d79fa8626fff1b93e6eaa11676567822185d3fa8",
     "practice-catalog.js": "9156be0b584a0684368aa74f3251c364e6151ce09c59098118ca9ce9980cdb4a",
     "practice-details.js": "02c591f99b8662855b6feaec93d00c36a0de0d786796b988a8b4119605808ece",
     "practice.css": "9a8e55de5e72c56f32d4d0dca1e643e65916f6491470bde16447feab61e46c1e",
@@ -207,7 +207,7 @@
       "title": "道：源头 — 三道哲学",
       "textHash": "413883fc5e73ddfd6a61d7b2411a0bb782b6482aaf28215e64f84b8467413c66",
       "textLength": 4316,
-      "htmlHash": "108f362000a58a30da00b30b7f0fe03c6c52e232ef682863d2b38fa2aeeafaf8"
+      "htmlHash": "a533f295878b9d669d3739af19cabfe9f4b4377f67a29592506953088cefb9cf"
     },
     {
       "route": "concept/chaos",
@@ -221,9 +221,9 @@
       "route": "concept/polarity",
       "url": "https://www.triatao.com/read/concept/polarity/",
       "title": "1.3 二：极性 · 三道哲学",
-      "textHash": "e2c1f6378671eba9d56d9c534c007ca82ef33a5cfc055f90588262cb32299165",
-      "textLength": 12062,
-      "htmlHash": "9fe39cdcb8d7ee76e9b00731b1575e7af9ef010b0ca9dc4fdc5ab672da4cfb10"
+      "textHash": "ff8ee8c457fc9c0a06bb3f70a3cd9c6c6b5f3c7b52f5ac53ee1f97e678b7ed47",
+      "textLength": 12520,
+      "htmlHash": "599c4b23a0cbec11d08f615b1416f5b7d98e65cff7323c827a2bd53710ab3897"
     },
     {
       "route": "concept/zhongqi",
