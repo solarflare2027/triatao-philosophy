@@ -1,4 +1,4 @@
-import {withDeepReading} from './reading-depth.js?v=20261011-nine2';
+import {withDeepReading} from './reading-depth.js?v=20261029-inner-tagline';
 const triad=items=>`<div class="action-triad">${items.map(([t,p])=>`<div><h4>${t}</h4><p>${p}</p></div>`).join('')}</div>`;
 const insight=p=>`<div class="action-insight"><p>${p}</p></div>`;
 const cite=label=>`<button type="button" class="action-cite" data-element-anchor="belief-sources">${label} · 思想来源 ↓</button>`;

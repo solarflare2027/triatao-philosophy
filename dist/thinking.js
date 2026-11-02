@@ -1,4 +1,4 @@
-import {withDeepReading} from './reading-depth.js?v=20261011-nine2';
+import {withDeepReading} from './reading-depth.js?v=20261029-inner-tagline';
 const prose=s=>`<div class="action-prose">${s}</div>`;
 const fold=(q,s)=>`<details class="action-fold"><summary>${q}</summary>${prose(s)}</details>`;
 const insight=s=>`<div class="action-insight"><p>${s}</p></div>`;

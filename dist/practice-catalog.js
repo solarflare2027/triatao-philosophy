@@ -1,4 +1,4 @@
-import {creationOrder,creationNames,creationLayers} from './creation-framework.js?v=20261014-sources1';
+import {creationOrder,creationNames,creationLayers} from './creation-framework.js?v=20261029-inner-tagline';
 
 // The theory remains the single source of truth for names, order and layers.
 export {creationOrder,creationLayers};

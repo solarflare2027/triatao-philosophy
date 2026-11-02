@@ -1,4 +1,4 @@
-import {withDeepReading} from './reading-depth.js?v=20261011-nine2';
+import {withDeepReading} from './reading-depth.js?v=20261029-inner-tagline';
 const external=(url,label)=>`<a class="source-link" href="${url}" target="_blank" rel="noopener noreferrer">${label} ↗</a>`;
 const three=items=>`<div class="be-three identity-three">${items.map(([t,p])=>`<div><h4>${t}</h4><p>${p}</p></div>`).join('')}</div>`;
 const fold=(title,body)=>`<details class="identity-fold"><summary>${title}</summary><div class="identity-prose">${body}</div></details>`;
@@ -36,7 +36,7 @@ ${source('细雨 · 所知与所是；《与神为友》· 自我认识与他人
 <article><span>05</span><div><h4>更广阔的自我观</h4><p>赛斯、细雨与《与神对话》都讨论超出当前角色的生命，但概念与论述各有不同。多维自我、内在意识与神性的解释，为生命打开哲学追问。</p><small>入口：分别理解各体系；不以一次感受确认整体世界观</small></div></article>
 </div>
 <div class="identity-insight"><p><strong>当下的表现提供起点，潜能需要展开，完整的生命仍向认识敞开。</strong>这五个面向不是固定等级，也不是另一套“我”的结构。一时的状态、某项能力或一句哲学描述，都不足以穷尽自己。</p></div>
-${fold('关联背景：三个“我”与当前身份', '<p>《三道哲学》的“认识自己”以外在角色我、内在角色我、内在意识我展开。它讨论生命结构；这里的三个问题讨论我们怎样认识并创造身份。</p><p>身体我、头脑我、情感我指向实相层的外在角色；意识承接、角色运作、生命维系是模板层（电子层）中内在角色我的三个功能面向；主导神格 A 与次级神格 B、C……用于展开内在意识的表达。神格为本体系的命名，相关术语不能直接与其他体系逐项等同。</p><p>在本页，重点是让更广阔的理解支持当下生活，并持续照顾身体、能力、关系与责任。</p><a class="source-link" href="#/knowing">进入“认识自己”：三个“我”的结构 ↗</a>')}
+${fold('关联背景：三个“我”与当前身份', '<p>认识自己从身体载具我、外在角色我、内在意识我三个层面展开。身体承载生命与体验，角色通过逻辑、直觉与情感参与生活，内在意识从觉察、创造与联结三个角度理解。</p><a class="source-link" href="#/knowing">进入认识自己 ↗</a>')}
 
 <div class="identity-prose"><h3>体验怎样从“发生过”，变成“认识了”？</h3><p>阅读为我提供视角，想象让我接触一种可能，真实处境让我遇见感受、关系与后果。以为自己有耐心，被质疑时才发现急于控制；以为自己软弱，却在照顾他人时做出了勇敢的回应。</p><p><strong>体验既会显露已有面向，也会发展新的能力。</strong>耐心可能在一次次倾听中养成，勇气可能在仍然害怕时逐步生长。细雨对“所知与所是”“事上练”的讨论，提醒我们让理解进入生活；《与神对话》系列则赋予体验以认识和表达自己的重要位置。</p></div>
 ${three([['体验本身','会议上被质疑，我心跳加快，急于解释。先描述事件、感受与行为。'],['当时的解释','“这说明我不适合负责。”看见这是即时读法，还需要依据。'],['反思后的认识','我在资料不足时容易防御；有准备、能暂停时更愿意听取意见。下一次可调整准备和回应。']])}

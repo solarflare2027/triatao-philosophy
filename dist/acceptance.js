@@ -1,6 +1,9 @@
+import {relationshipPage} from './acceptance-relationship.js?v=20261029-inner-tagline';
+import {awarenessPage} from './acceptance-awareness.js?v=20261029-inner-tagline';
+import {motivationPage} from './acceptance-motivation.js?v=20261029-inner-tagline';
 export const acceptanceContent = {
   "cognitive": {
-    "name": "看见自己",
+    "name": "觉知与觉察",
     "subtitle": "为什么我无法接纳自己？",
     "eyebrow": "01 / UNDERSTANDING THE INNER CONFLICT",
     "definition": [
@@ -328,7 +331,7 @@ export const acceptanceContent = {
     ]
   },
   "existential": {
-    "name": "重建内在动力",
+    "name": "改变内在驱动力",
     "subtitle": "我不再因为恐惧自己不够好，而被迫成长；我开始因为热爱生命的可能，而主动创造自己。",
     "eyebrow": "03 / FROM FEAR TO CREATION",
     "introTitle": "如果不再逼迫自己，我还会继续成长吗？",
@@ -567,6 +570,9 @@ const head=(title,desc)=>`<div class="page-heading"><p class="eyebrow">02 / THE 
 const toc=items=>`<aside class="article-toc"><span class="eyebrow">本文脉络</span>${items.map(([id,label])=>`<button type="button" data-scroll="${id}">${label}</button>`).join('')}<a class="text-link" href="#/acceptance">接纳自己全貌 ↗</a></aside>`;
 
 export function acceptanceConceptPage(id){
+ if(id==='emotional') return relationshipPage();
+ if(id==='cognitive') return awarenessPage();
+ if(id==='existential') return motivationPage();
  const d=acceptanceContent[id];if(!d)return '';
  return acceptancePartPage(d,id);
 
@@ -652,9 +658,9 @@ export function acceptancePage(){
  ])}
  <section id="accept-parts" aria-label="接纳自己的三个部分" class="acceptance-layers">
  ${[
- ['accept-opening','01','看见自己','为什么我无法接纳自己？','看见那些隐藏在优秀、强大与不断进步背后的恐惧，理解自我否定是如何成为习惯的。','识别旧信念 · 洞察恐惧 · 看清驱动力'],
- ['accept-support','02','站在自己这一边','当我不够好时，如何真正接纳自己？','不再因为错误、弱小与失败而攻击自己，学会在最需要帮助的时候，成为自己的保护者。','停止自我攻击 · 建立自我支持 · 解除价值条件'],
- ['accept-motivation','03','重建内在动力','如何从恐惧驱动，走向爱驱动的创造？','保留追求最高生命潜能的雄心，通过试错与迭代，让成长越来越多地来自热爱、使命与自主选择。','转换动力 · 试错迭代 · 身份一致']
+ ['accept-opening','01','觉知与觉察','从看见自己的体验，走向理解自己的内在','知道自己正在经历什么，理解体验发生的机制与模式；在看见问题时，也保有对自己的理解与尊重。','觉知体验 · 觉察模式 · 理解自己'],
+ ['accept-support','02','站在自己这一边','以爱与慈悲，重建与自我的关系','我不需要等到自己变好，才开始善待自己。理解自我苛责，松开价值条件，学习以关怀陪自己面对现实。','理解苛责 · 松开条件 · 给予支持'],
+ ['accept-motivation','03','改变内在驱动力','如何从恐惧驱动，走向爱驱动的创造？','保留追求最高生命潜能的雄心，通过试错与迭代，让成长越来越多地来自热爱、使命与自主选择。','转换动力 · 试错迭代 · 身份一致']
  ].map(([id,n,sub,name,desc,steps])=>`<a class="acceptance-layer" ${`href="#/concept/${({'accept-opening':'cognitive','accept-support':'emotional','accept-motivation':'existential'})[id]}"`}><span class="eyebrow">${n} / ${sub}</span><h3>${name}<span aria-hidden="true">↗</span></h3><p>${desc}</p><p class="acceptance-steps">${steps}</p></a>`).join('')}
  </section>
  <section class="acceptance-practice" aria-labelledby="accept-practice">

@@ -16,3 +16,5 @@
 .kn-compact-row.is-current .kn-compact-label{color:var(--kn-gold)}
 .kn-compact a:hover,.atlas-group summary a:hover,.overview-group h2 a:hover{color:#8c6d3b;text-decoration:underline;text-underline-offset:5px}
 @media(max-width:700px){.kn-compact-formula{font-size:13px}.kn-compact-row{grid-template-columns:1fr;padding:7px 0}.kn-compact-label{font-size:14px;padding:4px 12px}.kn-compact-parts{padding:0 12px;gap:8px}.kn-compact-parts a{font-size:12px;min-height:40px}.kn-compact{margin-bottom:28px}}
+
+.kn-angle{display:flex;align-items:center;min-height:44px;font-size:13px;line-height:1.8;color:var(--kn-muted)}

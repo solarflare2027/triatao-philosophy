@@ -1,4 +1,4 @@
-import {withDeepReading} from './reading-depth.js?v=20261011-nine2';
+import {withDeepReading} from './reading-depth.js?v=20261029-inner-tagline';
 const triad=items=>`<div class="action-triad">${items.map(([t,p])=>`<div><h4>${t}</h4><p>${p}</p></div>`).join('')}</div>`;
 const prose=s=>`<div class="action-prose">${s}</div>`;
 const insight=s=>`<div class="action-insight"><p>${s}</p></div>`;

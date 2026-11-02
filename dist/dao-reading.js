@@ -1,5 +1,5 @@
-import {daoContent,daoSources} from './dao-content.js?v=20261014-sources1';
-import {hasTianVisual,tianVisual} from './tian-visuals.js?v=20261012-tian-depth1';
+import {daoContent,daoSources} from './dao-content.js?v=20261029-inner-tagline';
+import {hasTianVisual,tianVisual} from './tian-visuals.js?v=20261029-inner-tagline';
 const p=paragraphs=>paragraphs.map(t=>`<p>${t}</p>`).join('');
 const fold=([question,answer])=>`<details class="action-fold dao-fold"><summary>${question}</summary><div class="action-prose">${p(answer)}</div></details>`;
 export const hasDaoReading=id=>Boolean(daoContent[id]);

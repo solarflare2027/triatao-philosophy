@@ -1,4 +1,4 @@
-import {readingExpansion} from './reading-expansion.js?v=20261011-nine2';
+import {readingExpansion} from './reading-expansion.js?v=20261029-inner-tagline';
 // Optional deeper readings. Keep the main chapter readable with every answer closed.
 const readings={
  imagination:{

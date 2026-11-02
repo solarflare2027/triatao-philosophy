@@ -13,3 +13,6 @@
 *.woff2 binary
 *.ttf binary
 *.otf binary
+
+# Preserve deployed bytes, including Windows line endings used by snapshot hashes.
+dist/** -text whitespace=cr-at-eol

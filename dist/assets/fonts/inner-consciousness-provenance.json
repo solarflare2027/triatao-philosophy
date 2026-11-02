@@ -1,0 +1,7 @@
+{
+  "family": "GenRyuMin",
+  "source": "Existing user-approved gen-ryu-min.ttf",
+  "derived": "InnerMin subset for author fourth edition; source names and license retained",
+  "date": "2026-10-29",
+  "missingCjkGlyphs": []
+}

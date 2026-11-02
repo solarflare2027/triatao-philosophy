@@ -1,5 +1,5 @@
-import {creationOrder,creationLayers,elementName,practiceTitles,practiceExercises,exercisesFor,practiceAvailability,theoryHref,elementPracticeHref,exerciseHref} from './practice-catalog.js?v=20261014-choice11';
-import {practiceDetails} from './practice-details.js?v=20261014-choice11';
+import {creationOrder,creationLayers,elementName,practiceTitles,practiceExercises,exercisesFor,practiceAvailability,theoryHref,elementPracticeHref,exerciseHref} from './practice-catalog.js?v=20261029-inner-tagline';
+import {practiceDetails} from './practice-details.js?v=20261029-inner-tagline';
 
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const paragraphs=items=>(items||[]).map(text=>`<p>${esc(text)}</p>`).join('');
