@@ -1,3 +1,4 @@
+import {initRoleVisuals} from './role-visuals.js?v=20261102-role1';
 import {innerPage,initInner} from './inner-consciousness.js?v=20261102-inner-visual1';
 import {initRelationship} from './acceptance-relationship.js?v=20261029-inner-tagline';
 import {initAwareness} from './acceptance-awareness.js?v=20261029-inner-tagline';
@@ -17,7 +18,7 @@ import {paths,notes,extraNodes} from './data.js?v=20261102-tian-directory1';
 import {essayPage} from './essay.js?v=20261029-inner-tagline';
 import {becomingPage,initBecoming,becomingElementPage,becomingReadingPage} from './becoming.js?v=20261029-inner-tagline';
 import {mountArt,diagram} from './art.js?v=20261029-inner-tagline';
-import {selfLayers,selfElements,selfAliases,knowingPage,selfLayerPage,selfElementPage,initKnowing} from './knowing.js?v=20261029-body-remove-example';
+import {selfLayers,selfElements,selfAliases,knowingPage,selfLayerPage,selfElementPage,initKnowing} from './knowing.js?v=20261102-role1';
 const $=s=>document.querySelector(s), main=$('#main');
 const arrow='<span aria-hidden="true">↗</span>';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -57,7 +58,7 @@ function route(){const raw=location.hash.startsWith('#/')?location.hash.slice(2)
  const parent=isPractice?'practice':isKnowing||isBecoming||path==='acceptance'?'ren':path.startsWith('concept/')?(lookup(path.split('/')[1])?.path||'wang'):path==='layout'?'wang':path;
  document.querySelectorAll('.desktop-nav a,.map-nav').forEach(a=>{a.classList.toggle('active',a.hash===`#/${parent}`);if(a.hash===`#/${parent}`)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
  scrollTo({top:0,behavior:'instant'});main.focus({preventScroll:true});revealObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');revealObserver.unobserve(e.target);}}),{threshold:.08});main.querySelectorAll('.reveal').forEach(e=>revealObserver.observe(e));
- const disposers=[initInner(main),initTianVisuals(main),initDaoPortal(main),initMotivation(main),initAwareness(main),initRelationship(main)];if(!path)disposers.push(initHome());if(isKnowing)initKnowing();if(isBecoming)initBecoming(params);if($('#cosmos'))disposers.push(mountArt($('#cosmos')));if(path==='map'){initMap();if(params.get('focus'))requestAnimationFrame(()=>$('#map-'+params.get('focus'))?.scrollIntoView({block:'center'}));}if(path==='layout')initLayoutTabs();if(path&&!isInner)disposers.push(initReadingUI(main,path,elements,selfLayers,selfElements,[...indexed,...extraNodes]));cleanup=()=>disposers.forEach(fn=>fn());finishNavigation(main,path);initAcceptance(main,path,params);updateHeader();
+ const disposers=[initRoleVisuals(main),initInner(main),initTianVisuals(main),initDaoPortal(main),initMotivation(main),initAwareness(main),initRelationship(main)];if(!path)disposers.push(initHome());if(isKnowing)initKnowing();if(isBecoming)initBecoming(params);if($('#cosmos'))disposers.push(mountArt($('#cosmos')));if(path==='map'){initMap();if(params.get('focus'))requestAnimationFrame(()=>$('#map-'+params.get('focus'))?.scrollIntoView({block:'center'}));}if(path==='layout')initLayoutTabs();if(path&&!isInner)disposers.push(initReadingUI(main,path,elements,selfLayers,selfElements,[...indexed,...extraNodes]));cleanup=()=>disposers.forEach(fn=>fn());finishNavigation(main,path);initAcceptance(main,path,params);updateHeader();
 }
 
 function initMap(){document.querySelectorAll('[data-map-filter]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-map-filter]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b));});const filter=b.dataset.mapFilter;document.querySelectorAll('.atlas-column').forEach(c=>c.hidden=filter!=='all'&&c.dataset.path!==filter);$('.atlas').classList.toggle('single',filter!=='all');if(scrollY>$('.map-toolbar').offsetTop-90)$('.map-toolbar').scrollIntoView({block:'start',behavior:'instant'});});document.querySelectorAll('[data-expand]').forEach(b=>b.onclick=()=>document.querySelectorAll('.atlas-column:not([hidden]) details').forEach(d=>d.open=b.dataset.expand==='yes'));}
