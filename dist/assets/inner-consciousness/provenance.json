@@ -1,0 +1,35 @@
+{
+  "created": "2026-11-02",
+  "method": "built-in image_gen",
+  "purpose": "Triatao inner-consciousness editorial illustration sequence",
+  "disclosure": "AI-generated original editorial illustrations; they depict hypothetical scenes, not documentary events.",
+  "assets": [
+    {
+      "part": "recognition",
+      "prompt": "Use case: illustration-story. Asset type: landscape editorial illustration for the Chinese philosophy reading site Tria Tao. A refined hand-drawn editorial illustration with precise dark forest-green ink linework and soft watercolor washes on warm ivory paper #efeee8, muted sage and restrained warm ochre accents. Spacious calm composition, tactile paper grain, sophisticated natural anatomy, no 3D, no photorealism, no glowing spiritual beings, no cosmic imagery. Same protagonist across the series: thoughtful Chinese founder in their early thirties, androgynous, short softly parted black hair, clean-shaven, cream rolled-sleeve shirt with muted forest-green sleeveless sweater, ordinary modern workspace. One human only. Landscape approximately 3:2. No written text, letters, numbers, logos, captions, watermarks or UI, since accessible Chinese captions will be added separately. Primary request: stage 1 recognition of one's reaction. In a quiet meeting room immediately after a difficult presentation, the founder sits in three-quarter profile at a wooden table with an open notebook and a closed laptop, shoulders tight, one hand clenched beside a ceramic cup. Their gaze has just softened and turned toward their own clenched hand, noticing the reaction. A warm rectangle of window daylight crosses the table, a delicate watercolor ripple near the hand suggests attention returning. Emotion without melodrama, a moment of self-awareness within the same person, no second observer or duplicate body. Show enough environment and generous negative space around the subject.",
+      "files": [
+        "recognition-20261102-720.webp",
+        "recognition-20261102-1440.webp"
+      ],
+      "processing": "Resized to 720x480 and 1440x960 and encoded as WebP quality 84. No content edits."
+    },
+    {
+      "part": "dialogue",
+      "prompt": "Use case: illustration-story. Asset type: landscape editorial illustration for the Chinese philosophy reading site Tria Tao. A refined hand-drawn editorial illustration with precise dark forest-green ink linework and soft watercolor washes on warm ivory paper #efeee8, muted sage and restrained warm ochre accents. Spacious calm composition, tactile paper grain, sophisticated natural anatomy, no 3D, no photorealism, no glowing spiritual beings, no cosmic imagery. Same protagonist across the series: thoughtful Chinese founder in their early thirties, androgynous, short softly parted black hair, clean-shaven, cream rolled-sleeve shirt with muted forest-green sleeveless sweater, ordinary modern workspace. One human only. Landscape approximately 3:2. No written text, letters, numbers, logos, captions, watermarks or UI, since accessible Chinese captions will be added separately. Primary request: stage 2 listening and discernment. The same founder sits in three-quarter profile at the same wooden desk in quiet evening light, relaxed shoulders, thoughtfully writing in an open unlettered notebook with a pen. A ceramic cup and a gently closed laptop sit nearby; soft sage window shadows and a restrained ochre desk-lamp glow suggest room for attention. The founder pauses, looking at the notebook rather than rushing. A small leafy branch outside the window, a few separated blank note cards on desk. The mood is careful inquiry, listening, patience. One person only, no spirit, no symbols claiming a signal source.",
+      "files": [
+        "dialogue-20261102-720.webp",
+        "dialogue-20261102-1440.webp"
+      ],
+      "processing": "Resized to 720x480 and 1440x960 and encoded as WebP quality 84. No content edits."
+    },
+    {
+      "part": "integration",
+      "prompt": "Use case: illustration-story. Asset type: landscape editorial illustration for the Chinese philosophy reading site Tria Tao. A refined hand-drawn editorial illustration with precise dark forest-green ink linework and soft watercolor washes on warm ivory paper #efeee8, muted sage and restrained warm ochre accents. Spacious calm composition, tactile paper grain, sophisticated natural anatomy, no 3D, no photorealism, no glowing spiritual beings, no cosmic imagery. Same protagonist across the series: thoughtful Chinese founder in their early thirties, androgynous, short softly parted black hair, clean-shaven, cream rolled-sleeve shirt with muted forest-green sleeveless sweater, ordinary modern workspace. One human only. Landscape approximately 3:2. No written text, letters, numbers, logos, captions, watermarks or UI, since accessible Chinese captions will be added separately. Primary request: stage 3 direction becoming a considered action in everyday life. The same founder at the same wooden workspace in clear morning light, standing comfortably beside the desk, calmly looking over a simple paper plan with blank boxes and small geometric marks, putting one useful sheet beside a closed notebook. An open doorway reveals a quiet garden path inviting a restorative walk. Ceramic cup and laptop remain on table. Their posture is grounded and purposeful, body at ease, work and rest have room together. One person only. A flowing band of window light gently links the notebook, working hand, and open doorway. No success trophies, no magical change, no halos.",
+      "files": [
+        "integration-20261102-720.webp",
+        "integration-20261102-1440.webp"
+      ],
+      "processing": "Resized to 720x480 and 1440x960 and encoded as WebP quality 84. No content edits."
+    }
+  ]
+}

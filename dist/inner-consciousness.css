@@ -1,3 +1,5 @@
+@import url('./inner-visuals.css?v=20261102-inner-visual1');
+@import url('./inner-dialogue-practice.css?v=20261102-inner-visual1');
 @font-face{font-family:InnerMin;src:url('assets/fonts/inner-consciousness.woff2?v=20261029-inner-v4') format('woff2');font-weight:400;font-style:normal;font-display:swap}
 .ic-page{--ic-ink:#223f34;--ic-muted:#586858;--ic-line:#c6cec2;--ic-paper:#efeee8;--ic-figure:#e5eade;--ic-warm:#e8e0d4;color:var(--ic-ink);font-family:Dominica,InnerMin,GenRyuMin,serif;max-width:1230px;padding-top:32px;padding-bottom:100px}
 .ic-page ::selection{background:#c6d6be;color:#142c22}.ic-page a{color:inherit;text-underline-offset:.24em}.ic-page :focus-visible{outline:2px solid #536f49;outline-offset:5px}.ic-page [id]{scroll-margin-top:125px}
@@ -21,3 +23,13 @@
 @media(prefers-reduced-motion:reduce){.ic-page *{scroll-behavior:auto!important;transition:none!important}}
 
 .ic-page .ic-icon{width:1em;height:1em;display:inline-block;vertical-align:-.12em;flex-shrink:0}
+
+/* A continuous illustration sequence, inside the article reading measure. */
+.ic-story{margin:0 0 58px;padding:0;min-width:0}
+.ic-story img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;background:var(--ic-warm)}
+.ic-story figcaption{padding:17px 0 18px;border-bottom:1px solid var(--ic-line)}
+.ic-story figcaption>span{display:block;font-size:14px;line-height:1.8;color:var(--ic-muted)}
+.ic-prose .ic-story figcaption p{font-size:18px;line-height:1.85;margin:7px 0 0}
+.ic-toc a{font:inherit;font-size:14px;line-height:1.85;padding:8px 0;text-align:left;color:var(--ic-muted);text-decoration:none}
+.ic-toc a:hover{color:var(--ic-ink);text-decoration:underline}
+@media(max-width:600px){.ic-story{margin-bottom:42px}.ic-story figcaption{padding:14px 0 16px}.ic-prose .ic-story figcaption p{font-size:17px}}

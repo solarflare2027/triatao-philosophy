@@ -1,4 +1,4 @@
-import {innerPage,initInner} from './inner-consciousness.js?v=20261029-inner-tagline';
+import {innerPage,initInner} from './inner-consciousness.js?v=20261102-inner-visual1';
 import {initRelationship} from './acceptance-relationship.js?v=20261029-inner-tagline';
 import {initAwareness} from './acceptance-awareness.js?v=20261029-inner-tagline';
 import {initMotivation} from './acceptance-motivation.js?v=20261029-inner-tagline';
