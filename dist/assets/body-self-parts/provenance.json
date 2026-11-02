@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-02",
+  "source": "OpenAI imagegen",
+  "artwork": "Three newly generated conceptual etchings; one for each body-self chapter.",
+  "export": "WebP quality 86; content unchanged",
+  "files": {
+    "recognition.webp": "exec-d10c2be2-6ef9-4cce-871c-874f9763420f.png",
+    "experience.webp": "exec-bfb6e884-885d-472a-9d15-32798ccd3c0c.png",
+    "cooperation.webp": "exec-8995b739-5a2d-4e75-84e0-c2c7eee39080.png"
+  }
+}
