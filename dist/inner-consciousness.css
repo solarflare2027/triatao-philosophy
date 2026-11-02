@@ -33,3 +33,14 @@
 .ic-toc a{font:inherit;font-size:14px;line-height:1.85;padding:8px 0;text-align:left;color:var(--ic-muted);text-decoration:none}
 .ic-toc a:hover{color:var(--ic-ink);text-decoration:underline}
 @media(max-width:600px){.ic-story{margin-bottom:42px}.ic-story figcaption{padding:14px 0 16px}.ic-prose .ic-story figcaption p{font-size:17px}}
+
+/* Epic artwork sequence, with captions kept readable outside the paintings. */
+.ic-epic-inline{margin:48px 0 42px}
+.ic-epic-hero{margin-bottom:58px}
+.ic-story.ic-epic-inline img,.ic-story.ic-epic-hero img{object-fit:contain;background:#142b24}
+.ic-prose .ic-epic-matrix figcaption p{font-family:Dominica,Georgia,serif;font-size:clamp(21px,3vw,28px);line-height:1.6;text-align:center;letter-spacing:.015em;margin:0;padding:7px 0;text-transform:none}
+.ic-prose .lines .en{overflow-wrap:anywhere}
+@media(max-width:600px){.ic-epic-inline{margin:36px 0}.ic-epic-hero{margin-bottom:42px}.ic-story figcaption>span{letter-spacing:0}}
+
+@font-face{font-family:InnerEpicExtra;src:url("assets/inner-consciousness-epic-v1/extra-cjk.woff2") format("woff2");font-display:swap}
+.ic-page{font-family:Dominica,InnerMin,InnerEpicExtra,GenRyuMin,serif}
