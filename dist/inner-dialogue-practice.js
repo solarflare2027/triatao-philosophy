@@ -83,3 +83,6 @@ export function initDialoguePractice(root) {
   });
   return () => controller.abort();
 }
+
+// The independent reading page reuses the same four interpretations as the chapter tool.
+export function dialoguePracticeReadings(){return `<div class="ic-page"><p class="ic-dp-context">一位创始人想让不会写代码的人也能创造。公司做大后，大客户定制越来越多，他心里反复冒出一句话：</p><p class="ic-dp-thought">“我想换个方向。”</p><p>几种动机也可能同时存在。</p>${interpretations.map(item=>`<section class="cp-section"><h2>${item.label}</h2>${readingMarkup(item)}</section>`).join('')}<p class="ic-dp-note">这一步可以停在“不确定”。把感受、解释和实际结果分开记下，留待下一次回应。</p></div>`;}

@@ -24,9 +24,9 @@ export const practiceExercises=[{
 export const exercisesFor=id=>practiceExercises.filter(exercise=>exercise.elementIds.includes(id));
 export const practiceAvailability=id=>exercisesFor(id).some(exercise=>exercise.status==='published')?'查看实践练习':'实践内容完善中';
 export const practiceSearchItems=[
- {name:'创造自己的实践',summary:'从理解到体验，从体验到成为。三层九项实践入口。',href:'practice',group:'创造实践'},
- ...creationOrder.map(id=>({name:elementName(id)+'实践',summary:practiceTitles[id]+' · '+practiceAvailability(id),href:'practice/layer/'+id,group:'创造实践'})),
- ...practiceExercises.map(e=>({name:e.title,summary:e.subtitle+(e.status==='draft'?' · 框架预览，内容完善中':''),href:'practice/exercise/'+e.id,group:'创造实践'}))
+ {name:'实践',summary:'三道哲学的实践文章、情境练习与持续探索。',href:'practice',group:'实践'},
+ ...creationOrder.map(id=>({name:elementName(id)+'实践',summary:practiceTitles[id]+' · '+practiceAvailability(id),href:'practice/layer/'+id,group:'实践'})),
+ ...practiceExercises.map(e=>({name:e.title,summary:e.subtitle+(e.status==='draft'?' · 框架预览，内容完善中':''),href:'practice/exercise/'+e.id,group:'实践'}))
 ];
 
 // Redirect old practice bookmarks into the new system.

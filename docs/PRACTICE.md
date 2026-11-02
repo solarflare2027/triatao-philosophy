@@ -102,3 +102,13 @@
 `practiceDetails` 支持 `layout: 'guide'`：`introductionTitle`／`introduction` 为引言，`sections` 为阶段，每阶段可有 `paragraphs` 与 `steps`；步骤包含稳定的 `id`、`title`、`paragraphs`。`criteria` 包含标题、前文、名称/问题二元数组与后文；`closing` 包含标题和段落。段落仅支持 `**重点**` 与 `*提示*`，渲染前转义正文，不接受原始 HTML。此布局保留连续滚动阅读，不添加表单、评分或进度要求。
 
 《从选择到成为》公开版继续使用 `#/practice/exercise/from-choice-to-being`。独立的 `#/practice/exercise/from-choice-to-being/philosopher-king` 仅为占位页，不是另一项已发布练习，不进入关联练习目录。两页均由现有静态正文生成器发现并输出 `/read/` 版本。
+
+## 全站实践文章入口（2026-11-03）
+
+`#/practice` 现为全站「实践」文章目录，按发布日期倒序排列；历史日期未记录的文章不补造日期，列在已标注日期的文章之后。天道、人道、王道和关联章节均可筛选，没有文章的模块显示空状态。原九项实践目录、公开指南和哲人王版路由继续保留。
+
+`dist/practice-articles.js` 是目录与章节入口共享的索引。既有练习元数据直接从 `practice-catalog.js` 派生，正文只保存在原详情配置中。每条文章配置包含 `id/title/summary/href/modules/topics/publishedAt/kind/stage/relatedIds`。`topics` 可以关联多个章节；`relatedIds` 可以指向同一实践的后续或修订文章，详情页会显示这些关联。`stage` 可按实际情况标明「尝试中」「遇到阻力」「反馈与修订」等，不应把假设案例当作已发生的实践。
+
+新增文章：先完成一个独立正文页面，再在共享索引中登记其地址、摘要、实际发布日期及相关章节。关联章节自动显示入口卡片；总目录使用相同条目。新增路由须加入现有页面分派并运行静态正文生成，之后执行 `npm run check`，验证筛选、章节往返与无 JavaScript 正文。
+
+现有情境练习「同一句“想”，可能从哪里来？」迁至 `#/practice/article/inner-discernment` 独立阅读页，四种解释复用 `inner-dialogue-practice.js` 的原数据，章节显示同一篇文章的入口。「面对质疑，我如何回应？」继续使用原 `#/case` 页面，无重复正文。

@@ -1,3 +1,4 @@
+import {practiceArticles} from '../dist/practice-articles.js';
 import assert from 'node:assert/strict';
 import {creationOrder,creationLayers,practiceExercises,practiceRedirect,practiceSearchItems,practiceTitles} from '../dist/practice-catalog.js?v=20261014-practice1';
 import {practiceDetails} from '../dist/practice-details.js?v=20261014-practice1';
@@ -58,13 +59,13 @@ for(const id of creationOrder){
  assert(practiceElementPage(id).includes(`href="#/becoming/${id}"`),`${id}: 缺少返回理论入口`);
 }
 assert.equal((creationOverviewPage().match(/id="creation-practice-bridge"/g)||[]).length,1);
-const pages=['practice','practice/exercise/from-choice-to-being/philosopher-king',...creationOrder.map(id=>'practice/layer/'+id),...practiceExercises.map(e=>'practice/exercise/'+e.id)];
+const pages=['practice','practice/article/inner-discernment','practice/exercise/from-choice-to-being/philosopher-king',...creationOrder.map(id=>'practice/layer/'+id),...practiceExercises.map(e=>'practice/exercise/'+e.id)];
 let links=0;
 for(const route of pages){
  const html=practiceRoute(route);assert(html,`${route}: 页面为空`);
  for(const [,href] of html.matchAll(/href="#\/(.*?)"/g)){
   links++;
-  assert(href===''||href==='becoming'||href.startsWith('practice')&&practiceRoute(href)||href.startsWith('becoming/')&&creationOrder.includes(href.slice(9)),`${route}: 失效链接 ${href}`);
+  assert(href===''||href==='map'||href==='case'||href==='acceptance'||href.startsWith('knowing/')||href==='becoming'||href.startsWith('practice')&&practiceRoute(href)||href.startsWith('becoming/')&&creationOrder.includes(href.slice(9)),`${route}: 失效链接 ${href}`);
  }
  for(const [,id] of html.matchAll(/data-scroll="([^"]+)"/g))assert(html.includes(`id="${id}"`),`${route}: 无效目录 ${id}`);
 }
@@ -80,3 +81,6 @@ for(const id of creationOrder)assert.equal(practiceRedirect('becoming/practice',
 assert.equal(practiceRedirect('awareness',new URLSearchParams()),'#/practice/layer/focus');
 assert.equal(practiceRedirect('wang',new URLSearchParams()),null);
 console.log(`通过：创造实践 ${pages.length} 个页面、${links} 个内部链接、九项双向入口、占位发布保护与旧链接兼容。`);
+
+const ids=new Set(practiceArticles.map(a=>a.id));assert.equal(ids.size,practiceArticles.length);
+for(const a of practiceArticles){assert(a.modules.length&&a.modules.every(m=>['tian','ren','wang'].includes(m)));assert(a.topics.length);assert(a.publishedAt===null||/^\d{4}-\d{2}-\d{2}$/.test(a.publishedAt));for(const id of a.relatedIds||[])assert(ids.has(id),'未知后续文章');}
