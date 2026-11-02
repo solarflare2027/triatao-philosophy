@@ -1,0 +1,14 @@
+Tool: built-in image_gen
+Transparency: false
+
+Use case: stylized-concept.
+Asset: a spectacular wide 16:9 philosophical illustration for “Polarity — the relative world”.
+Primary request: ONE continuous world displaying MAXIMAL, UNMISTAKABLE opposition, a sublime heavenly paradise versus an oppressive infernal abyss. The difference must be immediately legible at thumbnail size. Prioritize powerful expression over fitting any existing website style. Rich color, huge dramatic tonal difference, cinematic epic scale, meticulous fine-art matte painting; no restrained ink wash, no muted gray monochrome.
+
+LEFT HALF: radiant white and warm GOLD daylight; luminous open sky; soaring graceful ivory architecture with rounded arches, elegant symmetry, intact beautiful forms; abundant emerald gardens, flowering trees, turquoise cascading water, warmth, flourishing life. Open spacious ascending composition. At the near foreground, clearly readable human-scale figures gently protect a vulnerable person and tend a living garden. Their care is expressed by a sheltering body gesture and an offering hand.
+
+RIGHT HALF: a radically different world of near-BLACK obsidian, deep CRIMSON glow and cold violet storm; a vast descending abyss, looming serrated cliffs, crushed jagged architecture, shattered bridges, twisted shapes, sterile broken ground, embers, turbulent weather, enormous oppressive scale. Strong tension, disorder, visual harshness and conflict. Near foreground human figures visibly act destructively: one is forcefully smashing a small shelter while another drives a vulnerable person away with an aggressive gesture. No gore or injuries shown. Keep the painting aesthetically beautiful and grand, not horror. Small but visible, farther along the dark path, a traveler is helping another to their feet with a warm lantern: darkness itself is not a fixed label for moral evil.
+
+COMPOSITION: a confident panoramic view, left paradise and right abyss each occupy roughly HALF, both detailed and compelling; extreme contrast in illumination, color, shape, order, feeling. One river and a narrow stone causeway cross the irregular center seam and connect the two terrains, showing they are regions of ONE continuous landscape with shared perspective and horizon. Strong collision at the boundary, only a narrow transitional zone; DO NOT soften or average the two extremes. The connection should not diminish their startling differences. Compose with large readable landforms first; secondary human actions must still be visible at full size. Both sides equally artistically resolved.
+
+Constraints: opaque full-bleed art, no website mockup, no text/labels/borders/watermarks, no yin-yang symbol, no swirling vortex, no diagram, no demons, no monsters, no grotesque faces, no gore, no cheap cartoon aesthetic. Not two separately framed images. Do not make the dark side merely a gray version of the same pleasant mountains.
