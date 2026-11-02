@@ -1,5 +1,5 @@
 import {practiceSearchItems} from './practice-catalog.js?v=20261029-inner-tagline';
-import {paths} from './data.js?v=20261029-inner-tagline';
+import {paths} from './data.js?v=20261102-tian-directory1';
 import {elements} from './elements.js?v=20261029-inner-tagline';
 
 const svg=(path,cls='')=>`<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true"><path d="${path}"/></svg>`;

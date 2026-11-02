@@ -10,7 +10,7 @@ await new Promise((resolve,reject)=>{server.stdout.once('data',resolve);server.o
 const browser=await launchBrowser();
 const escape=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const hash=s=>createHash('sha256').update(s).digest('hex');
-const snapshots=new Map(),pending=['','map','library','practice','becoming/mechanism','becoming/cases','wang/closing'];
+const snapshots=new Map(),pending=['','map','library','practice','becoming/mechanism','becoming/cases','wang/closing','concept/blueprint'];
 try{
  for(let i=0;i<pending.length;i++){
   const route=pending[i];if(snapshots.has(route))continue;
@@ -67,7 +67,7 @@ try{
    // make the pre-rendered fallback usable when it does not run.
    const ns=document.createElement('noscript');ns.innerHTML='<style>.reveal{opacity:1!important;transform:none!important}.reading-contents nav a{display:block;padding:.6em 0;color:inherit;text-decoration:none}#search-open,#menu-toggle,.back-top,.map-toolbar{display:none!important}[role="tabpanel"][hidden]{display:block!important}</style>';
    doc.querySelector('head').append(ns);
-   const script=document.createElement('script');script.type='module';script.src='/readable.js?v=20261021-portals2';doc.querySelector('head').append(script);
+   const script=document.createElement('script');script.type='module';script.src='/readable.js?v=20261102-tian-directory1';doc.querySelector('head').append(script);
    return {html:'<!doctype html>\n'+doc.outerHTML,title:document.title,text,links,description:document.querySelector('.page-intro,.be-element-essence,.be-element-intro')?.textContent.trim()||document.title};
   },{route,anchors});
   if(snapshot.text.includes('这条路径尚未展开'))throw Error('Unknown reachable route: '+route);
@@ -83,7 +83,7 @@ try{
  const manifest={version:1,sourceFiles:Object.fromEntries(sourceFiles),pages:[]};
  for(const [route,s] of snapshots){
   const url='https://www.triatao.com/read/'+(route?route+'/':'');
-  let html=s.html.replace(/href="#\/([^"?]*)(\?[^\"]*)?"/g,(_,target,query='')=>`href="${snapshots.has(target)?'/read/'+(target?target+'/':''):'/#/'+target}${query}"`);
+  let html=s.html.replace(/[ \t]+(?=\r?$)/gm,'').replace(/href="#\/([^"?]*)(\?[^\"]*)?"/g,(_,target,query='')=>`href="${snapshots.has(target)?'/read/'+(target?target+'/':''):'/#/'+target}${query}"`);
   html=html.replace(/<meta name="description" content="[^"]*">/,`<meta name="description" content="${escape(s.description.slice(0,180))}">`);
   html=html.replace(/<link rel="canonical"[^>]*>/g,'').replace('</head>',`<link rel="canonical" href="${url}"></head>`);
   const dir=root+'read/'+(route?route+'/':'');await mkdir(dir,{recursive:true});await writeFile(dir+'index.html',html+'\n');

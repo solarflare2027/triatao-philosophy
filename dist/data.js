@@ -1,9 +1,9 @@
 import {wangContent,wangGroups,wangOverview} from './wang.js?v=20261029-inner-tagline';
 export const paths = [
- {id:'tian',name:'天道',en:'THE NATURE OF REALITY',number:'01',verb:'看见真理',question:'世界的本质是什么？它运行的规律又是什么？',intro:'认识世界的九大原理。本源回答存在是什么，变化回答存在如何展开，创造回答意识为何及如何成为经验。从存在的本质，到变化的结构，再到实相的形成，九理构成一条相互承接的追问。',groups:[
-  {id:'origin',name:'本源',desc:'存在是什么：性质、整体与差异。',items:[['emptiness','空性','无固定自性，以意识本源理解开放的存在。'],['chaos','混沌','分别之前，容纳潜在秩序的完整。'],['polarity','极性','一成为多，差异在关系中相依。']]},
-  {id:'change',name:'变化',desc:'存在如何展开：状态、道路与时间。',items:[['flux','流变','形式在形成、维持、转化与消散中展开。'],['probability','概率','现实具有多种道路，选择继续打开可能。'],['alltime','全时','整体共存、相互关联、动态生成。']]},
-  {id:'creation',name:'创造',desc:'为何及如何成为经验：意义、命题与机制。',items:[['mirror','镜像','意识通过相对经验，认识并展开自身。'],['blueprint','蓝图','内在意识选择生命命题，角色以创造回应。'],['generation','生成','意识经由模板组织，形成个体与共享实相。']]}
+ {id:'tian',name:'天道',en:'THE NATURE OF REALITY',number:'01',verb:'看见真理',question:'世界的本质是什么？它运行的规律又是什么？',intro:'沿着本源、创造与变化，认识世界的九大原理。从道、混沌与极性追问万物的根源，经由中气、显化与镜像理解创造，再以流变、概率与全时认识变化。',groups:[
+  {id:'origin',name:'本源',desc:'道 · 一 · 二：源头、潜能与差异。',items:[['emptiness','道：源头','万物的根源是什么？'],['chaos','一：混沌','万物尚未分化时，生成的可能如何存在？'],['polarity','二：极性','差异与参照如何出现，两极又如何相依？']]},
+  {id:'creation',name:'创造',desc:'三 · 生 · 相：创造的构成、机制与呈现。',items:[['zhongqi','三：中气','阴阳与中气如何共同参与创造？'],['generation','生：显化','内在的潜能与意向如何成为具体实相？'],['mirror','相：镜像','外在如何映出内在，内外又如何交互？']]},
+  {id:'change',name:'变化',desc:'流变 · 概率 · 全时：状态、道路与时间。',items:[['flux','流变','形式在形成、维持、转化与消散中展开。'],['probability','概率','现实具有多种道路，选择继续打开可能。'],['alltime','全时','整体共存、相互关联、动态生成。']]}
  ]},
  {id:'ren',name:'人道',en:'THE ART OF BECOMING',number:'02',verb:'创造自己',question:'我是谁？我又选择成为谁？',intro:'通过体验认识自己，通过选择创造自己。让真实的自己被看见、被理解、被善待，再把选择落实为思考、表达与行动。',groups:[
   {id:'knowing',name:'认识自己',desc:'从身体载具、外在角色与内在意识三个层面，认识完整的自己。',items:[['body-self','身体载具我','从使用身体，到与身体合作。'],['external-self','外在角色我','抛开所有的名，我是谁？'],['inner-consciousness','内在意识我',"让内在的王归位，活出生命的最高版本。"]]},
