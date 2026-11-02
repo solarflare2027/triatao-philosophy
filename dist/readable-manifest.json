@@ -12,7 +12,7 @@
     "action-v2.css": "5cfab32e636f03e4aa1f690a98803527bee8acf1565528af58c46b74eae73444",
     "action.css": "0360adafabe0c31f16750f8f861795c51bba84ebaaf34276718616664b83c5a4",
     "action.js": "30983870dd54b09ca249151d83b2ed6011aa15e5c39ceffddb8c97df3f449d42",
-    "app.js": "6d2ef629aeca9922dd3f334a640eaa1be393137c7fa9791aed2662f0d2ffa035",
+    "app.js": "1303d407a13ca65fe8e57b8b2008a4ab73e05126bde51463def40688ce615eda",
     "art.js": "bfcda036c9dcacc84d197c5d59035dc2c2e5a882d9729199780b022f0895d471",
     "atlas.css": "d52a3df5610414e857724a40010b005664e03232f679964fcbd9b6b0ed38b81a",
     "becoming.css": "7e9a57db681153202db3dbaae0a81cf4ce6f258650593216e973ce5b59865ffb",
@@ -48,7 +48,7 @@
     "identity.js": "94595994593c5edfd86fd1c9227b06e7b99c67752dde28167dfca0356fb0f56f",
     "imagination.css": "db3ecf9e1cbd5f0f4bf24c5bf33f64e84cc82ae4e375ee12740412b8228fb4a0",
     "imagination.js": "8c5448a7d3f2977793d11d2d5b2e012ade92ba09d21b86769378428b7d0b428f",
-    "index.html": "a2f13bceaeb0ebaaecdcc05151628b12aa36a4a40324de7e96bd4fdffddc68ab",
+    "index.html": "c36d76c3834b6ec8e0ae8adbc7834db3ac6ac2bedd887c02c27c3a0703363803",
     "inner-consciousness.css": "e98b61320dd5fd7dbcb27440ef4448c474a3a6fdd7acee3964c62dbb56e68713",
     "inner-consciousness.js": "1178211c96c053e36e61d02d8911209a32e77f65175e299a1829381794b5187a",
     "inner-dialogue-practice.css": "4547647b9544be2d494342099f8380efff31d9796d1679135182edfc893fe15a",
@@ -202,9 +202,9 @@
       "route": "concept/emptiness",
       "url": "https://www.triatao.com/read/concept/emptiness/",
       "title": "道：源头 — 三道哲学",
-      "textHash": "440c940d10910bf7cb3ade537e66c41acbe9ec9cdc91a4a132e204c8e9947268",
-      "textLength": 6732,
-      "htmlHash": "6fc433a200be7152ad1f0a3bdc8beda51bb72414aa75e2cecf3005e74b4b95b2"
+      "textHash": "413883fc5e73ddfd6a61d7b2411a0bb782b6482aaf28215e64f84b8467413c66",
+      "textLength": 4316,
+      "htmlHash": "15c812235704efcec8e6ec08b3da519bc4cdcff55ff3715d52d15cdff32b7316"
     },
     {
       "route": "concept/chaos",
