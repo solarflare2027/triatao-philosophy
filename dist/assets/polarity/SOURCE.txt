@@ -1,0 +1,1 @@
+插画由内置 image_gen 依作者要求生成。PNG 保留原始像素与透明通道。字体沿用本站字体，保留原始来源与许可。绘图提示词见随附 taiji-prompt.txt 与 illustration-prompts.txt。

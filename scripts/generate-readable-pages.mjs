@@ -15,6 +15,14 @@ try{
  for(let i=0;i<pending.length;i++){
   const route=pending[i];if(snapshots.has(route))continue;
   if(route&&!/^[a-z0-9/-]+$/.test(route))throw Error('Unsafe route '+route);
+  if(route==='concept/polarity'){
+   const context=await browser.newContext({javaScriptEnabled:false}),page=await context.newPage();
+   await page.goto(origin+'/polarity.html');
+   const text=(await page.locator('main').textContent()).replace(/\s+/g,' ').trim();
+   const html=(await readFile(root+'polarity.html','utf8')).trimEnd();
+   snapshots.set(route,{html,title:await page.title(),text,links:[],description:'为何分化、一生二、二生三、三生万物：从两极的差异，理解它们如何共同构成具体存在。'});
+   await context.close();console.log('Captured standalone',route);continue;
+  }
   const context=await browser.newContext({viewport:{width:1440,height:1000}}),page=await context.newPage();
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto(origin+'/#/'+route,{waitUntil:'networkidle'});
@@ -67,7 +75,7 @@ try{
    // make the pre-rendered fallback usable when it does not run.
    const ns=document.createElement('noscript');ns.innerHTML='<style>.reveal{opacity:1!important;transform:none!important}.reading-contents nav a{display:block;padding:.6em 0;color:inherit;text-decoration:none}#search-open,#menu-toggle,.back-top,.map-toolbar{display:none!important}[role="tabpanel"][hidden]{display:block!important}</style>';
    doc.querySelector('head').append(ns);
-   const script=document.createElement('script');script.type='module';script.src='/readable.js?v=20261102-role1';doc.querySelector('head').append(script);
+   const script=document.createElement('script');script.type='module';script.src='/readable.js?v=20261102-polarity1';doc.querySelector('head').append(script);
    return {html:'<!doctype html>\n'+doc.outerHTML,title:document.title,text,links,description:document.querySelector('.page-intro,.be-element-essence,.be-element-intro')?.textContent.trim()||document.title};
   },{route,anchors});
   if(snapshot.text.includes('这条路径尚未展开'))throw Error('Unknown reachable route: '+route);
