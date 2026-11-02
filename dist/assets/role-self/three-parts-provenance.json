@@ -1,0 +1,22 @@
+{
+  "tool": "built-in imagegen",
+  "date": "2026-11-02",
+  "reference": "Existing original role-self triptych generated in the same task",
+  "parts": [
+    {
+      "part": 1,
+      "name": "names",
+      "prompt": "Use case: illustration-story. Create one standalone wide landscape 3:2 editorial watercolor and ink painting for an existing Chinese philosophy website. Match the reference illustration's warm ivory paper, forest-green shadows, ochre gold, expressive East Asian adult with dark wavy hair, cream shirt, thoughtful human posture, delicate ink washes, realistic proportions and literary atmosphere. It is an allegory about social identity, not a scientific diagram. No text, labels, numbers, letters, logos, watermarks or multiple panels. Make one complete scene with generous breathing room and clear focal point. First essay: 名为相, I think I am who? Paint the same person standing in a quiet backstage dressing room before a large mirror, gently holding a simple theatrical half-mask slightly away from their face. In the mirror and around the room, a modest work jacket, a family photograph with indistinct faces, a closed notebook and a blank name plaque suggest the names, life story and social roles that help them live. Face and mask clearly separate, the person's actual face calm and thoughtful. Fine gold lines subtly connect the objects to the mask, never to the person's body. Mood curious and humane, not sinister."
+    },
+    {
+      "part": 2,
+      "name": "attachment",
+      "prompt": "Use case: illustration-story. Create one standalone wide landscape 3:2 editorial watercolor and ink painting for an existing Chinese philosophy website. Match the reference illustration's warm ivory paper, forest-green shadows, ochre gold, expressive East Asian adult with dark wavy hair, cream shirt, thoughtful human posture, delicate ink washes, realistic proportions and literary atmosphere. It is an allegory about social identity, not a scientific diagram. No text, labels, numbers, letters, logos, watermarks or multiple panels. Make one complete scene with generous breathing room and clear focal point. Second essay: 谁在执着于名, what am I protecting? Paint the same person seated at a desk immediately after reading an unseen comment on a plain sheet of paper. Their shoulders tense and one hand starts to defend, but the other hand pauses, attentive to what is happening. In the background a blank gold portrait frame, a small blank award, a circle of shadowy friendly figures and an orderly calendar-like grid without lettering suggest recognition, belonging and control. Thin gold threads run from those symbols to the sleeve, visibly connected but not violent, suggesting how a desire can trigger an old response. Soft natural light falls on the resting hand and the page. Show the mechanism in a single elegant visual scene, no diagram labels."
+    },
+    {
+      "part": 3,
+      "name": "release",
+      "prompt": "Use case: illustration-story. Create one standalone wide landscape 3:2 editorial watercolor and ink painting for an existing Chinese philosophy website. Match the reference illustration's warm ivory paper, forest-green shadows, ochre gold, expressive East Asian adult with dark wavy hair, cream shirt, thoughtful human posture, delicate ink washes, realistic proportions and literary atmosphere. It is an allegory about social identity, not a scientific diagram. No text, labels, numbers, letters, logos, watermarks or multiple panels. Make one complete scene with generous breathing room and clear focal point. Third essay: 松开, acting well while holding the role lightly. Paint the same person in a sunlit workspace with an open window looking toward a green garden. They place their half-mask gently on the table and untie a loose gold thread from the sleeve, with a relaxed open hand. Their work notebook and a few blank papers remain on the desk and their jacket rests on a chair, showing that responsibility and practical life remain. They look ready to return to a meaningful small task, calm and engaged rather than escaping. The mask, open hand and work desk form the clear triangle of the composition. No triumph pose or supernatural glow."
+    }
+  ]
+}
