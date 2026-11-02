@@ -3,3 +3,5 @@
 2026-11-02 读者版：页首改用 relative-mountain WebP，与原始生成 PNG 为同一幅图的网页编码版本，保留透明通道；提示词见 relative-mountain-prompt.txt。字体扩展记录见 reader-font-provenance.json。原太极素材保留为历史资源，本页已不引用。
 
 2026-11-02 页首插画更新：opposed-world-v2 为内置 image_gen 生成的“光暗两极”。依作者要求突出金白天堂与黑红深渊的强烈差异，以光照、建筑形态和人物动作分别表现光暗、美丑与守护／伤害，河流与石桥保持共同世界，暗处的相助避免把黑暗固定为邪恶。WebP 是不透明原始 PNG 的网页编码副本；PNG 留存在作者工作区。提示词见 opposed-world-v2-prompt.txt。
+
+2026-11-02 唯美版修订：opposed-world-v3 由内置 image_gen 基于 v2 编辑，依作者要求增加通透光感、花木、薄雾和绘画层次，保留极端光暗差异、同一世界的连接及人物行动。原始 PNG 为不透明绘画，WebP 为网页编码副本；提示词见 opposed-world-v3-prompt.txt。

@@ -1,0 +1,15 @@
+Tool: built-in image_gen
+Mode: edit; reference: 光暗两极 v2
+Transparency: false
+
+Use case: style-transfer.
+Edit target: the supplied illustration of one continuous landscape with paradise on the left and an abyss on the right.
+Requested change: make the whole image markedly more 唯美 — ethereal, poetic, exquisitely beautiful, dreamlike and emotionally moving. Retain the EXTREME DIFFERENCE between the two halves. Maintain a wide 16:9 panoramic composition, the same shared river and connecting stone bridge, the contrast of caring versus harmful human actions, and the small act of help with a lantern within the dark side.
+
+Transform the aesthetic into a masterfully painted Romantic fantasy landscape: luminous color glazing, subtle soft light, delicate rich detail, elegant visual rhythm, beautiful atmospheric depth, sheer monumental scale. Fine-art illustration with visible painterly subtlety. The current glossy game-render look, harsh local sharpening, overbusy foreground and theatrical action poses should be replaced by a refined, lyrical composition with breathing room.
+
+LIGHT HALF: breathtaking heavenly garden, pearlescent white/gold architecture with exquisitely graceful arches and towers, sunlit clouds, transparent turquoise water, abundant soft pink blossoms and radiant greenery; light seems to glow through petals, mist and cascading water. Serene, generous, alive and spacious. Foreground people wear flowing fabric, with natural tender gestures of embracing and sheltering someone vulnerable.
+
+DARK HALF: equally artistically beautiful yet unmistakably opposed: deep violet-black abyss, imposing broken obsidian architecture, sharp fractured silhouettes, cold storm haze and restrained ruby/crimson light glowing from deep fissures. A melancholic, sublime, fallen realm; oppressive and fractured, with magnificent chiaroscuro. Replace the current many bright orange lava stripes with a small number of deep ruby illuminated fissures and drifting embers. No horror or grotesquerie. Harmful action remains legible, but figures are more naturally painted, smaller within the sweeping landscape, less cartoonishly angry and less posed. One destroys a fragile shelter, another drives someone away; no gore. Keep the distant lantern-bearing person offering help in the darkness.
+
+Keep both halves dramatically different in brightness, form, color, order and mood, immediately readable even at thumbnail size. DO NOT blend them into a muted uniform landscape, do not weaken the right half into ordinary pleasant mountains. Use strong large value masses with delicate painterly details. Both halves belong to a single continuous sublime world, not a framed diptych. No text, watermark, diagram, yin-yang or vortex, no monsters. Opaque full-bleed painting.
