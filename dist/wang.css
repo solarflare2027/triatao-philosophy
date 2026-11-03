@@ -38,3 +38,5 @@
  .wang-page .wang-branches,.wang-page .wang-connections{padding-left:17px}
  .wang-page .wang-relations h3{font-size:21px}
 }
+
+.wang-page .wang-siblings{display:flex;gap:2rem;flex-wrap:wrap;margin:-20px 0 52px;border-bottom:1px solid #d8d1c3}.wang-siblings a{padding:12px 0;color:#777;text-decoration:none}.wang-siblings a[aria-current="page"]{color:#80653c;border-bottom:2px solid #ad8956}.wang-previous{margin:36px 0 0}.wang-previous a{color:#80653c}.wang-full-map{margin:32px 0 70px}.wang-full-map .wang-position{margin:20px 0 0}@media(max-width:760px){.wang-page .wang-siblings{gap:1.5rem;margin:0 0 32px}.wang-full-map .wang-position>div{min-width:0}}
