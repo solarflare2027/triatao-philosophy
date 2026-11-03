@@ -1,4 +1,4 @@
-import {wangContent,wangGroups,wangOverview} from './wang.js?v=20261103-strategy-crux1';
+import {wangContent,wangGroups,wangOverview} from './wang.js?v=20261104-wangnav1';
 export const paths = [
  {id:'tian',name:'天道',en:'THE NATURE OF REALITY',number:'01',verb:'看见真理',question:'世界的本质是什么？它运行的规律又是什么？',intro:'沿着本源、创造与变化，认识世界的九大原理。从道、混沌与极性追问万物的根源，经由中气、显化与镜像理解创造，再以流变、概率与全时认识变化。',groups:[
   {id:'origin',name:'本源',desc:'道 · 一 · 二：源头、潜能与差异。',items:[['emptiness','道：源头','万物的根源是什么？'],['chaos','一：混沌','万物尚未分化时，生成的可能如何存在？'],['polarity','二：极性','差异与参照如何出现，两极又如何相依？']]},
