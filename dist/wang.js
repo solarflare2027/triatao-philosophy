@@ -1,15 +1,16 @@
 import {daoPortal} from './dao-portal.js?v=20261029-inner-tagline';
-import {wangHeart} from './wang-heart.js?v=20261029-inner-tagline';
-import {wangPower} from './wang-power.js?v=20261103-strategy-crux1';
-import {wangRealm} from './wang-realm.js?v=20261029-inner-tagline';
-import {wangBranches} from './wang-branches.js?v=20261103-strategy-crux1';
-import {wangGroups,wangOrder,wangRelations,wangOverview,wangClosing} from './wang-framework.js?v=20261029-inner-tagline';
+import {wangHeart} from './wang-heart.js?v=20261104-wangreading1';
+import {wangPower} from './wang-power.js?v=20261104-wangreading1';
+import {wangRealm} from './wang-realm.js?v=20261104-wangreading1';
+import {wangBranches} from './wang-branches.js?v=20261104-wangreading1';
+import {wangGroups,wangOrder,wangRelations,wangOverview,wangClosing} from './wang-framework.js?v=20261104-wangreading1';
 import {daoSources} from './dao-content.js?v=20261029-inner-tagline';
 export {wangGroups,wangOrder,wangOverview};
 export const wangContent={...wangHeart,...wangPower,...wangRealm,...wangBranches};
 export const hasWangReading=id=>Object.hasOwn(wangContent,id);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const ps=items=>items.map(t=>`<p>${esc(t)}</p>`).join('');
+const rich=t=>String(t).split(/(\*\*.*?\*\*)/g).map(x=>x.startsWith('**')&&x.endsWith('**')?'<strong>'+esc(x.slice(2,-2))+'</strong>':esc(x)).join('');
+const ps=items=>items.map(t=>`<p>${rich(t)}</p>`).join('');
 const route=id=>id==='layout'?'layout':'concept/'+id;
 const arrow='<span aria-hidden="true">↗</span>';
 const link=(id,label)=>`<a href="#/${route(id)}">${esc(label||wangContent[id].name)} ${arrow}</a>`;
@@ -20,9 +21,12 @@ function position(current){return `<nav class="reading-position wang-position" a
 function siblingNav(id,d,g){const ids=d.parent?wangContent[d.parent].children:g.parts;return `<nav class="wang-siblings" aria-label="同层章节">${ids.map(x=>`<a href="#/${route(x)}" ${x===id?'aria-current="page"':''}>${esc(wangContent[x].name)}</a>`).join('')}</nav>`;}
 function fullMap(current){return `<details class="action-fold dao-fold wang-full-map"><summary>王道全图</summary>${position(current)}</details>`;}
 function toc(id,d,extra=[]){return `<aside class="article-toc"><span class="eyebrow">本页目录</span>${[[`wang-${id}-definition`,'主线'],...d.sections.map((s,i)=>[`wang-${id}-${i}`,s.title]),...extra,[`wang-${id}-questions`,'深入追问']].map(([key,label])=>`<button type="button" data-scroll="${key}">${esc(label)}</button>`).join('')}</aside>`;}
-const sections=(id,d)=>d.sections.map((s,i)=>`<h2 id="wang-${id}-${i}">${esc(s.title)}</h2>${ps(s.paragraphs)}`).join('');
+const sections=(id,d)=>d.sections.map((s,i)=>`<h2 id="wang-${id}-${i}">${esc(s.title)}</h2>${ps(s.paragraphs.slice(0,1))}${s.visual?diagram(s.visual):''}${ps(s.paragraphs.slice(1))}`).join('');
 const questions=(id,d)=>`<h2 id="wang-${id}-questions">深入追问</h2>${d.questions.map(fold).join('')}`;
 const extraSources={
+ maoContradiction:{label:'毛泽东：《矛盾论》（1937）',url:'https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-193708.htm',note:'参照第四节主要矛盾与次要矛盾的论述，帮助理解主次与阶段变化。主要矛盾、杠杆、可突破性之间的区分是本站整合。'},
+ maoStrategy:{label:'毛泽东：《中国革命战争的战略问题》（1936）',url:'https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-193612.htm',note:'参照第五章第三节集中兵力，理解全局与局部力量配置的差别。组织与事业案例为本站延伸，不将军事关系直接套用于合作关系。'},
+ maoMethods:{label:'毛泽东：《党委会的工作方法》（1949）',url:'https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-19490313.htm',note:'参照第五项弹钢琴、第六项抓紧，理解中心工作与配合、持续落实之间的联系。文中对交付流程的分析为本站假设案例。'},
  rumeltCrux:{"label":"Richard Rumelt：《The Crux》（2022）及作者公开阐释","url":"https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/getting-strategy-wrong-and-how-to-do-it-right-instead","note":"借鉴对重要性、可应对程度与聚焦的判断，以及从挑战出发设计行动的思想。“重要性与可突破性”是本篇融入找杠杆的表述；三步结构沿用三道哲学。"},
  rumeltKernel:{"label":"Richard Rumelt：《Good Strategy Bad Strategy》（2011）及作者文章","url":"https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-perils-of-bad-strategy","note":"作者文章直接说明诊断、指导方针与一致行动构成战略内核。本篇据此深化应对思路与行动配合，不以目标或项目清单代替战略。"},
  porterChoices:{"label":"Michael Porter 战略体系：Making Strategic Trade-offs","url":"https://www.isc.hbs.edu/strategy/creating-a-successful-strategy/Pages/making-strategic-trade-offs.aspx","note":"哈佛商学院战略与竞争力研究所对战略取舍的说明：活动、需求与定位可能不相容。用于理解为何选择某条路径，也要明确放弃哪些不相容的安排。"},
@@ -49,3 +53,7 @@ export function wangPage(id){
 }
 export function wangOverviewPage(){const d=wangOverview;return `<div class="page-shell dao-reading wang-page wang-overview dao-overview">${crumbs([['王道']])}${daoPortal('wang')}<div class="dao-overview-intro"><span class="eyebrow">03 / 王道总论</span><p class="page-intro">${d.thesis}</p></div><div class="overview-question"><span>这一道的追问</span><p>${d.question}</p></div><section class="wang-framework" aria-label="王道三层九章">${wangGroups.map(g=>`<div class="wang-framework-row"><div class="wang-group-label"><span class="eyebrow">${g.level} / ${g.purpose}</span><h2>${g.name}</h2><p>${g.desc}</p></div><div class="wang-group-items">${g.parts.map(id=>`<a href="#/${route(id)}"><h3>${wangContent[id].name} ${arrow}</h3><p>${wangContent[id].thesis}</p></a>`).join('')}</div></div>`).join('')}</section><div class="article-layout">${toc('overview',d,[[`wang-overview-relations`,'六组相互支撑的关系']])}<article class="prose"><h2 id="wang-overview-definition">从理解世界，到承担共同创造</h2>${ps(d.definition)}${sections('overview',d)}<h2 id="wang-overview-relations">九章如何相互支撑</h2><p>九章不是逐级取得的身份，也不要求等一种能力完美后才开始下一种。它们共同约束一次真实的创造。</p><div class="wang-relations">${wangRelations.map(([a,b,title,text])=>`<div><h3>${link(a)} <span aria-hidden="true">×</span> ${link(b)}</h3><p>${text}</p></div>`).join('')}</div>${questions('overview',d)}${sources(d)}</article></div>${nextNav('concept/decide','从第一章：决断开始','wang/closing','阅读终章：真正的王')}</div>`;}
 export function wangClosingPage(){const d=wangClosing;return `<div class="page-shell dao-reading wang-page">${crumbs([['王道','wang'],['真正的王']])}${heading(d,'王道 / 终章')}<div class="article-layout">${toc('closing',d)}<article class="prose"><h2 id="wang-closing-definition">让创造超出一个人的生命</h2>${ps(d.definition)}${sections('closing',d)}${questions('closing',d)}</article></div>${nextNav('tian','回到天道，继续求真')}${fullMap('')}</div>`;}
+
+const chart=(title,body,caption)=>`<figure class="wang-diagram"><figcaption>${title}</figcaption>${body}<p>${caption}</p></figure>`;
+const steps=(items)=>'<div class="wang-diagram-flow">'+items.map(([a,b])=>'<div><strong>'+a+'</strong><span>'+b+'</span></div>').join('')+'</div>';
+function diagram(type){if(type==='leverage')return chart('01 / 杠杆怎样牵动全局',steps([['改变接口','承诺前确认需求'],['减少返工','释放已有产能'],['改善交付','让客户获得价值']]),'检验的不是动作大小，而是改变能否沿着关系传到整体结果。')+chart('02 / 突破口，要过两道关','<div class="wang-choice"><div>重要，但暂缺路径<br><strong>布局创造条件</strong></div><div class="chosen">重要，而且有现实路径<br><strong>集中力量突破</strong></div><div>影响有限，也难推进<br><strong>暂缓投入</strong></div><div>容易，但影响有限<br><strong>完成必要日常工作</strong></div></div>','重要性看全局影响；可突破性看现实路径。此图是定性判断，不是评分公式。');if(type==='focus')return chart('03 / 围绕一个重点，形成合力',steps([['释放力量','暂停分散投入'],['组织配合','人员 · 权限 · 资源'],['形成优势','集中改变交接']]),'把重点写进真实的资源配置，让各项行动相互支持。');return chart('04 / 怎样知道真的破局了',steps([['关键条件','交接方式改变了吗？'],['整体结果','交付与体验改善了吗？'],['重新识局','新的约束出现在哪里？']]),'同时检查成本与人的负担；依据结果继续、修正或停止。');}
