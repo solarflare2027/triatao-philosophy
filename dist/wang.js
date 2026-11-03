@@ -1,8 +1,8 @@
 import {daoPortal} from './dao-portal.js?v=20261029-inner-tagline';
 import {wangHeart} from './wang-heart.js?v=20261029-inner-tagline';
-import {wangPower} from './wang-power.js?v=20261029-inner-tagline';
+import {wangPower} from './wang-power.js?v=20261103-strategy-crux1';
 import {wangRealm} from './wang-realm.js?v=20261029-inner-tagline';
-import {wangBranches} from './wang-branches.js?v=20261029-inner-tagline';
+import {wangBranches} from './wang-branches.js?v=20261103-strategy-crux1';
 import {wangGroups,wangOrder,wangRelations,wangOverview,wangClosing} from './wang-framework.js?v=20261029-inner-tagline';
 import {daoSources} from './dao-content.js?v=20261029-inner-tagline';
 export {wangGroups,wangOrder,wangOverview};
@@ -21,6 +21,14 @@ function toc(id,d,extra=[]){return `<aside class="article-toc"><span class="eyeb
 const sections=(id,d)=>d.sections.map((s,i)=>`<h2 id="wang-${id}-${i}">${esc(s.title)}</h2>${ps(s.paragraphs)}`).join('');
 const questions=(id,d)=>`<h2 id="wang-${id}-questions">深入追问</h2>${d.questions.map(fold).join('')}`;
 const extraSources={
+ rumeltCrux:{"label":"Richard Rumelt：《The Crux》（2022）及作者公开阐释","url":"https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/getting-strategy-wrong-and-how-to-do-it-right-instead","note":"借鉴对重要性、可应对程度与聚焦的判断，以及从挑战出发设计行动的思想。“重要性与可突破性”是本篇融入找杠杆的表述；三步结构沿用三道哲学。"},
+ rumeltKernel:{"label":"Richard Rumelt：《Good Strategy Bad Strategy》（2011）及作者文章","url":"https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-perils-of-bad-strategy","note":"作者文章直接说明诊断、指导方针与一致行动构成战略内核。本篇据此深化应对思路与行动配合，不以目标或项目清单代替战略。"},
+ porterChoices:{"label":"Michael Porter 战略体系：Making Strategic Trade-offs","url":"https://www.isc.hbs.edu/strategy/creating-a-successful-strategy/Pages/making-strategic-trade-offs.aspx","note":"哈佛商学院战略与竞争力研究所对战略取舍的说明：活动、需求与定位可能不相容。用于理解为何选择某条路径，也要明确放弃哪些不相容的安排。"},
+ porterFit:{"label":"Michael Porter 战略体系：Fit Across the Value Chain","url":"https://www.isc.hbs.edu/strategy/creating-a-successful-strategy/Pages/fit-across-the-value-chain.aspx","note":"借鉴活动彼此配合、相互加强的思想。竞争战略有特定的商业问题范围，本篇将其作为行动协调的参照，不把所有公共目标都化约为竞争。"},
+ playingToWin:{"label":"A. G. Lafley、Roger L. Martin：《Playing to Win》（2013）","url":"https://rogerlmartin.com/thought-pillars/strategy","note":"作者官网说明相互关联的战略选择，包括行动场域、实现方式、能力与管理安排。本篇吸收选择之间需要匹配的思想，不另增五问框架。"},
+ goldrattGoal:{"label":"Eliyahu M. Goldratt、Jeff Cox：《The Goal》与约束理论","url":"https://www.goldrattresearchlabs.com/introduction-to-toc","note":"Goldratt Research Labs 对约束理论的说明，用于检验流程中的局部改善是否带动整体产出、约束是否转移。不把系统约束与所有战略挑战等同。"},
+ collinsStop:{"label":"Jim Collins：《Good to Great》及 How Do You Do “Stop Doing?”","url":"https://www.jimcollins.com/media_topics/StopDoing.html","note":"作者官网关于停止清单与资源配置的公开说明。用于让取舍落实到暂停事项和释放资源；本篇不照搬固定削减比例，也不据此承诺业绩。"},
+ dukeQuit:{"label":"Annie Duke：《Quit》（2022）授权摘录","url":"https://behavioralscientist.org/annie-duke-quit-mental-models-to-help-you-cut-your-losses/","note":"作者授权摘录讨论先检验关键难题，以及结合状态与时点的退出条件。本篇据此明确观察、停止与复核安排；示例是三道的假设情境。"},
  xiyuZhuang:{label:'细雨：《庄子·天道》讲解',url:'https://xiyu.love/archives/zhuang-zi-tian-dao',note:'借鉴尊重自身与他人的发展、减少控制和成全不同生命的思想；本篇的组织与治理论述由三道框架展开。'},
  ostrom:{label:'Elinor Ostrom：Beyond Markets and States（2009）',url:'https://www.nobelprize.org/prizes/economic-sciences/2009/ostrom/lecture/?lbw=1',note:'关于复杂经济系统的多中心治理，作为制度、合作与自主组织的延伸阅读；不用于证明本体系的形而上学命题。'}
 };
