@@ -21,7 +21,7 @@ import {paths,notes,extraNodes} from './data.js?v=20261104-wangnav1';
 import {essayPage} from './essay.js?v=20261029-inner-tagline';
 import {becomingPage,initBecoming,becomingElementPage,becomingReadingPage} from './becoming.js?v=20261029-inner-tagline';
 import {mountArt,diagram} from './art.js?v=20261029-inner-tagline';
-import {selfLayers,selfElements,selfAliases,knowingPage,selfLayerPage,selfElementPage,initKnowing} from './knowing.js?v=20261102-body-parts1';
+import {selfLayers,selfElements,selfAliases,knowingPage,selfLayerPage,selfElementPage,initKnowing} from './knowing.js?v=20261104-knowing-sync1';
 const $=s=>document.querySelector(s), main=$('#main');
 const arrow='<span aria-hidden="true">↗</span>';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
