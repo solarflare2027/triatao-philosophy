@@ -1,5 +1,5 @@
-import {practiceSearchItems} from './practice-catalog.js?v=20261103-practice-hub1';
-import {paths} from './data.js?v=20261102-tian-directory1';
+import {practiceSearchItems} from './practice-catalog.js?v=20261029-inner-tagline';
+import {paths} from './data.js?v=20261104-flux2';
 import {elements} from './elements.js?v=20261029-inner-tagline';
 
 const svg=(path,cls='')=>`<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true"><path d="${path}"/></svg>`;
@@ -10,7 +10,7 @@ const panels={
  paths:{title:'三道体系',items:paths.map(p=>`<button class="a16-row" data-third="${p.id}"><span>${p.name}<small>${p.verb}</small></span>${icons.next}</button>`).join('')+row('map','三道全图','从整体进入每一个思想分支')},
  becoming:{title:'创造自己',items:elements.map((e,i)=>row('becoming/'+e.id,`${String(i+1).padStart(2,'0')}　${e.name}`)).join('')+row('becoming','三层九要素','意识层 · 模板层 · 实相层')},
  readings:{title:'文章与案例',items:row('essay','三道总论','从看见真理，到参与创造')+row('layout','布局','把未来带回现在')+row('case','面对质疑，我如何回应？','一次从觉察到选择的实践')+row('library','浏览文章与案例')},
- practice:{title:'实践',items:row('practice','实践文章','在现实反馈中不断探索、修正与创造')+row('practice/exercise/from-choice-to-being','从选择到成为','身份创造实践指南 · 公开版')+row('becoming','回到创造自己','三层九项的理论脉络')}
+ practice:{title:'创造实践',items:row('practice','创造自己的实践','从理解到体验，从体验到成为')+row('practice/exercise/from-choice-to-being','从选择到成为','框架预览 · 内容完善中')+row('becoming','回到创造自己','三层九项的理论脉络')}
 };
 const thirdPanels=Object.fromEntries(paths.map(p=>[p.id,{title:p.name,items:row(p.id,p.name+'篇总览',p.verb)+p.groups.map(g=>row(g.id==='knowing'?'knowing':g.id==='becoming'?'becoming':'map?focus='+g.id,g.name,g.items.map(i=>i[1]).join(' · '))).join('')} ]));
 const searchEntries=[...practiceSearchItems.map(({name,summary,href})=>({name,detail:summary,href})),...paths.map(p=>({name:p.name,detail:p.verb,href:p.id})),...elements.map(e=>({name:e.name,detail:'创造自己 · '+e.essence,href:'becoming/'+e.id})),{name:'三道全图',detail:'思想结构与阅读入口',href:'map'},{name:'三道总论',detail:'世界观、人生观与价值观',href:'essay'},{name:'认识自己',detail:'三个“我”',href:'knowing'},{name:'布局',detail:'布先手、据枢纽、留自由',href:'layout'}];
@@ -33,7 +33,7 @@ export function home(){return `
   </div></section>
   <footer class="a16-footer"><div class="a16-footer-inner"><div class="a16-footer-brand"><a href="#/" class="tria-footer-lockup"><span>三道哲学</span></a><p>《哲人王》的学习与实践手册</p></div><div class="a16-footer-right">
    <nav class="a16-path-circles" aria-label="三道入口"><a href="#/tian" aria-label="天道：看见真理">天</a><a href="#/ren" aria-label="人道：创造自己">人</a><a href="#/wang" aria-label="王道：改变世界">王</a></nav>
-   <div class="a16-footer-links"><span>求真 · 选择 · 创造</span><a href="#/start">走进三道</a><a href="#/map">三道全图</a><a href="#/library">文章与案例</a><a href="#/practice">实践</a></div>
+   <div class="a16-footer-links"><span>求真 · 选择 · 创造</span><a href="#/start">走进三道</a><a href="#/map">三道全图</a><a href="#/library">文章与案例</a><a href="#/practice">创造实践</a></div>
   </div></div></footer>
   <dialog id="a16-menu" class="a16-menu" data-depth="0" aria-labelledby="a16-menu-title">
    <h2 id="a16-menu-title" class="a16-sr">三道哲学导航</h2>

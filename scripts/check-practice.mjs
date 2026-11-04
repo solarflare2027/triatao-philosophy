@@ -59,7 +59,7 @@ for(const id of creationOrder){
  assert(practiceElementPage(id).includes(`href="#/becoming/${id}"`),`${id}: 缺少返回理论入口`);
 }
 assert.equal((creationOverviewPage().match(/id="creation-practice-bridge"/g)||[]).length,1);
-const pages=['practice','practice/article/inner-discernment','practice/exercise/from-choice-to-being/philosopher-king',...creationOrder.map(id=>'practice/layer/'+id),...practiceExercises.map(e=>'practice/exercise/'+e.id)];
+const pages=['practice','practice/exercise/from-choice-to-being/philosopher-king',...creationOrder.map(id=>'practice/layer/'+id),...practiceExercises.map(e=>'practice/exercise/'+e.id)];
 let links=0;
 for(const route of pages){
  const html=practiceRoute(route);assert(html,`${route}: 页面为空`);

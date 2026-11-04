@@ -310,7 +310,7 @@ for (const entry of manifest.pages) {
 }
 const alias = path.join(root, 'practice', 'index.html'), practice = fileForRoute('practice');
 if ((plan.get(alias) ?? originals.get(alias)) !== (plan.get(practice) ?? originals.get(practice))) throw Error('The /practice alias would diverge');
-manifest.sourceFiles = Object.fromEntries([...sourceSnapshots].map(([name, bytes]) => [name, hash(bytes)]));
+manifest.sourceFiles = Object.fromEntries([...sourceSnapshots].map(([name, bytes]) => [name, hash(plan.get(path.join(root, name)) ?? bytes)]));
 manifest.generation = {mode: 'offline-inner-only', browserRendered: false, routeScope: [...changedRoutes], preflightTextHashes: manifest.pages.length};
 plan.set(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
 
