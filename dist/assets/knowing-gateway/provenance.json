@@ -1,0 +1,22 @@
+{
+  "generated": "2026-11-02",
+  "tool": "Built-in image_gen",
+  "purpose": "认识自己首页三章入口插图",
+  "prompts": {
+    "body": "Use case: illustration-story. Asset type: illustration for one of three Chinese philosophy website chapter cards. Primary request: a refined original philosophical engraving, Renaissance copperplate line work combined with Chinese literati restraint, very fine forest-green ink, subtle antique gold accents, generous negative space, landscape 3:2 composition. The illustration should occupy the central two thirds, quietly dissolve toward the background, no border, no lettering, no labels, no logos, no glowing effects, no infographic. Scene: warm ivory paper (#f4f2eb). A fully clothed barefoot human figure seen from behind, standing at a shallow stream, one hand gently touching a low branch. Water, touch and grounded feet communicate bodily experience and entering the world through a living body. Natural human proportions, elegant sparse landscape, calm and humane.",
+    "role": "Use case: illustration-story. Asset type: illustration for one of three Chinese philosophy website chapter cards. Primary request: a refined original philosophical engraving, Renaissance copperplate line work combined with Chinese literati restraint, very fine forest-green ink, subtle antique gold accents, generous negative space, landscape 3:2 composition. The illustration should occupy the central two thirds, quietly dissolve toward the background, no border, no lettering, no labels, no logos, no glowing effects, no infographic. Scene: pale warm grey paper (#e4e3d9). A simple draped theatrical robe hangs from a slender wooden stand next to an antique oval mirror. The mirror reflects a distant open landscape, suggesting a life larger than its public role. Quiet still life, precise delicate crosshatching, no face, no theatrical mask, no letters.",
+    "inner": "Use case: illustration-story. Asset type: illustration for one of three Chinese philosophy website chapter cards. Primary request: a refined original philosophical engraving, Renaissance copperplate line work combined with Chinese literati restraint, very fine forest-green ink, subtle antique gold accents, generous negative space, landscape 3:2 composition. The illustration should occupy the central two thirds, quietly dissolve toward the background, no border, no lettering, no labels, no logos, no glowing effects, no infographic. Scene: deep forest-green ground (#253d32), engraved in restrained warm ivory and muted champagne gold. A small fully clothed solitary figure viewed from behind at the threshold of a simple open stone arch, beyond it a quiet broad horizon and a subtle rising sun. Contemplation and awareness, not religious iconography, no crown, no mystical energy. Vast dark breathing room, delicate fine-line engraving."
+  },
+  "assets": [
+    "body-v1.jpg",
+    "role-v1.jpg",
+    "inner-v1.jpg"
+  ],
+  "processing": "Resized to 960px wide, JPEG quality 82, no composition changes",
+  "fontSupplement": {
+    "file": "../fonts/gen-ryu-min-knowing-v1.woff2",
+    "source": "../fonts/gen-ryu-min.ttf",
+    "unicode": "U+77E9",
+    "note": "Original approved font; existing subset and glyphs unchanged"
+  }
+}

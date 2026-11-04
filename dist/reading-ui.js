@@ -25,6 +25,6 @@ export function initReadingUI(root,path,elements,selfLayers,selfElements,catalog
  if(['concept/cognitive','concept/emotional','concept/existential'].includes(path)){back=['acceptance','返回接纳自己'];if(path==='concept/existential')next=['becoming','走向创造自己'];}
  if(path==='concept/cognitive')next=['concept/emotional','站在自己这一边'];
  if(path==='concept/emotional')next=['concept/existential','改变内在驱动力'];
- if(next&&!shell.classList.contains('wang-page')){const nav=document.createElement('nav');nav.className='reading-next';nav.setAttribute('aria-label','继续阅读');nav.innerHTML=`<a class="reading-next-primary" href="#/${next[0]}">${next[1]} <span aria-hidden="true">→</span></a><a class="reading-next-back" href="#/${back[0]}">${back[1]}</a>`;oldFooter?oldFooter.replaceWith(nav):shell.append(nav);shell.querySelectorAll('.intention-back').forEach(a=>a.remove());}
+ if(next&&!shell.classList.contains('wang-page')&&!shell.classList.contains('flux-reading')){const nav=document.createElement('nav');nav.className='reading-next';nav.setAttribute('aria-label','继续阅读');nav.innerHTML=`<a class="reading-next-primary" href="#/${next[0]}">${next[1]} <span aria-hidden="true">→</span></a><a class="reading-next-back" href="#/${back[0]}">${back[1]}</a>`;oldFooter?oldFooter.replaceWith(nav):shell.append(nav);shell.querySelectorAll('.intention-back').forEach(a=>a.remove());}
  return ()=>{window.removeEventListener('scroll',onScroll);cancelAnimationFrame(frame);};
 }

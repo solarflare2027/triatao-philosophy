@@ -1,5 +1,5 @@
 // Enhancement only for generated /read/ pages. The original Hash site is unchanged.
-import {readableRoutes} from './readable-routes.js?v=20261029-inner-tagline';
+import {readableRoutes} from './readable-routes.js?v=20261104-rhythm1';
 const known=new Set(readableRoutes);
 function convertLinks(){
  document.querySelectorAll('a[href^="#/"]').forEach(a=>{
@@ -8,6 +8,6 @@ function convertLinks(){
  });
 }
 // Keep all original page initializers, animation, search and mobile menu behavior.
-await import('./app.js?v=20261102-inner-visual1');
+await import('./app.js?v=20261104-body-story1');
 convertLinks();
 new MutationObserver(convertLinks).observe(document.body,{childList:true,subtree:true});

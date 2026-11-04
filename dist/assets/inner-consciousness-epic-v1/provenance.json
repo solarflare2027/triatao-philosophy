@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-02",
+  "tool": "built-in image_gen",
+  "series": "我与本体 · 我与更高维的我",
+  "reference": "recognition-hero is the identity and style reference for the other nine artworks.",
+  "assets": [
+    {
+      "key": "recognition-hero",
+      "prompt": "Use case: stylized-concept. Asset type: epic philosophical editorial illustration for Tria Tao's 'Recognition: me and my higher-dimensional self', landscape 3:2. Create a breathtaking monumental painting, mixing Renaissance fresco composition, exquisite engraved linework and sophisticated oil glazes. A small embodied Chinese adult, short black hair, ivory tunic and deep forest-green cloak, stands at the edge of a vast still dark-green sea inside a boundless cathedral of space. Opposite them, their OWN vastly larger higher-dimensional true self rises from translucent layers of luminous ivory, antique gold and emerald geometry, the SAME facial identity, humane and clear-eyed, face and hands discernible but formed from interwoven starlight, a living cosmic architecture. The small person and the enormous true self look into one another's eyes in recognition, eye lines visibly meet. They are two perspectives of one being: a subtle continuous gold thread connects their hearts through a shared reflection in the water. Enormous scale, deep atmospheric perspective, architectural framing, mysterious dimension beyond ordinary perception, restrained cosmic splendor, chiaroscuro and warm radiant light. Palette: forest green #223f34, midnight green, parchment ivory #efeee8, antique gold. Richly painted, dignified, intellectually serious, awe and intimacy together, no generic fantasy warrior, no god from any religion, no deity crown, no chakras, no neon psychedelic clutter, no game UI, no text or letters or watermark. The visual is a symbolic philosophical artwork, not a physical anatomical diagram.",
+      "files": [
+        "recognition-hero-720.webp",
+        "recognition-hero-1440.webp"
+      ]
+    },
+    {
+      "key": "dialogue-hero",
+      "prompt": "Use case: stylized-concept. Asset type: landscape 3:2 philosophical editorial illustration for Tria Tao. Reference image 1 is STYLE AND CHARACTER IDENTITY REFERENCE ONLY, not an edit target: keep the same small embodied Chinese adult with short black hair, ivory tunic, forest-green cloak, and the same enormous higher-dimensional true self sharing their exact face. Create a NEW composition. Preserve the breathtaking monumental Renaissance fresco/oil-painting aesthetic, engraved detail, emerald cosmic architecture, parchment ivory and antique gold light, extraordinary scale, sacred geometry, dignified humane expressions. Two perspectives of ONE self, no religious deity crown, no superhero armor, no neon psychedelic clutter, no text, captions, lettering or watermark. Primary request: A wordless conversation across dimensions. A tiny embodied self on a suspended stone bridge reaches one open hand toward the enormous translucent hand of their same-faced higher self. Their hands almost meet across a thin veil of glowing emerald glass. The huge calm face leans close to listen. Luminous gold waves gently cross the veil, not letters. A vast cathedral of stars and layered archways surrounds them, deep space and warm chiaroscuro, intimate trust on an epic scale.",
+      "files": [
+        "dialogue-hero-720.webp",
+        "dialogue-hero-1440.webp"
+      ]
+    },
+    {
+      "key": "integration-hero",
+      "prompt": "Use case: stylized-concept. Asset type: landscape 3:2 philosophical editorial illustration for Tria Tao. Reference image 1 is STYLE AND CHARACTER IDENTITY REFERENCE ONLY, not an edit target: keep the same small embodied Chinese adult with short black hair, ivory tunic, forest-green cloak, and the same enormous higher-dimensional true self sharing their exact face. Create a NEW composition. Preserve the breathtaking monumental Renaissance fresco/oil-painting aesthetic, engraved detail, emerald cosmic architecture, parchment ivory and antique gold light, extraordinary scale, sacred geometry, dignified humane expressions. Two perspectives of ONE self, no religious deity crown, no superhero armor, no neon psychedelic clutter, no text, captions, lettering or watermark. Primary request: The embodied self walks forward along a stone causeway toward a warm sunlit world, and their vast same-faced higher self aligns precisely behind and around them as a translucent architecture of gold light. Both look in the same direction. The small person remains fully visible, solid, independent and capable; their hands hold a simple rolled plan, their feet touch real stone. The enormous self's open hands frame the path without puppeteering. Converging emerald and ivory arcs create a single shared direction.",
+      "files": [
+        "integration-hero-720.webp",
+        "integration-hero-1440.webp"
+      ]
+    },
+    {
+      "key": "recognition-witness",
+      "prompt": "Use case: stylized-concept. Asset type: landscape 3:2 philosophical editorial illustration for Tria Tao. Reference image 1 is STYLE AND CHARACTER IDENTITY REFERENCE ONLY, not an edit target: keep the same small embodied Chinese adult with short black hair, ivory tunic, forest-green cloak, and the same enormous higher-dimensional true self sharing their exact face. Create a NEW composition. Preserve the breathtaking monumental Renaissance fresco/oil-painting aesthetic, engraved detail, emerald cosmic architecture, parchment ivory and antique gold light, extraordinary scale, sacred geometry, dignified humane expressions. Two perspectives of ONE self, no religious deity crown, no superhero armor, no neon psychedelic clutter, no text, captions, lettering or watermark. Primary request: The embodied self stands inside a large circular theatre, surrounded by a low storm of dark green fabric and scattered red-gold sparks that symbolize a passing emotional reaction. Above and beyond the theatre, their enormous same-faced higher self quietly sees the whole scene. The small person starts to turn their head upward in awareness. A still gold line links their hearts; emotion remains present, observer and experiencer coexist. Strong diagonal composition, immense cosmic dome.",
+      "files": [
+        "recognition-witness-720.webp",
+        "recognition-witness-1440.webp"
+      ]
+    },
+    {
+      "key": "recognition-dimensions",
+      "prompt": "Use case: stylized-concept. Asset type: landscape 3:2 philosophical editorial illustration for Tria Tao. Reference image 1 is STYLE AND CHARACTER IDENTITY REFERENCE ONLY, not an edit target: keep the same small embodied Chinese adult with short black hair, ivory tunic, forest-green cloak, and the same enormous higher-dimensional true self sharing their exact face. Create a NEW composition. Preserve the breathtaking monumental Renaissance fresco/oil-painting aesthetic, engraved detail, emerald cosmic architecture, parchment ivory and antique gold light, extraordinary scale, sacred geometry, dignified humane expressions. Two perspectives of ONE self, no religious deity crown, no superhero armor, no neon psychedelic clutter, no text, captions, lettering or watermark. Primary request: The embodied self stands at a mirrored threshold. A huge translucent hand of their same-faced higher self holds many layered luminous translucent planes, each a wider view of the very same scene and figure. No spacecraft, no external simulation laboratory. This is widening perspective within the same being, nested architecture reflected in water. The enormous face is partly visible in an opening among the planes, quiet recognition. Emerald depths, gold cosmic geometry, spectacular spatial layering.",
+      "files": [
+        "recognition-dimensions-720.webp",
+        "recognition-dimensions-1440.webp"
+      ]
+    },
+    {
+      "key": "dialogue-veil",
+      "prompt": "Use case: stylized-concept. Asset type: landscape 3:2 philosophical editorial illustration for Tria Tao. Reference image 1 is STYLE AND CHARACTER IDENTITY REFERENCE ONLY, not an edit target: keep the same small embodied Chinese adult with short black hair, ivory tunic, forest-green cloak, and the same enormous higher-dimensional true self sharing their exact face. Create a NEW composition. Preserve the breathtaking monumental Renaissance fresco/oil-painting aesthetic, engraved detail, emerald cosmic architecture, parchment ivory and antique gold light, extraordinary scale, sacred geometry, dignified humane expressions. Two perspectives of ONE self, no religious deity crown, no superhero armor, no neon psychedelic clutter, no text, captions, lettering or watermark. Primary request: The embodied self approaches a tall emerald veil woven of orderly geometric patterns. Some gold light from their same-faced enormous higher self behind the veil is filtered into small scattered strands, while a narrow open doorway lets a clear continuous gold thread through to the embodied self's attentive open palm. Keep the veil protective and beautiful, not a prison or villain. The huge face beyond belongs to the same person, supportive and patient. A metaphor of making room for understanding.",
+      "files": [
+        "dialogue-veil-720.webp",
+        "dialogue-veil-1440.webp"
+      ]
+    },
+    {
+      "key": "dialogue-dream",
+      "prompt": "Use case: stylized-concept. Asset type: landscape 3:2 philosophical editorial illustration for Tria Tao. Reference image 1 is STYLE AND CHARACTER IDENTITY REFERENCE ONLY, not an edit target: keep the same small embodied Chinese adult with short black hair, ivory tunic, forest-green cloak, and the same enormous higher-dimensional true self sharing their exact face. Create a NEW composition. Preserve the breathtaking monumental Renaissance fresco/oil-painting aesthetic, engraved detail, emerald cosmic architecture, parchment ivory and antique gold light, extraordinary scale, sacred geometry, dignified humane expressions. Two perspectives of ONE self, no religious deity crown, no superhero armor, no neon psychedelic clutter, no text, captions, lettering or watermark. Primary request: An embodied self sleeps peacefully on a simple ivory stone platform above a deep emerald ocean. Their same-faced higher-dimensional self is awake above the water and gently opens an immense luminous archway made of interconnected dreamlike windows. In the windows are symbolic paths, a notebook, a small tree, and repeated versions of the same person, no text. A single ribbon of antique-gold light connects the sleeping person and the awake larger face. Dream and waking form one continuous inner landscape. Immense serene nocturnal fresco.",
+      "files": [
+        "dialogue-dream-720.webp",
+        "dialogue-dream-1440.webp"
+      ]
+    },
+    {
+      "key": "integration-direction",
+      "prompt": "Use case: stylized-concept. Asset type: landscape 3:2 philosophical editorial illustration for Tria Tao. Reference image 1 is STYLE AND CHARACTER IDENTITY REFERENCE ONLY, not an edit target: keep the same small embodied Chinese adult with short black hair, ivory tunic, forest-green cloak, and the same enormous higher-dimensional true self sharing their exact face. Create a NEW composition. Preserve the breathtaking monumental Renaissance fresco/oil-painting aesthetic, engraved detail, emerald cosmic architecture, parchment ivory and antique gold light, extraordinary scale, sacred geometry, dignified humane expressions. Two perspectives of ONE self, no religious deity crown, no superhero armor, no neon psychedelic clutter, no text, captions, lettering or watermark. Primary request: On a broad stone stair under cosmic arches, the embodied self holds a simple gold compass flat in an open palm, looking toward their enormous same-faced higher self. The enormous self indicates a distant luminous horizon with an open hand; the embodied person still holds a rolled plan and a working tool at their belt, retaining competence and agency. A crown lies unobtrusively on a stone ledge, no one is defeated or erased. Direction is shared and practical capability remains in the small self.",
+      "files": [
+        "integration-direction-720.webp",
+        "integration-direction-1440.webp"
+      ]
+    },
+    {
+      "key": "integration-life",
+      "prompt": "Use case: stylized-concept. Asset type: landscape 3:2 philosophical editorial illustration for Tria Tao. Reference image 1 is STYLE AND CHARACTER IDENTITY REFERENCE ONLY, not an edit target: keep the same small embodied Chinese adult with short black hair, ivory tunic, forest-green cloak, and the same enormous higher-dimensional true self sharing their exact face. Create a NEW composition. Preserve the breathtaking monumental Renaissance fresco/oil-painting aesthetic, engraved detail, emerald cosmic architecture, parchment ivory and antique gold light, extraordinary scale, sacred geometry, dignified humane expressions. Two perspectives of ONE self, no religious deity crown, no superhero armor, no neon psychedelic clutter, no text, captions, lettering or watermark. Primary request: The embodied self walks down a real human-scale stone street with trees, a worktable and an open garden doorway, bringing calm purposeful action to ordinary life. Their same-faced higher-dimensional true self is present as a vast translucent form integrated with the sky and architecture, looking in the same direction, gently protective without directing every movement. Gold light connects the person's head, working hands and grounded feet to the wider form. The material world stays solid and valued. Epic radiance enters everyday life.",
+      "files": [
+        "integration-life-720.webp",
+        "integration-life-1440.webp"
+      ]
+    },
+    {
+      "key": "matrix-choice",
+      "prompt": "Use case: stylized-concept. Asset type: landscape 3:2 philosophical editorial illustration for Tria Tao. Reference image 1 is STYLE AND CHARACTER IDENTITY REFERENCE ONLY, not an edit target: keep the same small embodied Chinese adult with short black hair, ivory tunic, forest-green cloak, and the same enormous higher-dimensional true self sharing their exact face. Create a NEW composition. Preserve the breathtaking monumental Renaissance fresco/oil-painting aesthetic, engraved detail, emerald cosmic architecture, parchment ivory and antique gold light, extraordinary scale, sacred geometry, dignified humane expressions. Two perspectives of ONE self, no religious deity crown, no superhero armor, no neon psychedelic clutter, no text, captions, lettering or watermark. Primary request: Paint a fresh epic editorial interpretation of the famous red-pill / blue-pill choice scene from The Matrix. Morpheus (recognizable bald Black man, round dark sunglasses, black leather coat) sits facing Neo (recognizable young Keanu Reeves, black hair, dark clothing) in a shadowy old room with deep red leather armchairs. Morpheus extends BOTH open palms toward Neo, exactly ONE clearly RED capsule in one palm and ONE clearly BLUE capsule in the other, prominently visible and separated; Neo watches both pills in a serious moment of irreversible choice. Film-like medium-wide over-the-shoulder composition, hands unmistakable, no extra fingers or pills. Keep the reference's refined Renaissance oil/fresco texture, forest-green shadows and antique-gold dramatic lighting, but use the actual Matrix characters and room rather than the higher-self figures. No giant self in this one scene. No text in the painting; the exact subtitle will be added in accessible HTML below.",
+      "files": [
+        "matrix-choice-720.webp",
+        "matrix-choice-1440.webp"
+      ]
+    }
+  ],
+  "matrix": "Original AI illustration interpreting the Morpheus/Neo choice scene; not an official film still. Subtitle supplied by the author and typeset separately.",
+  "extraFont": {
+    "file": "extra-cjk.woff2",
+    "characters": "菲街",
+    "source": "assets/fonts/gen-ryu-min.ttf",
+    "note": "Two missing characters used in image alternatives; existing subsets and outlines remain unchanged."
+  }
+}

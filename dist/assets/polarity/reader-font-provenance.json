@@ -1,0 +1,8 @@
+{
+  "source": "../fonts/gen-ryu-min.ttf",
+  "source_sha256": "2fa4005d409a3a18b6e9829ee1c1a47b76f3bbb9095751dd4cce8fe69cefd848",
+  "preserves_prior_characters": true,
+  "page_characters_covered": true,
+  "additional_characters": "伯坡尘帛悖扉柏欧氏氣滑為猫脊茨薛谔鸠鸣",
+  "output": "font-reader-d80ff793f47a.woff2"
+}
