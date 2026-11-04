@@ -85,3 +85,5 @@
 .flux-reading .flux-distinction thead{background:#e4e9e060}
 @media(max-width:700px){.flux-reading .flux-route{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:20px;margin-top:26px}.flux-reading .flux-route a:nth-child(4){border-left:0;padding-left:0}.flux-reading .flux-route strong{font-size:18px}.flux-reading .flux-route a{padding-right:5px;padding-left:12px}.flux-reading .flux-figure figcaption{display:block}.flux-reading .flux-figure figcaption .eyebrow{display:block;margin-bottom:6px}.flux-reading .flux-distinction table{font-size:14px}.flux-reading .flux-distinction th,.flux-reading .flux-distinction td{padding:12px 8px}.flux-reading .flux-aspects .flux-triple strong{font-size:23px}.flux-reading .flux-section{margin-top:30px;padding-top:26px}}
 @media print{.flux-reading .flux-route{break-inside:avoid}.flux-reading .flux-section{border-top:1px solid #bbb}.flux-reading .flux-distinction{break-inside:avoid}}
+
+.flux-reading .flux-opening-copy p:first-child{font-family:var(--serif);font-size:inherit;font-weight:400;font-synthesis:none;letter-spacing:normal;line-height:2.1;color:var(--ink)}
