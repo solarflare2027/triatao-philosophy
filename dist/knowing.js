@@ -1,4 +1,4 @@
-import {bodySelfPage,initBody} from './body-self.js?v=20261102-body-parts1';
+import {bodySelfPage,initBody} from './body-self.js?v=20261104-body-story1';
 import {externalRolePage} from './external-role.js?v=20261102-rolepages1';
 import {innerPage} from './inner-consciousness.js?v=20261029-inner-tagline';
 import {personalityContent,personalityPage} from './personality.js?v=20261029-inner-tagline';

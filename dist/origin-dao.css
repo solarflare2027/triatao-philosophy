@@ -1,4 +1,3 @@
-@font-face{font-family:GenRyuMin;src:url('/assets/origin-dao-20261102/source-glyphs.woff2?v=20261104-origin-native1') format('woff2');font-style:normal;font-weight:400;font-display:swap;unicode-range:U+5CE6,U+6276,U+8DCC}
 /* The site owns typography, page frame, headings, prose, disclosures and navigation.
    Only chapter illustrations and their controls are styled here. */
 .origin-dao{--origin-green:#3f5141;--origin-gold:#92713f;--origin-soft:#e4e8dc}
@@ -90,3 +89,15 @@
 
 @media(max-width:570px){.origin-dao .origin-opening-art{margin:27px auto 29px}.origin-dao .origin-opening-art img{aspect-ratio:2048/1024.5}}
 @media print{.origin-dao .origin-opening-art img{aspect-ratio:2048/683}}
+
+.origin-dao .origin-opening-copy blockquote,.origin-dao .origin-mainline blockquote{font-family:var(--serif);font-weight:400}.origin-dao .origin-opening-copy cite,.origin-dao .origin-mainline cite{font-family:var(--serif);font-weight:400}.origin-dao .origin-mainline{margin:30px 0}.origin-dao .origin-mainline h3{margin-top:0}
+
+/* Concept artwork authored in Figma; typography follows the shared site family. */
+.origin-dao :is(h1,h2,h3,blockquote,cite){font-family:var(--serif)}
+.origin-dao .origin-concept-grid{display:grid;gap:24px;align-items:start}
+.origin-dao .origin-concept-grid.origin-three{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.origin-dao .origin-concept-grid.origin-two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.origin-dao .origin-concept-grid img{display:block;width:100%;height:auto}
+.origin-dao .origin-desire-statement{padding-block:10px}
+.origin-dao .origin-desire-statement [lang=en]{display:inline-block;margin-bottom:8px}
+@media(max-width:570px){.origin-dao .origin-concept-grid.origin-two{grid-template-columns:1fr;gap:0}.origin-dao .origin-concept-grid.origin-three{grid-template-columns:1fr;gap:0}.origin-dao .origin-concept-grid img{max-width:320px;margin-inline:auto}.origin-dao .origin-concept-grid.origin-three img{max-width:240px}}

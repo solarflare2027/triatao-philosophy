@@ -1,0 +1,49 @@
+{
+  "created": "2026-11-05",
+  "figma": "https://www.figma.com/design/7tylYsrpMDGFaRTeY4rgMf",
+  "source": "Figma native vector components and approved GenRyuMin TW TTF SemiBold outlines",
+  "assets": [
+    {
+      "key": "source-root",
+      "id": "2:12",
+      "width": 240,
+      "height": 258
+    },
+    {
+      "key": "source-awareness",
+      "id": "2:20",
+      "width": 240,
+      "height": 258
+    },
+    {
+      "key": "source-creative",
+      "id": "2:30",
+      "width": 240,
+      "height": 258
+    },
+    {
+      "key": "knowing",
+      "id": "2:45",
+      "width": 368,
+      "height": 258
+    },
+    {
+      "key": "experiencing",
+      "id": "2:53",
+      "width": 368,
+      "height": 258
+    },
+    {
+      "key": "need",
+      "id": "2:64",
+      "width": 368,
+      "height": 258
+    },
+    {
+      "key": "desire",
+      "id": "2:74",
+      "width": 368,
+      "height": 258
+    }
+  ]
+}
