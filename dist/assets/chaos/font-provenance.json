@@ -3,6 +3,22 @@
   "role": "Chapter subset retaining the existing site typeface",
   "source": "Existing site font source: assets/fonts/gen-ryu-min.ttf",
   "text_source": "chaos-reading.js and chaos-reading.css",
-  "generated": "2026-11-02",
-  "sha256": "466ba67ac008f49ffaf6f85467c5da4d837e1507490dea622a0eccba0ffe5821"
+  "generated": "2026-11-05",
+  "sha256": "81a8fd9aba0b5a3641da8f5b243610d61bc7f6aed0e237831e5229a42abad7e7",
+  "revision": "20261105-chaos-twoquestions1",
+  "coverage": {
+    "new_module_unique_hanzi": 604,
+    "missing_new_hanzi": 0,
+    "all_previous_codepoints_retained": true
+  },
+  "history": [
+    {
+      "family": "GenRyuMin",
+      "role": "Chapter subset retaining the existing site typeface",
+      "source": "Existing site font source: assets/fonts/gen-ryu-min.ttf",
+      "text_source": "chaos-reading.js and chaos-reading.css",
+      "generated": "2026-11-02",
+      "sha256": "466ba67ac008f49ffaf6f85467c5da4d837e1507490dea622a0eccba0ffe5821"
+    }
+  ]
 }

@@ -6,6 +6,10 @@ for(const [name,expected] of Object.entries(manifest.sourceFiles)){
  if(hash(await readFile(new URL(name,root)))!==expected)throw Error('Readable pages are stale; regenerate after editing '+name);
 }
 const routes=new Set(manifest.pages.map(p=>p.route));
+// HTML attribute order and self-closing syntax do not change a canonical URL.
+// Check the parsed attributes rather than one exact serialization.
+const attribute=(tag,name)=>{const m=tag.match(new RegExp('(?:^|\\s)'+name+'\\s*=\\s*(?:"([^"]*)"|\x27([^\x27]*)\x27|([^\\s>]+))','i'));return m?.[1]??m?.[2]??m?.[3];};
+const canonicals=html=>[...html.matchAll(/<link\b[^>]*>/gi)].map(m=>m[0]).filter(t=>(attribute(t,'rel')||'').toLowerCase().split(/\s+/).includes('canonical')).map(t=>attribute(t,'href'));
 for(const path of ['index.html','read/index.html']){
  const html=await readFile(new URL(path,root),'utf8');
  const video=html.match(/<video\b[^>]*id="a16-video"[^>]*>/)?.[0];
@@ -15,7 +19,8 @@ for(const path of ['index.html','read/index.html']){
 for(const p of manifest.pages){
  const html=await readFile(new URL('read/'+(p.route?p.route+'/':'')+'index.html',root),'utf8');
  if(hash(html)!==p.htmlHash)throw Error('Generated HTML changed: '+p.route);
- if(!html.includes(`<link rel="canonical" href="${p.url}">`))throw Error('Missing canonical '+p.route);
+ const canonicalURLs=canonicals(html);
+ if(!canonicalURLs.length||canonicalURLs.some(url=>url!==p.url))throw Error('Missing or conflicting canonical '+p.route);
  if(!html.includes('data-read-route="'+p.route+'"'))throw Error('Missing route '+p.route);
  const isPendingChapter=p.route==='concept/zhongqi'&&html.includes('内容完善中')&&p.textLength>=40;
  if(p.textLength<100&&!isPendingChapter)throw Error('Empty content '+p.route);
